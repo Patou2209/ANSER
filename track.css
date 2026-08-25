@@ -136,3 +136,395 @@ body {
     }
 
 }
+
+/* =========================================
+   BANNIERE
+========================================= */
+
+.energy-banner {
+    position: relative;
+    width: 100%;
+    min-height: 590px;
+    background: #070245;
+    color: white;
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   GRAND "ANSER" EN ARRIERE-PLAN
+========================================= */
+
+.background-anser {
+    position: absolute;
+
+    top: 160px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 250px;
+    font-weight: 900;
+
+    letter-spacing: -15px;
+
+    color: rgba(22, 15, 100, 0.35);
+
+    pointer-events: none;
+
+    white-space: nowrap;
+
+    z-index: 0;
+}
+
+
+/* =========================================
+   CONTENEUR
+========================================= */
+
+.banner-container {
+    position: relative;
+    z-index: 2;
+    width: 610px;
+    max-width: calc(100% - 40px);
+    margin: auto;
+    padding-top: 28px;
+    padding-bottom: 75px;
+}
+
+
+/* =========================================
+   PARTIE HAUTE
+========================================= */
+
+.banner-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 90px;
+}
+
+
+/* Objectif */
+
+.objective {
+    width: 290px;
+}
+
+.objective h2 {
+    margin: 0 0 12px;
+
+    font-size: 20px;
+    line-height: 1.05;
+
+    font-weight: 800;
+}
+
+.objective p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.25;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.progress-container {
+    width: 270px;
+
+    padding-top: 2px;
+}
+
+.progress-item {
+    margin-bottom: 23px;
+}
+
+.progress-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+
+    background: #073276;
+
+    overflow: hidden;
+}
+
+.progress-value {
+    height: 100%;
+
+    background: #ffd400;
+}
+
+.progress-30 {
+    width: 30%;
+}
+
+.progress-50 {
+    width: 50%;
+}
+
+.progress-100 {
+    width: 100%;
+}
+
+
+/* =========================================
+   PARTIE BASSE
+========================================= */
+
+.banner-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 42px;
+
+    margin-top: 115px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.vision-image {
+    width: 260px;
+    height: 250px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.vision-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   CONTENU VISION
+========================================= */
+
+.vision-content {
+    width: 280px;
+}
+
+.vision-content h2 {
+    margin: 0 0 10px;
+
+    font-size: 20px;
+    line-height: 1.05;
+
+    font-weight: 800;
+}
+
+.vision-content > p {
+    margin: 0 0 13px;
+
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+
+/* =========================================
+   CARTES
+========================================= */
+
+.vision-cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 7px;
+}
+
+.vision-card {
+    min-height: 59px;
+
+    border: 1px solid #214c98;
+
+    border-radius: 9px;
+
+    padding: 9px 7px;
+
+    display: flex;
+
+    gap: 5px;
+
+    align-items: flex-start;
+}
+
+.check {
+    width: 16px;
+    height: 16px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffd400;
+
+    color: #070245;
+
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.vision-card h3 {
+    margin: 0 0 3px;
+
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+.vision-card p {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.15;
+}
+
+
+/* =========================================
+   BANDE JAUNE
+========================================= */
+
+.yellow-bottom {
+    position: absolute;
+
+    bottom: -18px;
+    left: -2%;
+
+    width: 104%;
+    height: 30px;
+
+    background: #ffd400;
+
+    transform: rotate(-0.9deg);
+
+    transform-origin: center;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .energy-banner {
+        min-height: auto;
+    }
+
+    .background-anser {
+        top: 180px;
+
+        font-size: 120px;
+
+        letter-spacing: -8px;
+    }
+
+    .banner-container {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 35px 25px 70px;
+    }
+
+    .banner-top {
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+    .objective {
+        width: 100%;
+    }
+
+    .objective h2 {
+        font-size: 25px;
+    }
+
+    .objective p {
+        font-size: 12px;
+    }
+
+    .progress-container {
+        width: 100%;
+    }
+
+    .progress-header {
+        font-size: 10px;
+    }
+
+    .progress-bar {
+        height: 7px;
+    }
+
+    .banner-bottom {
+        flex-direction: column;
+
+        gap: 30px;
+
+        margin-top: 60px;
+    }
+
+    .vision-image {
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+    }
+
+    .vision-content {
+        width: 100%;
+    }
+
+    .vision-content h2 {
+        font-size: 25px;
+    }
+
+    .vision-content > p {
+        font-size: 11px;
+    }
+
+    .vision-card h3 {
+        font-size: 10px;
+    }
+
+    .vision-card p {
+        font-size: 8px;
+    }
+}
