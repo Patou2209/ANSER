@@ -372,3 +372,67 @@
 
         startAutoPlay();
 
+        /* =========================================================
+           SLIDER DES PROJETS
+        ========================================================== */
+        const projects = [
+            {
+                name: "KAMONIA",
+                image: "./img/energy3.jpg"
+            },
+
+            {
+                name: "WALIKALE",
+                image: "./img/energy3.jpg"
+            },
+
+            {
+                name: "KALEHE",
+                image: "./img/energy3.jpg"
+            },
+
+            {
+                name: "MIABI P1",
+                image: "./img/energy3.jpg"
+            },
+
+            {
+                name: "N'DJILI BRASSERIE",
+                image: "./img/energy3.jpg"
+            }
+        ];
+
+
+        const track = document.getElementById("projectsTrack");
+
+
+        function createCard(project) {
+
+            return `
+                <div class="project-card">
+
+                    <img 
+                        src="${project.image}" 
+                        alt="${project.name}"
+                    >
+
+                    <div class="project-name">
+                        ${project.name}
+                    </div>
+
+                </div>
+            `;
+        }
+
+
+        /* Première série */
+        projects.forEach(project => {
+            track.innerHTML += createCard(project);
+        });
+
+
+        /* Deuxième série identique */
+        projects.forEach(project => {
+            track.innerHTML += createCard(project);
+        });
+
