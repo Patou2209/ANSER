@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSER</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsiveness.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+   
+    
+
+    
+</head>
+
+<body>
+
+    <div class="top-nav">
+        <div class="contact-info">
+            <span><i class="fas fa-phone"></i> <a href="https://wa.me/243812345678" target="_blank">+243 81 234 5678</a></span>
+            <span><i class="fas fa-envelope"></i> <a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ANSER" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/ANSER" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/anser" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/ANSER" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        </div>
+    </div>
+
+    <nav>
+        <img src="./img/logo.jpg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html" class="active-tab">Acceuil</a></li>
+                <li><a href="#services" class="active-tab">Services</a></li>
+                <li><a href="#vision-mission">Notre vision</a></li>
+                <li><a href="#apropos" >A propos</a></li>
+                <li><a href="#contact-details" >Contact</a></li>
+
+            </ul>
+            <img id="menu-btn" src="./img/menu.png" alt="">
+        </div>
+        
+    </nav>
+
+    <!-- =========================================================
+         HERO SLIDER
+
+         IMPORTANT :
+         Remplace simplement les valeurs de "image" dans le JS
+         par tes propres images.
+    ========================================================== -->
+
+    <section class="hero" aria-label="Présentation">
+
+        <!-- Les slides seront générées automatiquement par JavaScript -->
+        <div id="slidesContainer"></div>
+
+        <!-- Navigation -->
+        <div class="hero-nav">
+
+            <div class="arrows">
+                <button
+                    class="arrow"
+                    id="prevBtn"
+                    aria-label="Slide précédente">
+                    ←
+                </button>
+
+                <button
+                    class="arrow"
+                    id="nextBtn"
+                    aria-label="Slide suivante">
+                    →
+                </button>
+            </div>
+
+            <div
+                class="dots"
+                id="dotsContainer"
+                aria-label="Navigation des slides">
+            </div>
+
+        </div>
+
+        <!-- Barre de progression -->
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+    </section>
+    <script src="index.js"></script>
+
+   
+
+</body>
+</html>

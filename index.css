@@ -1,0 +1,509 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Oswald", sans-serif;
+            background: #111;
+        }
+
+        /* =========================
+           top navigation bar
+        ========================= */
+
+        .top-nav {
+            width: 100%;
+            background: #162667;        /* bleu nuit profond, élégant */
+            color: #ffffff;
+            padding: 10px 40px;         /* espacement interne */
+            display: flex;
+            flex-wrap: wrap;            /* responsive : passe sur 2 lignes si besoin */
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .contact-info span, .social-icons a {
+            margin-right: 20px;        /* espacement entre les infos */
+            font-size: 14px;           /* taille de police légèrement réduite */
+            text-decoration: none;
+        }
+        .social-icons a {
+            margin-right: 15px;        /* espacement entre les icônes */
+            font-size: 16px;           /* taille de police pour les icônes */
+            color: #ffd400;            /* couleur des icônes */
+            transition: color 0.3s;    /* transition douce pour le hover */
+        }
+        .contact-info a {
+            color: #ffffff;             /* couleur du texte */
+            text-decoration: none;      /* pas de soulignement */
+            transition: color 0.3s;     /* transition douce pour le hover */
+        }
+        .contact-info a:hover {
+            color: #ffd400;             /* couleur au survol */
+        }
+        .social-icons a:hover {
+            color: #fff;             /* couleur au survol */
+        }
+
+
+        /* =========================
+           NAVIGATION PRINCIPALE
+        ========================= */
+
+        nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 25%;
+        align-items: center;
+        padding: 20px ;
+        height: 80px;
+        box-shadow: 2px 2px 10px rgba(0, 0,  0.15);
+        width: 100%;
+        background-color: white;
+        z-index: 999;
+        }
+
+        nav .navigation{
+        display: flex;
+        height: fit-content;
+        
+        }
+        #menu-btn{
+        display: none;
+        width: 30px;
+        height: 30px;
+        }
+        #menu-close{
+        display: none;
+        cursor: pointer;
+        }
+        nav .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        }
+        nav .navigation ul li {
+        list-style: none;
+        margin-left: 30px;
+        }
+        nav .navigation ul li a {
+        text-decoration: none;
+        color: rgb(21, 21, 100);
+        font-size: 16px;
+        font-weight: 500;
+        transition: 0.3s ease;
+        }
+        nav .navigation ul li a:hover {
+        color: #FDC93B;
+        border-bottom: 2px solid #FDC93B;
+        transition: 0.5s ease-in-out;
+        }
+        nav img{
+        width: 120px;
+        height: 70px;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 650px;
+            min-height: 500px;
+            overflow: hidden;
+            background: #222;
+        }
+
+        /*
+          Chaque slide occupe exactement le même espace.
+          Une seule slide possède la classe "active".
+        */
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+
+            /*
+             * Toutes les slides restent empilées.
+             * On anime uniquement l'opacité : cela évite le
+             * "flash" ou le saut entre deux images.
+             */
+            opacity: 0;
+            pointer-events: none;
+
+            transition:
+                opacity 1.35s cubic-bezier(0.22, 1, 0.36, 1);
+
+            z-index: 1;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+            pointer-events: auto;
+            z-index: 2;
+        }
+
+        /* Image de fond */
+        .hero-image {
+            position: absolute;
+            inset: 0;
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center;
+
+            /*
+             * Léger mouvement "Ken Burns".
+             * Il est volontairement très lent pour rester élégant.
+             */
+            transform: scale(1.06);
+            transition:
+                transform 7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .hero-slide.active .hero-image {
+            transform: scale(1);
+        }
+
+        /* Voile sombre au-dessus de l'image */
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.70) 0%,
+                    rgba(0, 0, 0, 0.42) 50%,
+                    rgba(0, 0, 0, 0.15) 100%
+                );
+
+            z-index: 1;
+
+            opacity: 0.98;
+            transition: opacity 1.35s ease;
+        }
+
+        /* Contenu */
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            width: min(1200px, 84%);
+            height: 100%;
+
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            color: white;
+            padding-bottom: 50px;
+        }
+
+        .hero-content-inner {
+            max-width: 700px;
+        }
+
+        .hero-kicker {
+            display: inline-block;
+
+            margin-bottom: 18px;
+
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #ffd400;
+        }
+
+        .hero-title {
+            font-size: clamp(34px, 5vw, 64px);
+            line-height: 1.08;
+            font-weight: 800;
+
+            margin-bottom: 22px;
+
+            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
+        }
+
+        .hero-description {
+            max-width: 650px;
+
+            font-size: 17px;
+            line-height: 1.6;
+
+            margin-bottom: 30px;
+
+            color: rgba(255, 255, 255, 0.94);
+        }
+
+        /* Bouton */
+        .hero-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 14px 25px;
+
+            background: #ffd400;
+            color: #171717;
+
+            border-radius: 6px;
+
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+
+            transition:
+                transform 0.25s ease,
+                background 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .hero-button:hover {
+            transform: translateY(-2px);
+            background: #ffe34f;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        /* =========================
+           ANIMATION DU TEXTE
+        ========================= */
+
+        .hero-kicker,
+        .hero-title,
+        .hero-description,
+        .hero-button {
+            opacity: 0;
+            transform: translate3d(0, 28px, 0);
+        }
+
+        /*
+         * Le texte entre progressivement, après le début
+         * du fondu de l'image. Les délais donnent une sensation
+         * de continuité plutôt qu'un changement brutal.
+         */
+        .hero-slide.active .hero-kicker {
+            animation:
+                textIn 0.85s cubic-bezier(0.22, 1, 0.36, 1)
+                0.18s forwards;
+        }
+
+        .hero-slide.active .hero-title {
+            animation:
+                textIn 0.95s cubic-bezier(0.22, 1, 0.36, 1)
+                0.28s forwards;
+        }
+
+        .hero-slide.active .hero-description {
+            animation:
+                textIn 0.95s cubic-bezier(0.22, 1, 0.36, 1)
+                0.42s forwards;
+        }
+
+        .hero-slide.active .hero-button {
+            animation:
+                textIn 0.95s cubic-bezier(0.22, 1, 0.36, 1)
+                0.56s forwards;
+        }
+
+        @keyframes textIn {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 28px, 0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        .hero-nav {
+            position: absolute;
+            z-index: 10;
+
+            left: 50%;
+            bottom: 38px;
+
+            transform: translateX(-50%);
+
+            width: min(1200px, 84%);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .arrows {
+            display: flex;
+            gap: 12px;
+        }
+
+        .arrow {
+            width: 44px;
+            height: 44px;
+
+            border: 1px solid rgba(255, 255, 255, 0.65);
+            border-radius: 50%;
+
+            background: rgba(0, 0, 0, 0.15);
+            color: white;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            transition:
+                background 0.25s ease,
+                transform 0.25s ease;
+        }
+
+        .arrow:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: scale(1.06);
+        }
+
+        /* Points */
+        .dots {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .dot {
+            width: 9px;
+            height: 9px;
+
+            padding: 0;
+            border: 0;
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, 0.55);
+
+            cursor: pointer;
+
+            transition:
+                width 0.25s ease,
+                background 0.25s ease;
+        }
+
+        .dot.active {
+            width: 28px;
+            border-radius: 10px;
+            background: #ffd400;
+        }
+
+        /* =========================
+           BARRE DE PROGRESSION
+        ========================= */
+
+        .progress {
+            position: absolute;
+            z-index: 20;
+
+            left: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 4px;
+
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 100%;
+
+            background: #ffd400;
+        }
+
+        .progress-bar.running {
+            animation: progress 6s linear forwards;
+        }
+
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 768px) {
+            
+            .hero {
+                height: 620px;
+            }
+
+            .hero-content {
+                width: 88%;
+                padding-bottom: 70px;
+            }
+
+            .hero-content-inner {
+                max-width: 100%;
+            }
+
+            .hero-title {
+                font-size: 36px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+                line-height: 1.5;
+            }
+
+            .hero-nav {
+                width: 88%;
+                bottom: 25px;
+            }
+
+            .arrow {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-slide,
+            .hero-image,
+            .hero-overlay,
+            .hero-button {
+                transition: none;
+            }
+
+            .hero-kicker,
+            .hero-title,
+            .hero-description,
+            .hero-button {
+                animation: none !important;
+                opacity: 1;
+                transform: none;
+            }
+
+            .progress-bar.running {
+                animation: none;
+            }
+        }
+   
