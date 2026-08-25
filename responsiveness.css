@@ -65,6 +65,17 @@
         background-color: white;
     }
 
+    .about-section{
+        flex-direction: column;
+    }
+    .about-content{
+        width: 100%;
+    }
+    .about-image{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
     /* Footer responsiveness */
     .footer-col img{
         width: 120px;
