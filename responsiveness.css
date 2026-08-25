@@ -125,3 +125,400 @@
                 font-size: 1.5rem;
             }
         }
+
+
+        /* =========================================
+   SECTION PROJETS
+========================================= */
+
+.projects-section {
+    width: 100%;
+
+    background: white;
+
+    padding: 25px 0 40px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTENEUR PRINCIPAL
+========================================= */
+
+.projects-container {
+
+    width: 620px;
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 55px;
+}
+
+
+/* =========================================
+   PARTIE TEXTE
+========================================= */
+
+.projects-text {
+
+    width: 275px;
+
+    flex-shrink: 0;
+}
+
+.projects-text h2 {
+
+    margin: 0 0 12px;
+
+    font-size: 21px;
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    color: #050505;
+}
+
+
+.projects-text > p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.25;
+
+    color: #111;
+}
+
+
+/* =========================================
+   LIGNE JAUNE
+========================================= */
+
+.yellow-line {
+
+    width: 220px;
+
+    height: 1px;
+
+    background: #ffd400;
+
+    margin-top: 17px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   STATISTIQUES
+========================================= */
+
+.projects-stats {
+
+    display: flex;
+
+    gap: 35px;
+}
+
+
+.stat {
+
+    width: 90px;
+}
+
+
+.stat-number {
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    color: #080808;
+
+    margin-bottom: 5px;
+}
+
+
+.stat-number span {
+
+    color: #ffd400;
+
+    font-size: 20px;
+}
+
+
+.stat h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    color: #111;
+}
+
+
+.stat p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.2;
+
+    color: #111;
+}
+
+
+/* =========================================
+   ZONE IMAGES
+========================================= */
+
+.projects-images {
+
+    position: relative;
+
+    width: 305px;
+
+    height: 300px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   BANDE JAUNE
+========================================= */
+
+.yellow-shape {
+
+    position: absolute;
+
+    left: 87px;
+
+    top: 20px;
+
+    width: 25px;
+
+    height: 255px;
+
+    background: #ffd400;
+
+    border-radius: 12px;
+
+    z-index: 0;
+}
+
+
+/* =========================================
+   GRANDE IMAGE
+========================================= */
+
+.big-project-image {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 205px;
+
+    height: 295px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    z-index: 2;
+}
+
+
+.big-project-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   PETITE IMAGE
+========================================= */
+
+.small-project-image {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 80px;
+
+    width: 165px;
+
+    height: 180px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    z-index: 3;
+}
+
+
+.small-project-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .projects-section {
+
+        padding: 50px 0;
+    }
+
+
+    .projects-container {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 0 25px;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 50px;
+    }
+
+
+    .projects-text {
+
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+
+    .projects-text h2 {
+
+        font-size: 28px;
+    }
+
+
+    .projects-text > p {
+
+        font-size: 12px;
+
+        line-height: 1.4;
+    }
+
+
+    .yellow-line {
+
+        width: 100%;
+    }
+
+
+    .projects-stats {
+
+        gap: 50px;
+    }
+
+
+    .stat {
+
+        width: 120px;
+    }
+
+
+    .stat-number {
+
+        font-size: 35px;
+    }
+
+
+    .stat-number span {
+
+        font-size: 22px;
+    }
+
+
+    .stat h3 {
+
+        font-size: 14px;
+    }
+
+
+    .stat p {
+
+        font-size: 9px;
+    }
+
+
+    .projects-images {
+
+        width: 100%;
+
+        max-width: 360px;
+
+        height: 340px;
+    }
+
+
+    .big-project-image {
+
+        width: 225px;
+
+        height: 320px;
+    }
+
+
+    .small-project-image {
+
+        width: 180px;
+
+        height: 195px;
+
+        top: 90px;
+    }
+
+
+    .yellow-shape {
+
+        left: 95px;
+
+        height: 275px;
+    }
+
+}
