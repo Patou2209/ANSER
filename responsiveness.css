@@ -36,7 +36,7 @@
         padding: 10px 0 10px 20px;
     }
     nav .navigation ul {
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 220px;
         right: -220px;
@@ -70,6 +70,7 @@
     }
     .about-content{
         width: 100%;
+        padding: 0;
     }
     .about-image{
         width: 100%;
