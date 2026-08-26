@@ -378,27 +378,27 @@
         const projects = [
             {
                 name: "KAMONIA",
-                image: "./img/energy3.jpg"
+                image: "./img/solar.jpg"
             },
 
             {
                 name: "WALIKALE",
-                image: "./img/energy3.jpg"
+                image: "./img/power.jpg"
             },
 
             {
                 name: "KALEHE",
-                image: "./img/energy3.jpg"
+                image: "./img/energy2.jpg"
             },
 
             {
                 name: "MIABI P1",
-                image: "./img/energy3.jpg"
+                image: "./img/energy1.jpg"
             },
 
             {
                 name: "N'DJILI BRASSERIE",
-                image: "./img/energy3.jpg"
+                image: "./img/energy.jpg"
             }
         ];
 
