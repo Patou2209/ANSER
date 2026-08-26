@@ -112,6 +112,10 @@
         width: 150px;
         height: 70px;
         }
+        .active-tab {
+        color: #ffd400 !important;
+        border-bottom: 2px solid #ffd400;
+        }
 
         /* =========================
            HERO
@@ -181,7 +185,6 @@
         .hero-overlay {
             position: absolute;
             inset: 0;
-
             background:
                 linear-gradient(
                     90deg,
@@ -191,7 +194,6 @@
                 );
 
             z-index: 1;
-
             opacity: 0.98;
             transition: opacity 1.35s ease;
         }
@@ -707,12 +709,13 @@
         
         }
         .direct-contact {
-        color: #334F6C;
+        color: white;
         background-color: #ffd400;
         border: none;
         padding: 10px 20px;
         cursor: pointer;
         transition: 0.3s ease;
+        border-radius: 5px;
         }
         
         .direct-contact i{
@@ -722,11 +725,11 @@
         }
         .direct-contact a{
         text-decoration: none;
-        color: rgb(21, 21, 100);
+        color: white;
         }
         .direct-contact:hover{
         background-color: white;
-        color: rgb(21, 21, 100);
+        font-weight: 600;
         }
         #footer .copyright{
         margin-top: 20px;
@@ -757,68 +760,54 @@
         font-size: 1.2rem;
         padding: 10px;
         }
+        
+        .maintenance {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-        /* =========================
-           MOBILE
-        ========================= */
+            text-align: center;
+            padding: 2rem;
+            min-height: 80vh;
 
-        @media (max-width: 768px) {
-            
-            .hero {
-                height: 550px;
-            }
+            background-image: url('img/icone-removebg.png');
+            background-size: 60%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
 
-            .hero-content {
-                width: 88%;
-                padding-bottom: 70px;
-            }
-            .hero-image {
-                object-fit: cover;
-            }
-
-            .hero-content-inner {
-                max-width: 100%;
-            }
-
-            .hero-title {
-                font-size: 30px;
-            }
-
-            .hero-description {
-                font-size: 15px;
-                line-height: 1.5;
-            }
-
-            .hero-nav {
-                width: 88%;
-                bottom: 25px;
-            }
-
-            .arrow {
-                width: 40px;
-                height: 40px;
-            }
+            color: #fff;
+            overflow: hidden;
         }
 
-        @media (prefers-reduced-motion: reduce) {
-            .hero-slide,
-            .hero-image,
-            .hero-overlay,
-            .hero-button {
-                transition: none;
-            }
-
-            .hero-kicker,
-            .hero-title,
-            .hero-description,
-            .hero-button {
-                animation: none !important;
-                opacity: 1;
-                transform: none;
-            }
-
-            .progress-bar.running {
-                animation: none;
-            }
+        /* Voile noire */
+        .maintenance::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            z-index: 1;
         }
-   
+
+        /* Le contenu passe au-dessus de la voile */
+        .maintenance h1,
+        .maintenance p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .maintenance h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .maintenance p {
+            font-size: clamp(1rem, 2.2vw, 1.4rem);
+            max-width: 700px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
