@@ -298,15 +298,17 @@
            ÉVÉNEMENTS
         ========================================================== */
 
-        nextBtn.addEventListener(
-            "click",
-            nextSlide
-        );
+        if (nextBtn && prevBtn && hero) {
+            nextBtn.addEventListener(
+                "click",
+                nextSlide
+            );
 
-        prevBtn.addEventListener(
-            "click",
-            previousSlide
-        );
+            prevBtn.addEventListener(
+                "click",
+                previousSlide
+            );
+        }
 
 
         /* =========================================================
@@ -316,19 +318,21 @@
         const hero =
             document.querySelector(".hero");
 
-        hero.addEventListener(
-            "mouseenter",
-            () => {
-                clearInterval(autoPlay);
-            }
-        );
+        if (hero) {
+            hero.addEventListener(
+                "mouseenter",
+                () => {
+                    clearInterval(autoPlay);
+                }
+            );
 
-        hero.addEventListener(
-            "mouseleave",
-            () => {
-                restartAutoPlay();
-            }
-        );
+            hero.addEventListener(
+                "mouseleave",
+                () => {
+                    restartAutoPlay();
+                }
+            );
+        }
 
 
         /* =========================================================
@@ -339,11 +343,11 @@
             "keydown",
             (event) => {
 
-                if (event.key === "ArrowRight") {
+                if (event.key === "ArrowRight" && slidesContainer) {
                     nextSlide();
                 }
 
-                if (event.key === "ArrowLeft") {
+                if (event.key === "ArrowLeft" && slidesContainer) {
                     previousSlide();
                 }
             }
@@ -353,24 +357,27 @@
            MENU
         ========================================================== */
 
-        let menuBtn = document.getElementById('menu-btn');
-            let menuClose = document.getElementById('menu-close');
-            
+        const menuBtn = document.getElementById('menu-btn');
+        const menuClose = document.getElementById('menu-close');
+        const navigation = document.querySelector('.navigation');
+
+        if (menuBtn && menuClose && navigation) {
             menuBtn.addEventListener('click', function() {
-                document.querySelector('.navigation').classList.add('active');
+                navigation.classList.add('active');
             });
             menuClose.addEventListener('click', function() {
-                document.querySelector('.navigation').classList.remove('active');
+                navigation.classList.remove('active');
             });
+        }
         /* =========================================================
            INITIALISATION
         ========================================================== */
 
-        createSlides();
-
-        showSlide(0);
-
-        startAutoPlay();
+        if (slidesContainer && dotsContainer && progressBar) {
+            createSlides();
+            showSlide(0);
+            startAutoPlay();
+        }
 
         /* =========================================================
            SLIDER DES PROJETS
@@ -426,13 +433,15 @@
 
 
         /* Première série */
-        projects.forEach(project => {
-            track.innerHTML += createCard(project);
-        });
+        if (track) {
+            projects.forEach(project => {
+                track.innerHTML += createCard(project);
+            });
 
 
-        /* Deuxième série identique */
-        projects.forEach(project => {
-            track.innerHTML += createCard(project);
-        });
+            /* Deuxième série identique */
+            projects.forEach(project => {
+                track.innerHTML += createCard(project);
+            });
+        }
 
