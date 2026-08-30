@@ -80,6 +80,7 @@
         let currentSlide = 0;
 
         let autoPlay;
+        let hero = document.querySelector(".hero");
 
         // Durée d'affichage d'une slide
         const SLIDE_DURATION = 4000;
@@ -314,9 +315,6 @@
         /* =========================================================
            PAUSE LORSQUE LA SOURIS EST SUR LE HERO
         ========================================================== */
-
-        const hero =
-            document.querySelector(".hero");
 
         if (hero) {
             hero.addEventListener(
