@@ -1,0 +1,468 @@
+
+    <!-- =========================================================
+         BANNIÈRE DE LA PAGE
+    ========================================================== -->
+    <header class="page-banniere" style="background-image: url('./img/energy3.jpg');">
+        <div class="page-banniere__voile" aria-hidden="true"></div>
+        <div class="page-banniere__motif" aria-hidden="true"></div>
+
+        <div class="conteneur">
+            <div class="page-banniere__contenu">
+                <nav class="fil-ariane" aria-label="Fil d'Ariane">
+                    <a href="index.html">Accueil</a>
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    <span aria-current="page">Blog</span>
+                </nav>
+
+                <span class="page-banniere__etiquette">
+                    <i class="fas fa-pen-nib" aria-hidden="true"></i>
+                    Blog
+                </span>
+
+                <h1 class="page-banniere__titre">
+                    Comprendre l'énergie, éclairer les choix
+                </h1>
+
+                <p class="page-banniere__texte">
+                    Analyses, dossiers thématiques et retours d'expérience : nos publications
+                    explorent les enjeux techniques, économiques et humains de l'électrification
+                    rurale et périurbaine en République Démocratique du Congo.
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- =========================================================
+         DOSSIER À LA UNE
+    ========================================================== -->
+    <section class="section section--blanc" id="dossier" aria-label="Dossier à la une">
+        <div class="conteneur">
+
+            <div class="bloc-titre" data-anim="bas">
+                <span class="sur-titre">Dossier</span>
+                <h2 class="titre-section">Notre publication du moment</h2>
+                <div class="trait-jaune"></div>
+            </div>
+
+            <article class="article-vedette" data-anim="bas">
+                <div class="article-vedette__media">
+                    <img src="./img/energy2.jpg" alt="Mini-réseaux et développement économique local">
+                </div>
+                <div class="article-vedette__corps">
+                    <p class="article-carte__date">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Lecture : 8 minutes
+                        <span style="color:#7b838a;">&nbsp;•&nbsp; Économie de l'énergie</span>
+                    </p>
+                    <h3 class="article-vedette__titre">
+                        Pourquoi le mini-réseau change la donne en milieu rural
+                    </h3>
+                    <p>
+                        Étendre le réseau national jusqu'à chaque village congolais représenterait un
+                        coût et un délai considérables, compte tenu de l'immensité du territoire et de
+                        la dispersion de l'habitat. Le mini-réseau propose une réponse différente :
+                        produire l'électricité au plus près de la demande, à partir d'une ressource
+                        renouvelable locale, et la distribuer sur un périmètre restreint. Ce modèle
+                        raccourcit le délai de mise en service, réduit les pertes de transport et
+                        permet d'ajuster la puissance installée à l'évolution réelle des usages,
+                        notamment productifs.
+                    </p>
+                    <div class="groupe-btn">
+                        <a href="projets.html" class="btn btn--bleu">
+                            Voir nos mini-réseaux
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         ARTICLES AVEC FILTRES
+    ========================================================== -->
+    <section class="section section--gris" id="articles" aria-label="Nos publications">
+        <div class="conteneur">
+
+            <div class="bloc-titre" data-anim="bas">
+                <span class="sur-titre">Publications</span>
+                <h2 class="titre-section">Nos analyses par thématique</h2>
+                <div class="trait-jaune"></div>
+                <p class="texte-section">
+                    Choisissez une thématique pour explorer nos articles consacrés à la technique, au
+                    financement, à l'impact social ou à la gouvernance du secteur énergétique.
+                </p>
+            </div>
+
+            <div class="filtres" data-groupe-filtres="#grille-blog" data-anim="bas">
+                <button class="filtre is-actif" type="button" data-filtre="tous">Tous les sujets</button>
+                <button class="filtre" type="button" data-filtre="technique">Technique</button>
+                <button class="filtre" type="button" data-filtre="financement">Financement</button>
+                <button class="filtre" type="button" data-filtre="social">Impact social</button>
+                <button class="filtre" type="button" data-filtre="gouvernance">Gouvernance</button>
+            </div>
+
+            <div class="articles-grille" id="grille-blog">
+
+                <article class="article-carte" data-categorie="technique" data-anim="bas" data-anim-delai="0">
+                    <div class="article-carte__media">
+                        <img src="./img/solar.jpg" alt="Le solaire photovoltaïque en RDC">
+                        <span class="article-carte__categorie">Technique</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Lecture : 6 minutes
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Le solaire photovoltaïque, une réponse adaptée aux territoires isolés
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Un ensoleillement abondant, des coûts d'équipement en baisse continue et
+                            une installation rapide font du solaire une solution particulièrement
+                            pertinente pour les localités éloignées du réseau. Reste à traiter la
+                            question du stockage et de la maintenance dans la durée.
+                        </p>
+                        <a href="#" class="carte__lien">
+                            Lire l'analyse
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="technique" data-anim="bas" data-anim-delai="120">
+                    <div class="article-carte__media">
+                        <img src="./img/energy1.jpg" alt="Potentiel hydroélectrique de la RDC">
+                        <span class="article-carte__categorie">Technique</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Lecture : 7 minutes
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Microcentrales : valoriser un potentiel hydrographique exceptionnel
+                        </h3>
+                        <p class="article-carte__extrait">
+                            La République Démocratique du Congo dispose de l'un des potentiels
+                            hydroélectriques les plus importants du continent. Les microcentrales
+                            offrent une production stable, disponible jour et nuit, complémentaire des
+                            installations solaires.
+                        </p>
+                        <a href="#" class="carte__lien">
+                            Lire l'analyse
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="financement" data-anim="bas" data-anim-delai="240">
+                    <div class="article-carte__media">
+                        <img src="./img/energy.jpg" alt="Subventions basées sur les résultats">
+                        <span class="article-carte__categorie">Financement</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Lecture : 5 minutes
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Subvention basée sur les résultats : payer ce qui est réellement livré
+                        </h3>
+                        <p class="article-carte__extrait">
+                            En liant le versement de l'aide publique à la vérification d'un résultat
+                            mesurable, ce mécanisme aligne les intérêts de l'opérateur et du
+                            bénéficiaire, tout en sécurisant l'usage des ressources de l'État.
+                        </p>
+                        <a href="fonds-mwinda.html" class="carte__lien">
+                            Lire l'analyse
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="social" data-anim="bas" data-anim-delai="0">
+                    <div class="article-carte__media">
+                        <img src="./img/energy3.jpg" alt="Impact de l'électricité sur la santé et l'éducation">
+                        <span class="article-carte__categorie">Impact social</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Lecture : 6 minutes
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Santé et éducation : les premiers bénéficiaires de l'électrification
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Une chaîne du froid fiable pour les vaccins, des salles de classe
+                            éclairées permettant l'étude en soirée, des maternités sécurisées la nuit :
+                            l'électricité produit des effets immédiats et mesurables sur le
+                            quotidien.
+                        </p>
+                        <a href="#" class="carte__lien">
+                            Lire l'analyse
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="social" data-anim="bas" data-anim-delai="120">
+                    <div class="article-carte__media">
+                        <img src="./img/energyback.jpg" alt="Cuisson propre et efficace">
+                        <span class="article-carte__categorie">Impact social</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Lecture : 5 minutes
+                        </p>
+                        <h3 class="article-carte__titre">
+                            La cuisson propre, un enjeu de santé publique trop souvent négligé
+                        </h3>
+                        <p class="article-carte__extrait">
+                            La cuisson au bois et au charbon expose quotidiennement les familles à des
+                            fumées nocives. Les équipements améliorés réduisent la consommation de
+                            combustible, les émissions et la pénibilité du travail domestique.
+                        </p>
+                        <a href="#" class="carte__lien">
+                            Lire l'analyse
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="gouvernance" data-anim="bas" data-anim-delai="240">
+                    <div class="article-carte__media">
+                        <img src="./img/power.jpg" alt="Planification territoriale de l'électrification">
+                        <span class="article-carte__categorie">Gouvernance</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Lecture : 8 minutes
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Planifier avant de construire : la logique des Plans Locaux
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Élaborer un plan d'électrification pour chacun des 145 territoires
+                            demande du temps, mais évite les investissements mal dimensionnés et les
+                            installations abandonnées faute de modèle d'exploitation viable.
+                        </p>
+                        <a href="about.html" class="carte__lien">
+                            Lire l'analyse
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="financement gouvernance" data-anim="bas" data-anim-delai="0">
+                    <div class="article-carte__media">
+                        <img src="./img/energy2.jpg" alt="Attirer l'investissement privé dans l'énergie rurale">
+                        <span class="article-carte__categorie">Financement</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Lecture : 7 minutes
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Comment rendre le rural attractif pour l'investisseur privé
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Faible densité, revenus modestes, éloignement logistique : les zones
+                            rurales concentrent les facteurs de risque. Réduire ce risque, plutôt que
+                            de le nier, constitue la condition première d'un engagement privé
+                            durable.
+                        </p>
+                        <a href="#" class="carte__lien">
+                            Lire l'analyse
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="technique gouvernance" data-anim="bas" data-anim-delai="120">
+                    <div class="article-carte__media">
+                        <img src="./img/solar.jpg" alt="Qualité et certification des équipements solaires">
+                        <span class="article-carte__categorie">Technique</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Lecture : 5 minutes
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Certification des équipements : une exigence qui protège les ménages
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Un kit solaire défaillant au bout de quelques mois décourage durablement
+                            toute une communauté. Exiger des produits certifiés protège l'usager et
+                            préserve la crédibilité de l'ensemble du secteur.
+                        </p>
+                        <a href="fonds-mwinda.html" class="carte__lien">
+                            Lire l'analyse
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="social" data-anim="bas" data-anim-delai="240">
+                    <div class="article-carte__media">
+                        <img src="./img/energy1.jpg" alt="Usages productifs de l'électricité en milieu rural">
+                        <span class="article-carte__categorie">Impact social</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Lecture : 6 minutes
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Usages productifs : la clé de la viabilité d'un projet rural
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Moulins, ateliers de soudure, chambres froides, unités de transformation
+                            agricole : ce sont ces usages productifs qui créent la demande stable
+                            indispensable à l'équilibre économique d'une installation.
+                        </p>
+                        <a href="#" class="carte__lien">
+                            Lire l'analyse
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         GLOSSAIRE
+    ========================================================== -->
+    <section class="section section--blanc" id="glossaire" aria-label="Glossaire de l'énergie">
+        <div class="conteneur">
+
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Repères</span>
+                <h2 class="titre-section">Petit glossaire de l'électrification</h2>
+                <div class="trait-jaune"></div>
+                <p class="texte-section">
+                    Quelques notions revenant fréquemment dans nos publications, expliquées
+                    simplement.
+                </p>
+            </div>
+
+            <div class="accordeon" data-anim="bas" style="max-width: 900px; margin-inline: auto;">
+
+                <div class="accordeon__item">
+                    <button class="accordeon__tete" type="button">
+                        <span>Mini-réseau</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Système électrique local, indépendant du réseau national, comprenant sa
+                            propre unité de production et son réseau de distribution. Il alimente une
+                            localité ou un quartier, à partir d'une source principalement
+                            renouvelable, parfois complétée par un appoint thermique afin de garantir
+                            la continuité du service.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordeon__item">
+                    <button class="accordeon__tete" type="button">
+                        <span>Système solaire domestique</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Équipement individuel composé d'un panneau photovoltaïque, d'une batterie
+                            et de quelques points d'usage : éclairage, recharge de téléphone,
+                            téléviseur ou petit ventilateur. Il apporte un premier niveau d'accès à
+                            l'électricité, sans nécessiter de réseau.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordeon__item">
+                    <button class="accordeon__tete" type="button">
+                        <span>Plan Local d'Électrification</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Document de planification élaboré à l'échelle du territoire. Il recense la
+                            demande énergétique, inventorie les ressources mobilisables et définit la
+                            stratégie d'électrification la plus pertinente, en hiérarchisant les
+                            projets à conduire. Il est régulièrement actualisé.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordeon__item">
+                    <button class="accordeon__tete" type="button">
+                        <span>Programme d'Investissements Prioritaires</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Sélection des projets les plus matures issus des Plans Locaux
+                            d'Électrification. Ce programme constitue le vivier dans lequel sont
+                            puisés les projets à financer et à mettre en concurrence à court et moyen
+                            terme.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordeon__item">
+                    <button class="accordeon__tete" type="button">
+                        <span>Taux d'accès à l'électricité</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Part de la population disposant d'un accès à l'électricité. En République
+                            Démocratique du Congo, cet indicateur révèle un contraste marqué entre
+                            les zones urbaines et le milieu rural, où il demeure très faible. Réduire
+                            cet écart constitue la mission première de l'ANSER.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         APPEL À L'ACTION
+    ========================================================== -->
+    <section class="cta" aria-label="Proposer une contribution">
+        <div class="conteneur">
+            <div class="cta__contenu" data-anim="bas">
+                <h2>Vous souhaitez proposer une contribution ?</h2>
+                <p>
+                    Chercheurs, ingénieurs, opérateurs et acteurs du développement : nous accueillons
+                    volontiers les regards experts sur les enjeux énergétiques du pays.
+                </p>
+                <div class="groupe-btn">
+                    <a href="contact.html" class="btn btn--jaune">
+                        Nous écrire
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="actualites.html" class="btn btn--contour-clair">
+                        Voir les actualités
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cta__bande" aria-hidden="true"></div>
+    </section>

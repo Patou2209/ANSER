@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez l'ANSER — Siège, pools et formulaire</title>
+    <meta name="description" content="Adressez votre demande à l'ANSER : coordonnées du siège de Kinshasa, contacts des pools d'électrification, formulaire en ligne et horaires d'ouverture.">
+    <meta name="theme-color" content="#151564">
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="track.css">
+    <link rel="stylesheet" href="responsiveness.css">
+    <link rel="stylesheet" href="pages.css">
+
+    <!-- Polices et icônes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="./img/icone-removebg.png">
+</head>
+
+<body>
+
+    <!-- Barre de progression de lecture -->
+    <div class="barre-lecture" aria-hidden="true"></div>
+
+    <!-- =========================================================
+         BARRE SUPÉRIEURE — contact rapide et réseaux sociaux
+         (identique sur toutes les pages)
+    ========================================================== -->
+    <div class="top-nav">
+        <div class="contact-info">
+            <span>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <a href="tel:+243810111171">+243 810 111 171</a>
+            </span>
+            <span>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a>
+            </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                <i class="fab fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         NAVIGATION PRINCIPALE (identique sur toutes les pages)
+    ========================================================== -->
+    <nav id="navigation-principale" aria-label="Navigation principale">
+        <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+            <img src="./img/anser_logo_bleu_font.png" alt="Logo de l'ANSER">
+        </a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times" role="button" tabindex="0" aria-label="Fermer le menu"></i>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="appels-offres.html">Appels d'offres</a></li>
+                <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html" class="active-tab" aria-current="page">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="./img/menu.png" alt="" role="button" tabindex="0" aria-label="Ouvrir le menu">
+        </div>
+    </nav>
+
+
+    <!-- =========================================================
+         BANNIÈRE DE LA PAGE
+    ========================================================== -->
+    <header class="page-banniere" style="background-image: url('./img/energyback.jpg');">
+        <div class="page-banniere__voile" aria-hidden="true"></div>
+        <div class="page-banniere__motif" aria-hidden="true"></div>
+
+        <div class="conteneur">
+            <div class="page-banniere__contenu">
+                <nav class="fil-ariane" aria-label="Fil d'Ariane">
+                    <a href="index.html">Accueil</a>
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    <span aria-current="page">Contact</span>
+                </nav>
+
+                <span class="page-banniere__etiquette">
+                    <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+                    Nous contacter
+                </span>
+
+                <h1 class="page-banniere__titre">
+                    Échangeons sur l'avenir énergétique de la RDC
+                </h1>
+
+                <p class="page-banniere__texte">
+                    Une question sur un projet, une demande de partenariat, une sollicitation
+                    d'information ou de presse : nos équipes sont à votre écoute et s'engagent à
+                    vous répondre avec attention.
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- =========================================================
+         FORMULAIRE ET COORDONNÉES
+    ========================================================== -->
+    <section class="section section--blanc" id="formulaire" aria-label="Formulaire de contact">
+        <div class="conteneur">
+
+            <div class="duo" style="align-items: start;">
+
+                <div data-anim="gauche">
+                    <span class="sur-titre">Formulaire</span>
+                    <h2 class="titre-section" style="font-size: clamp(23px, 2.6vw, 30px);">
+                        Adressez-nous votre demande
+                    </h2>
+                    <div class="trait-jaune"></div>
+
+                    <form class="formulaire" data-formulaire novalidate>
+                        <div class="formulaire__grille">
+
+                            <div class="champ">
+                                <label for="champ-nom">
+                                    Nom et prénom <span class="requis" aria-hidden="true">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    id="champ-nom"
+                                    name="nom"
+                                    placeholder="Votre nom complet"
+                                    autocomplete="name"
+                                    required>
+                            </div>
+
+                            <div class="champ">
+                                <label for="champ-organisation">Organisation</label>
+                                <input
+                                    type="text"
+                                    id="champ-organisation"
+                                    name="organisation"
+                                    placeholder="Entreprise, institution ou association"
+                                    autocomplete="organization">
+                            </div>
+
+                            <div class="champ">
+                                <label for="champ-courriel">
+                                    Adresse électronique <span class="requis" aria-hidden="true">*</span>
+                                </label>
+                                <input
+                                    type="email"
+                                    id="champ-courriel"
+                                    name="courriel"
+                                    placeholder="nom@exemple.cd"
+                                    autocomplete="email"
+                                    required>
+                            </div>
+
+                            <div class="champ">
+                                <label for="champ-telephone">Numéro de téléphone</label>
+                                <input
+                                    type="tel"
+                                    id="champ-telephone"
+                                    name="telephone"
+                                    placeholder="+243 000 000 000"
+                                    autocomplete="tel">
+                            </div>
+
+                            <div class="champ champ--large">
+                                <label for="champ-objet">
+                                    Objet de votre demande <span class="requis" aria-hidden="true">*</span>
+                                </label>
+                                <select id="champ-objet" name="objet" required>
+                                    <option value="">Sélectionnez un objet</option>
+                                    <option value="information">Demande d'information générale</option>
+                                    <option value="projet">Proposition de projet</option>
+                                    <option value="marche">Question sur un appel d'offres</option>
+                                    <option value="mwinda">Fonds Mwinda et financement</option>
+                                    <option value="partenariat">Proposition de partenariat</option>
+                                    <option value="presse">Demande de presse</option>
+                                    <option value="autre">Autre sujet</option>
+                                </select>
+                            </div>
+
+                            <div class="champ champ--large">
+                                <label for="champ-message">
+                                    Votre message <span class="requis" aria-hidden="true">*</span>
+                                </label>
+                                <textarea
+                                    id="champ-message"
+                                    name="message"
+                                    placeholder="Décrivez votre demande avec le plus de précision possible."
+                                    required></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="groupe-btn">
+                            <button type="submit" class="btn btn--jaune">
+                                Envoyer le message
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <div class="formulaire__message" role="status" aria-live="polite"></div>
+
+                        <p style="margin-top: 20px; font-size: 13.8px; line-height: 1.6; color: #7b838a; text-align: left;">
+                            Les champs marqués d'un astérisque sont obligatoires. Les informations
+                            transmises sont utilisées exclusivement pour le traitement de votre
+                            demande.
+                        </p>
+                    </form>
+                </div>
+
+                <div data-anim="droite">
+                    <span class="sur-titre">Coordonnées</span>
+                    <h2 class="titre-section" style="font-size: clamp(23px, 2.6vw, 30px);">
+                        Nous joindre directement
+                    </h2>
+                    <div class="trait-jaune"></div>
+
+                    <div class="coordonnees">
+
+                        <article class="coordonnee">
+                            <div class="coordonnee__icone">
+                                <i class="fas fa-location-dot" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3>Siège social</h3>
+                                <p>
+                                    Bâtiment Orgamane, 4845,<br>
+                                    avenue Lukusa, commune de la Gombe,<br>
+                                    Kinshasa, République Démocratique du Congo
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="coordonnee">
+                            <div class="coordonnee__icone">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3>Téléphone</h3>
+                                <p><a href="tel:+243810111171">+243 810 111 171</a></p>
+                            </div>
+                        </article>
+
+                        <article class="coordonnee">
+                            <div class="coordonnee__icone">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3>Adresse électronique</h3>
+                                <p><a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></p>
+                            </div>
+                        </article>
+
+                        <article class="coordonnee">
+                            <div class="coordonnee__icone">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <p>
+                                    <a href="https://wa.me/243810111171" target="_blank" rel="noopener">
+                                        Démarrer une conversation
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="coordonnee">
+                            <div class="coordonnee__icone">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3>Horaires d'ouverture</h3>
+                                <p>
+                                    Du lundi au vendredi, de 8 h 00 à 16 h 00.<br>
+                                    Fermé les samedis, dimanches et jours fériés.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         ORIENTER SA DEMANDE
+    ========================================================== -->
+    <section class="section section--gris" id="orientation" aria-label="Orienter votre demande">
+        <div class="conteneur">
+
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Bon réflexe</span>
+                <h2 class="titre-section">Orientez votre demande vers le bon interlocuteur</h2>
+                <div class="trait-jaune"></div>
+                <p class="texte-section">
+                    En précisant la nature de votre sollicitation, vous permettez à nos équipes de
+                    vous répondre plus rapidement et de manière plus complète.
+                </p>
+            </div>
+
+            <div class="grille grille--3">
+
+                <article class="carte" data-anim="bas" data-anim-delai="0">
+                    <div class="carte__icone">
+                        <i class="fas fa-file-signature" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="carte__titre">Marchés et appels d'offres</h3>
+                    <p class="carte__texte">
+                        Demande de dossier de consultation, question de procédure ou sollicitation
+                        d'éclaircissement. Rappelez systématiquement la référence du lot concerné.
+                    </p>
+                    <a href="appels-offres.html" class="carte__lien">
+                        Voir les consultations
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="carte" data-anim="bas" data-anim-delai="120">
+                    <div class="carte__icone">
+                        <i class="fas fa-coins" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="carte__titre">Fonds Mwinda</h3>
+                    <p class="carte__texte">
+                        Éligibilité au mécanisme de subvention, accréditation d'un opérateur ou
+                        modalités de versement des subsides basés sur les résultats.
+                    </p>
+                    <a href="fonds-mwinda.html" class="carte__lien">
+                        Découvrir le Fonds
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="carte" data-anim="bas" data-anim-delai="240">
+                    <div class="carte__icone">
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="carte__titre">Partenariats et investissements</h3>
+                    <p class="carte__texte">
+                        Proposition de coopération technique ou financière, manifestation d'intérêt
+                        d'un investisseur ou projet conjoint avec une collectivité.
+                    </p>
+                    <a href="projets.html" class="carte__lien">
+                        Voir nos projets
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         PLAN D'ACCÈS
+    ========================================================== -->
+    <section class="section section--blanc" id="acces" aria-label="Plan d'accès">
+        <div class="conteneur">
+
+            <div class="bloc-titre" data-anim="bas">
+                <span class="sur-titre">Nous rendre visite</span>
+                <h2 class="titre-section">Plan d'accès au siège de Kinshasa</h2>
+                <div class="trait-jaune"></div>
+                <p class="texte-section">
+                    Le siège de l'Agence est situé dans la commune de la Gombe, à Kinshasa. Nous vous
+                    recommandons de convenir d'un rendez-vous préalable avant tout déplacement.
+                </p>
+            </div>
+
+            <div class="carte-geo" data-anim="zoom">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=15.2830%2C-4.3230%2C15.3230%2C-4.2950&amp;layer=mapnik"
+                    title="Plan d'accès au siège de l'ANSER, commune de la Gombe, Kinshasa"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         PRÉSENCE TERRITORIALE
+    ========================================================== -->
+    <section class="section section--bleu" id="pools" aria-label="Notre présence territoriale">
+        <div class="conteneur">
+
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Présence territoriale</span>
+                <h2 class="titre-section">Six pools au service des vingt-six provinces</h2>
+                <div class="trait-jaune"></div>
+                <p class="texte-section" style="color: rgba(255,255,255,0.82);">
+                    Pour toute demande relative à un projet localisé, vous pouvez également passer
+                    par le pool couvrant la province concernée. Le siège assure la transmission des
+                    sollicitations.
+                </p>
+            </div>
+
+            <div class="grille grille--3">
+
+                <article class="carte carte--sombre" data-anim="bas" data-anim-delai="0">
+                    <div class="carte__icone">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="carte__titre">Pool Grand Ouest</h3>
+                    <p class="carte__texte">
+                        Kinshasa, Kongo-Central, Kwango, Kwilu et Mai-Ndombe.
+                    </p>
+                </article>
+
+                <article class="carte carte--sombre" data-anim="bas" data-anim-delai="90">
+                    <div class="carte__icone">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="carte__titre">Pool Grand Kasaï</h3>
+                    <p class="carte__texte">
+                        Kasaï, Kasaï-Central, Kasaï-Oriental, Lomami et Sankuru.
+                    </p>
+                </article>
+
+                <article class="carte carte--sombre" data-anim="bas" data-anim-delai="180">
+                    <div class="carte__icone">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="carte__titre">Pool Grand Équateur</h3>
+                    <p class="carte__texte">
+                        Équateur, Mongala, Nord-Ubangi, Sud-Ubangi et Tshuapa.
+                    </p>
+                </article>
+
+                <article class="carte carte--sombre" data-anim="bas" data-anim-delai="0">
+                    <div class="carte__icone">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="carte__titre">Pool Grand Oriental</h3>
+                    <p class="carte__texte">
+                        Tshopo, Bas-Uélé, Haut-Uélé et Ituri.
+                    </p>
+                </article>
+
+                <article class="carte carte--sombre" data-anim="bas" data-anim-delai="90">
+                    <div class="carte__icone">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="carte__titre">Pool Grand Est</h3>
+                    <p class="carte__texte">
+                        Nord-Kivu, Sud-Kivu et Maniema.
+                    </p>
+                </article>
+
+                <article class="carte carte--sombre" data-anim="bas" data-anim-delai="180">
+                    <div class="carte__icone">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="carte__titre">Pool Grand Katanga</h3>
+                    <p class="carte__texte">
+                        Haut-Katanga, Lualaba, Haut-Lomami et Tanganyika.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         QUESTIONS FRÉQUENTES
+    ========================================================== -->
+    <section class="section section--gris" id="questions" aria-label="Questions fréquentes">
+        <div class="conteneur">
+
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Bon à savoir</span>
+                <h2 class="titre-section">Avant de nous écrire</h2>
+                <div class="trait-jaune"></div>
+            </div>
+
+            <div class="accordeon" data-anim="bas" style="max-width: 900px; margin-inline: auto;">
+
+                <div class="accordeon__item">
+                    <button class="accordeon__tete" type="button">
+                        <span>Dans quel délai obtiendrai-je une réponse ?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Nos équipes s'efforcent de répondre dans les meilleurs délais. Les
+                            demandes liées à une consultation en cours sont traitées en priorité, en
+                            raison des délais réglementaires applicables aux marchés publics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordeon__item">
+                    <button class="accordeon__tete" type="button">
+                        <span>L'ANSER raccorde-t-elle directement les particuliers ?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Non. L'Agence planifie, finance et coordonne les projets, mais
+                            l'exploitation et le raccordement des abonnés relèvent des opérateurs
+                            titulaires des licences requises. Pour une demande individuelle de
+                            raccordement, il convient de s'adresser à l'exploitant du réseau local.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordeon__item">
+                    <button class="accordeon__tete" type="button">
+                        <span>Comment signaler un comportement irrégulier ?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Aucune somme d'argent n'est jamais exigée en dehors des montants
+                            expressément mentionnés dans un avis officiel. Tout comportement contraire
+                            peut être signalé par courriel à l'Agence, avec l'ensemble des éléments
+                            utiles permettant d'instruire le signalement.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordeon__item">
+                    <button class="accordeon__tete" type="button">
+                        <span>Puis-je candidater spontanément à un poste ?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Les recrutements de l'Agence font l'objet d'avis publiés selon les
+                            procédures en vigueur. Une candidature spontanée peut néanmoins être
+                            adressée par courriel, en précisant le domaine d'expertise concerné.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- =========================================================
+         PIED DE PAGE (identique sur toutes les pages)
+    ========================================================== -->
+    <footer>
+        <section id="footer">
+
+            <div class="footer-col">
+                <img src="./img/logo_yellow_white-removebg-preview.png" alt="Logo de l'ANSER">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="appels-offres.html">Soumission d'appels d'offres</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="appels-offres.html">Appels d'offres</a></li>
+                    <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Nos domaines</h3>
+                <ul>
+                    <li><a href="projets.html">Réseaux et extensions</a></li>
+                    <li><a href="projets.html">Centrales solaires</a></li>
+                    <li><a href="projets.html">Mini-réseaux hybrides</a></li>
+                    <li><a href="projets.html">Hydroélectricité rurale</a></li>
+                    <li><a href="projets.html">Éclairage public</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Coordonnées</h3>
+                <ul>
+                    <li>Siège social de l'ANSER, Kinshasa, RDC<br>
+                        Bâtiment Orgamane, 4845,<br>
+                        avenue Lukusa, commune de la Gombe</li>
+                    <li><a href="tel:+243810111171">+243 810 111 171</a></li>
+                    <li><a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></li>
+                </ul>
+                <div class="footer-boutons">
+                    <a class="footer-bouton" href="https://wa.me/243810111171"
+                       target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                    </a>
+                    <a class="footer-bouton footer-bouton--contour" href="mailto:anser@anser.gouv.cd">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Courriel
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p class="technoweb">
+                    &copy; <span data-annee>2026</span> ANSER — Agence Nationale de l'Électrification
+                    et des Services Énergétiques en milieux rural et périurbain.<br>
+                    Tous droits réservés.
+                </p>
+                <div class="pro-links">
+                    <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                        <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bouton de retour en haut de page -->
+    <button class="retour-haut" type="button" aria-label="Revenir en haut de la page">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+
+    <script src="pages.js"></script>
+</body>
+</html>

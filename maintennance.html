@@ -3,122 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANSER</title>
+    <title>Page en cours de construction — ANSER</title>
+    <meta name="description" content="Cette rubrique du site de l'ANSER est en cours de construction. Nos équipes travaillent à sa mise en ligne prochaine.">
+    <meta name="theme-color" content="#151564">
+
+    <!-- Feuilles de style -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="track.css">
     <link rel="stylesheet" href="responsiveness.css">
+    <link rel="stylesheet" href="pages.css">
+
+    <!-- Polices et icônes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
     <link rel="icon" type="image/png" href="./img/icone-removebg.png">
-       
 </head>
 
 <body>
 
+    <!-- Barre de progression de lecture -->
+    <div class="barre-lecture" aria-hidden="true"></div>
+
+    <!-- =========================================================
+         BARRE SUPÉRIEURE — contact rapide et réseaux sociaux
+         (identique sur toutes les pages)
+    ========================================================== -->
     <div class="top-nav">
         <div class="contact-info">
-            <span><i class="fas fa-phone"></i> <a href="https://wa.me/243812345678" target="_blank">+243 81 234 5678</a></span>
-            <span><i class="fas fa-envelope"></i> <a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></span>
+            <span>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <a href="tel:+243810111171">+243 810 111 171</a>
+            </span>
+            <span>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a>
+            </span>
         </div>
         <div class="social-icons">
-            <a href="https://www.facebook.com/ANSER" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/ANSER" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/company/anser" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/ANSER" target="_blank"><i class="fab fa-instagram"></i></a>
-
+            <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                <i class="fab fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
 
-    <nav>
-        <img src="./img/anser_logo_bleu_font.png" alt="ANSER">
+    <!-- =========================================================
+         NAVIGATION PRINCIPALE (identique sur toutes les pages)
+    ========================================================== -->
+    <nav id="navigation-principale" aria-label="Navigation principale">
+        <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+            <img src="./img/anser_logo_bleu_font.png" alt="Logo de l'ANSER">
+        </a>
         <div class="navigation">
             <ul>
-                <i id="menu-close" class="fas fa-times"></i>
-                <li><a href="index.html" >Acceuil</a></li>
-                <li><a href="maintennance.html" >A propos</a></li>
-                <li><a href="maintennance.html">Projets</a></li>
-                <li><a href="maintennance.html" >Appels d'offres</a></li>
-                <li><a href="maintennance.html" >Fond mwinda</a></li>
-                <li><a href="maintennance.html" >Blog</a></li>
-                <li><a href="maintennance.html" >Actualités</a></li>
-                <li><a href="maintennance.html" >Contact</a></li>
+                <i id="menu-close" class="fas fa-times" role="button" tabindex="0" aria-label="Fermer le menu"></i>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="appels-offres.html">Appels d'offres</a></li>
+                <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <img id="menu-btn" src="./img/menu.png" alt="">
-        </div> 
+            <img id="menu-btn" src="./img/menu.png" alt="" role="button" tabindex="0" aria-label="Ouvrir le menu">
+        </div>
     </nav>
 
-   <div class="maintenance">
-        <h1>Site en cours de maintenance</h1>
-        <p>
-            Nous vous présentons nos sincères excuses pour cette interruption temporaire.
-            Notre équipe travaille activement afin d'améliorer votre expérience et de vous
-            proposer un service encore plus performant. Nous serons de retour très bientôt.
-            Merci pour votre patience, votre compréhension et votre confiance.
-        </p>
-    </div>
 
+    <!-- =========================================================
+         PAGE EN COURS DE CONSTRUCTION
+    ========================================================== -->
+    <main class="maintenance" aria-label="Rubrique en cours de construction">
+        <h1>Cette rubrique arrive bientôt</h1>
+        <p>
+            Nos équipes travaillent activement à la mise en ligne de cette page afin de vous
+            proposer une information complète et fiable. Nous vous remercions de votre patience et
+            vous invitons, en attendant, à découvrir les rubriques déjà disponibles.
+        </p>
+
+        <div class="maintenance__actions">
+            <a href="index.html" class="btn btn--jaune">
+                Retour à l'accueil
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="contact.html" class="btn btn--contour-clair">
+                Nous contacter
+            </a>
+        </div>
+    </main>
+    <!-- =========================================================
+         PIED DE PAGE (identique sur toutes les pages)
+    ========================================================== -->
     <footer>
         <section id="footer">
 
             <div class="footer-col">
-                <img src="./img/logo_yellow_white-removebg-preview.png" alt="ANSER">
+                <img src="./img/logo_yellow_white-removebg-preview.png" alt="Logo de l'ANSER">
                 <h3>Liens utiles</h3>
-                <li>Soumissions d'appels d'offres</li>
-                <li>Actualités</li>
-                <li>Mentions légales</li>
+                <ul>
+                    <li><a href="appels-offres.html">Soumission d'appels d'offres</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
             </div>
 
             <div class="footer-col">
                 <h3>Navigation</h3>
-                <li>Acceuil</li>
-                <li>A propos</li>
-                <li>Projets</li>
-                <li>Appel d'offres</li>
-                <li>Fond mwinda</li>
-                <li>Blog</li>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="appels-offres.html">Appels d'offres</a></li>
+                    <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
             </div>
+
             <div class="footer-col">
-                
+                <h3>Nos domaines</h3>
+                <ul>
+                    <li><a href="projets.html">Réseaux et extensions</a></li>
+                    <li><a href="projets.html">Centrales solaires</a></li>
+                    <li><a href="projets.html">Mini-réseaux hybrides</a></li>
+                    <li><a href="projets.html">Hydroélectricité rurale</a></li>
+                    <li><a href="projets.html">Éclairage public</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
             </div>
 
             <div class="footer-col">
                 <h3>Coordonnées</h3>
-                <li>Siège Social Anser Kinshasa RDC <br> Bâtiment Orgamane sise 4845, <br> Avenue Lukusa Commune de la Gombe</li>
-                <li>+243810111171</li>
-                <div>
-                    <button class="direct-contact">
-                        <a href="https://wa.me/243810111171" target="_blank">
-                            WhatsApp <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </button>
-
-                    <button class="direct-contact">
-                        <a href="mailto:anser@anser.gouv.cd" target="_blank">
-                            E-mail <i class="fas fa-envelope"></i>
-                        </a>
-                    </button>
+                <ul>
+                    <li>Siège social de l'ANSER, Kinshasa, RDC<br>
+                        Bâtiment Orgamane, 4845,<br>
+                        avenue Lukusa, commune de la Gombe</li>
+                    <li><a href="tel:+243810111171">+243 810 111 171</a></li>
+                    <li><a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></li>
+                </ul>
+                <div class="footer-boutons">
+                    <a class="footer-bouton" href="https://wa.me/243810111171"
+                       target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                    </a>
+                    <a class="footer-bouton footer-bouton--contour" href="mailto:anser@anser.gouv.cd">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Courriel
+                    </a>
                 </div>
             </div>
 
-            
-
             <div class="copyright">
-            <p class="technoweb">© 2026 ANSER <br> Tous droits réservés.</p>
-
-            <div class="pro-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <p class="technoweb">
+                    &copy; <span data-annee>2026</span> ANSER — Agence Nationale de l'Électrification
+                    et des Services Énergétiques en milieux rural et périurbain.<br>
+                    Tous droits réservés.
+                </p>
+                <div class="pro-links">
+                    <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                        <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-        </div>
         </section>
     </footer>
-    <script src="index.js"></script>
 
-   
+    <!-- Bouton de retour en haut de page -->
+    <button class="retour-haut" type="button" aria-label="Revenir en haut de la page">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
+
+    <script src="pages.js"></script>
 </body>
 </html>

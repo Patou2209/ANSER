@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appels d'offres et marchés publics — ANSER</title>
+    <meta name="description" content="Consultez les avis d'appels d'offres de l'ANSER, les conditions de participation, la procédure de soumission et les documents à fournir pour les marchés d'électrification rurale et périurbaine.">
+    <meta name="theme-color" content="#151564">
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="track.css">
+    <link rel="stylesheet" href="responsiveness.css">
+    <link rel="stylesheet" href="pages.css">
+
+    <!-- Polices et icônes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="./img/icone-removebg.png">
+</head>
+
+<body>
+
+    <!-- Barre de progression de lecture -->
+    <div class="barre-lecture" aria-hidden="true"></div>
+
+    <!-- =========================================================
+         BARRE SUPÉRIEURE — contact rapide et réseaux sociaux
+         (identique sur toutes les pages)
+    ========================================================== -->
+    <div class="top-nav">
+        <div class="contact-info">
+            <span>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <a href="tel:+243810111171">+243 810 111 171</a>
+            </span>
+            <span>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a>
+            </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                <i class="fab fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         NAVIGATION PRINCIPALE (identique sur toutes les pages)
+    ========================================================== -->
+    <nav id="navigation-principale" aria-label="Navigation principale">
+        <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+            <img src="./img/anser_logo_bleu_font.png" alt="Logo de l'ANSER">
+        </a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times" role="button" tabindex="0" aria-label="Fermer le menu"></i>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="appels-offres.html" class="active-tab" aria-current="page">Appels d'offres</a></li>
+                <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="./img/menu.png" alt="" role="button" tabindex="0" aria-label="Ouvrir le menu">
+        </div>
+    </nav>
+
+<main id="contenu-principal">
+
+    <!-- =====================================================================
+         BANNIÈRE DE PAGE
+    ====================================================================== -->
+    <section class="page-banniere" style="background-image: url('./img/energyback.jpg');">
+        <span class="page-banniere__voile"></span>
+        <span class="page-banniere__motif"></span>
+        <div class="conteneur page-banniere__contenu">
+            <nav class="fil-ariane" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                <span>Appels d'offres</span>
+            </nav>
+            <span class="page-banniere__etiquette" data-anim="bas">Marchés publics</span>
+            <h1 class="page-banniere__titre" data-anim="bas" data-anim-delai="80">
+                Appels d'offres et consultations
+            </h1>
+            <p class="page-banniere__texte" data-anim="bas" data-anim-delai="160">
+                L'ANSER attribue ses marchés dans le respect des principes de liberté d'accès,
+                d'égalité de traitement des candidats et de transparence des procédures, conformément
+                à la réglementation congolaise sur les marchés publics.
+            </p>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         PRINCIPES
+    ====================================================================== -->
+    <section class="section section--blanc">
+        <div class="conteneur">
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Nos engagements</span>
+                <h2 class="titre-section">Une commande publique transparente</h2>
+                <span class="trait-jaune"></span>
+            </div>
+
+            <div class="grille grille--4">
+                <article class="carte" data-anim="bas">
+                    <span class="carte__icone"><i class="fas fa-scale-balanced" aria-hidden="true"></i></span>
+                    <h3 class="carte__titre">Égalité de traitement</h3>
+                    <p class="carte__texte">
+                        Tous les candidats reçoivent la même information, dans les mêmes délais, et
+                        sont évalués selon des critères publiés à l'avance.
+                    </p>
+                </article>
+                <article class="carte" data-anim="bas" data-anim-delai="80">
+                    <span class="carte__icone"><i class="fas fa-eye" aria-hidden="true"></i></span>
+                    <h3 class="carte__titre">Transparence</h3>
+                    <p class="carte__texte">
+                        Les avis, les critères d'attribution et les résultats des consultations sont
+                        rendus publics.
+                    </p>
+                </article>
+                <article class="carte" data-anim="bas" data-anim-delai="160">
+                    <span class="carte__icone"><i class="fas fa-lock" aria-hidden="true"></i></span>
+                    <h3 class="carte__titre">Confidentialité des offres</h3>
+                    <p class="carte__texte">
+                        Les plis restent scellés jusqu'à la séance publique d'ouverture, en présence
+                        des représentants des soumissionnaires.
+                    </p>
+                </article>
+                <article class="carte" data-anim="bas" data-anim-delai="240">
+                    <span class="carte__icone"><i class="fas fa-handshake-angle" aria-hidden="true"></i></span>
+                    <h3 class="carte__titre">Contenu local</h3>
+                    <p class="carte__texte">
+                        Les entreprises congolaises et les partenariats avec des acteurs locaux sont
+                        encouragés dans le cadre fixé par la réglementation.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         AVIS EN COURS
+    ====================================================================== -->
+    <section class="section section--gris" id="avis">
+        <div class="conteneur">
+            <div class="bloc-titre" data-anim="bas">
+                <span class="sur-titre">Consultations</span>
+                <h2 class="titre-section">Avis publiés</h2>
+                <span class="trait-jaune"></span>
+                <p class="texte-section">
+                    Le tableau ci-dessous récapitule les consultations récentes. Les dossiers
+                    d'appel d'offres complets sont délivrés sur demande écrite adressée au
+                    secrétariat de la Cellule de Gestion des Projets et des Marchés Publics.
+                </p>
+            </div>
+
+            <div class="tableau-enveloppe" data-anim="bas">
+                <table class="tableau">
+                    <caption class="sr-only">Liste des avis d'appels d'offres de l'ANSER</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Référence</th>
+                            <th scope="col">Objet du marché</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Date limite</th>
+                            <th scope="col">État</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AON/ANSER/001</td>
+                            <td>Fourniture et installation de lampadaires solaires autonomes — lot Kinshasa périurbain</td>
+                            <td>Appel d'offres ouvert</td>
+                            <td>Voir dossier</td>
+                            <td><span class="etat etat--ouvert">Ouvert</span></td>
+                        </tr>
+                        <tr>
+                            <td>AON/ANSER/002</td>
+                            <td>Travaux d'extension de réseau moyenne et basse tension — territoires du Kongo-Central</td>
+                            <td>Appel d'offres ouvert</td>
+                            <td>Voir dossier</td>
+                            <td><span class="etat etat--ouvert">Ouvert</span></td>
+                        </tr>
+                        <tr>
+                            <td>AMI/ANSER/003</td>
+                            <td>Avis à manifestation d'intérêt — études de faisabilité de mini-réseaux hybrides</td>
+                            <td>Manifestation d'intérêt</td>
+                            <td>Voir dossier</td>
+                            <td><span class="etat etat--bientot">Prochainement</span></td>
+                        </tr>
+                        <tr>
+                            <td>APP/MWINDA/001</td>
+                            <td>Appel à projets Fonds Mwinda — systèmes solaires domestiques et cuisson propre</td>
+                            <td>Appel à projets</td>
+                            <td>Voir dossier</td>
+                            <td><span class="etat etat--clos">Clos</span></td>
+                        </tr>
+                        <tr>
+                            <td>AON/ANSER/004</td>
+                            <td>Acquisition de matériel de mesure et de contrôle pour la supervision des chantiers</td>
+                            <td>Appel d'offres ouvert</td>
+                            <td>Voir dossier</td>
+                            <td><span class="etat etat--clos">Clos</span></td>
+                        </tr>
+                        <tr>
+                            <td>CONS/ANSER/005</td>
+                            <td>Consultation restreinte — assistance technique à la structuration financière de projets</td>
+                            <td>Consultation restreinte</td>
+                            <td>Voir dossier</td>
+                            <td><span class="etat etat--bientot">Prochainement</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="texte-section" style="margin-top: 22px;" data-anim="fondu">
+                <i class="fas fa-circle-info" aria-hidden="true"></i>
+                Les informations ci-dessus sont fournies à titre indicatif. Seules les mentions du
+                dossier d'appel d'offres et des avis officiels publiés par l'ANSER font foi.
+            </p>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         PROCÉDURE
+    ====================================================================== -->
+    <section class="section section--blanc" id="procedure">
+        <div class="conteneur">
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Comment soumissionner</span>
+                <h2 class="titre-section">La procédure en cinq étapes</h2>
+                <span class="trait-jaune"></span>
+            </div>
+
+            <div class="etapes">
+                <article class="etape" data-anim="bas">
+                    <span class="etape__pastille"></span>
+                    <h3>Consulter l'avis</h3>
+                    <p>
+                        Prenez connaissance de l'objet du marché, des conditions de participation et
+                        de la date limite de remise des offres.
+                    </p>
+                </article>
+                <article class="etape" data-anim="bas" data-anim-delai="80">
+                    <span class="etape__pastille"></span>
+                    <h3>Retirer le dossier</h3>
+                    <p>
+                        Adressez une demande écrite au secrétariat de la cellule des marchés pour
+                        obtenir le dossier d'appel d'offres complet.
+                    </p>
+                </article>
+                <article class="etape" data-anim="bas" data-anim-delai="160">
+                    <span class="etape__pastille"></span>
+                    <h3>Préparer l'offre</h3>
+                    <p>
+                        Constituez l'offre technique et l'offre financière séparément, en respectant
+                        strictement la présentation exigée par le dossier.
+                    </p>
+                </article>
+                <article class="etape" data-anim="bas" data-anim-delai="240">
+                    <span class="etape__pastille"></span>
+                    <h3>Déposer le pli</h3>
+                    <p>
+                        Le pli scellé est déposé contre récépissé au siège de l'ANSER avant
+                        l'expiration du délai indiqué. Tout dépôt tardif est rejeté.
+                    </p>
+                </article>
+                <article class="etape" data-anim="bas" data-anim-delai="320">
+                    <span class="etape__pastille"></span>
+                    <h3>Ouverture et attribution</h3>
+                    <p>
+                        Les offres sont ouvertes en séance publique, évaluées par la commission
+                        compétente, puis le marché est attribué et notifié à l'attributaire.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         DOCUMENTS À FOURNIR
+    ====================================================================== -->
+    <section class="section section--gris" id="documents">
+        <div class="conteneur">
+            <div class="duo">
+                <div class="duo__texte" data-anim="gauche">
+                    <span class="sur-titre">Constitution du dossier</span>
+                    <h2 class="titre-section">Pièces généralement exigées</h2>
+                    <span class="trait-jaune"></span>
+                    <p>
+                        La liste définitive figure dans chaque dossier d'appel d'offres. À titre
+                        indicatif, les soumissionnaires doivent le plus souvent produire :
+                    </p>
+                    <ul class="liste-check">
+                        <li>Lettre de soumission signée par une personne dûment habilitée</li>
+                        <li>Statuts de la société et registre du commerce (RCCM)</li>
+                        <li>Numéro d'identification nationale et numéro d'impôt</li>
+                        <li>Attestation fiscale et attestation de sécurité sociale en cours de validité</li>
+                        <li>États financiers certifiés des trois derniers exercices</li>
+                        <li>Références de marchés similaires exécutés, avec attestations de bonne fin</li>
+                        <li>Curriculum vitæ du personnel clé affecté au marché</li>
+                        <li>Liste des matériels et moyens logistiques mobilisables</li>
+                        <li>Garantie de soumission, lorsqu'elle est requise</li>
+                    </ul>
+                </div>
+                <div class="duo__media" data-anim="droite">
+                    <img src="./img/power.jpg" alt="Ouvrage électrique réalisé dans le cadre d'un marché public de l'ANSER" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         QUESTIONS FRÉQUENTES
+    ====================================================================== -->
+    <section class="section section--blanc" id="questions">
+        <div class="conteneur">
+            <div class="bloc-titre" data-anim="bas">
+                <span class="sur-titre">Assistance aux candidats</span>
+                <h2 class="titre-section">Questions fréquentes</h2>
+                <span class="trait-jaune"></span>
+            </div>
+
+            <div class="accordeon" data-anim="fondu">
+                <article class="accordeon__item">
+                    <button type="button" class="accordeon__tete" aria-expanded="false">
+                        <span>Le retrait du dossier d'appel d'offres est-il payant ?</span>
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Les modalités de retrait, y compris l'éventuel montant des frais de
+                            reproduction du dossier, sont précisées dans chaque avis. Aucun autre
+                            paiement ne peut être exigé d'un candidat.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordeon__item">
+                    <button type="button" class="accordeon__tete" aria-expanded="false">
+                        <span>Puis-je soumissionner en groupement d'entreprises ?</span>
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Oui, lorsque le dossier l'autorise. Le groupement doit alors désigner un
+                            mandataire, produire la convention de groupement et préciser la
+                            répartition des prestations entre ses membres.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordeon__item">
+                    <button type="button" class="accordeon__tete" aria-expanded="false">
+                        <span>Comment demander un éclaircissement sur un dossier ?</span>
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Toute demande d'éclaircissement doit être adressée par écrit dans le
+                            délai fixé par l'avis. Les réponses sont communiquées à l'ensemble des
+                            candidats ayant retiré le dossier, afin de préserver l'égalité de
+                            traitement.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordeon__item">
+                    <button type="button" class="accordeon__tete" aria-expanded="false">
+                        <span>Une offre peut-elle être modifiée après dépôt ?</span>
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Un soumissionnaire peut retirer ou remplacer son offre avant l'expiration
+                            du délai de remise. Passé ce délai, aucune modification n'est recevable.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordeon__item">
+                    <button type="button" class="accordeon__tete" aria-expanded="false">
+                        <span>Que faire en cas de contestation ?</span>
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordeon__corps">
+                        <p>
+                            Les candidats disposent des voies de recours prévues par la
+                            réglementation congolaise sur les marchés publics. Toute réclamation doit
+                            être formulée par écrit, motivée, et adressée à l'autorité compétente
+                            dans les délais réglementaires.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         APPEL À L'ACTION
+    ====================================================================== -->
+    <section class="cta">
+        <div class="conteneur cta__contenu" data-anim="zoom">
+            <span class="cta__bande"></span>
+            <h2>Besoin d'un dossier d'appel d'offres ?</h2>
+            <p>
+                Adressez votre demande écrite à la cellule des marchés de l'ANSER en précisant la
+                référence de l'avis qui vous intéresse.
+            </p>
+            <div class="groupe-btn">
+                <a href="contact.html" class="btn btn--jaune">
+                    <i class="fas fa-file-lines" aria-hidden="true"></i> Demander un dossier
+                </a>
+                <a href="fonds-mwinda.html" class="btn btn--contour-clair">
+                    <i class="fas fa-lightbulb" aria-hidden="true"></i> Découvrir le Fonds Mwinda
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+    <!-- =========================================================
+         PIED DE PAGE (identique sur toutes les pages)
+    ========================================================== -->
+    <footer>
+        <section id="footer">
+
+            <div class="footer-col">
+                <img src="./img/logo_yellow_white-removebg-preview.png" alt="Logo de l'ANSER">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="appels-offres.html">Soumission d'appels d'offres</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="appels-offres.html">Appels d'offres</a></li>
+                    <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Nos domaines</h3>
+                <ul>
+                    <li><a href="projets.html">Réseaux et extensions</a></li>
+                    <li><a href="projets.html">Centrales solaires</a></li>
+                    <li><a href="projets.html">Mini-réseaux hybrides</a></li>
+                    <li><a href="projets.html">Hydroélectricité rurale</a></li>
+                    <li><a href="projets.html">Éclairage public</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Coordonnées</h3>
+                <ul>
+                    <li>Siège social de l'ANSER, Kinshasa, RDC<br>
+                        Bâtiment Orgamane, 4845,<br>
+                        avenue Lukusa, commune de la Gombe</li>
+                    <li><a href="tel:+243810111171">+243 810 111 171</a></li>
+                    <li><a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></li>
+                </ul>
+                <div class="footer-boutons">
+                    <a class="footer-bouton" href="https://wa.me/243810111171"
+                       target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                    </a>
+                    <a class="footer-bouton footer-bouton--contour" href="mailto:anser@anser.gouv.cd">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Courriel
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p class="technoweb">
+                    &copy; <span data-annee>2026</span> ANSER — Agence Nationale de l'Électrification
+                    et des Services Énergétiques en milieux rural et périurbain.<br>
+                    Tous droits réservés.
+                </p>
+                <div class="pro-links">
+                    <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                        <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bouton de retour en haut de page -->
+    <button class="retour-haut" type="button" aria-label="Revenir en haut de la page">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+
+    <script src="pages.js"></script>
+</body>
+</html>

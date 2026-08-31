@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités de l'ANSER — Informations et communiqués</title>
+    <meta name="description" content="Suivez l'actualité de l'ANSER : inaugurations de projets, lancements d'appels à projets, partenariats stratégiques et communiqués officiels sur l'électrification de la RDC.">
+    <meta name="theme-color" content="#151564">
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="track.css">
+    <link rel="stylesheet" href="responsiveness.css">
+    <link rel="stylesheet" href="pages.css">
+
+    <!-- Polices et icônes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="./img/icone-removebg.png">
+</head>
+
+<body>
+
+    <!-- Barre de progression de lecture -->
+    <div class="barre-lecture" aria-hidden="true"></div>
+
+    <!-- =========================================================
+         BARRE SUPÉRIEURE — contact rapide et réseaux sociaux
+         (identique sur toutes les pages)
+    ========================================================== -->
+    <div class="top-nav">
+        <div class="contact-info">
+            <span>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <a href="tel:+243810111171">+243 810 111 171</a>
+            </span>
+            <span>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a>
+            </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                <i class="fab fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         NAVIGATION PRINCIPALE (identique sur toutes les pages)
+    ========================================================== -->
+    <nav id="navigation-principale" aria-label="Navigation principale">
+        <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+            <img src="./img/anser_logo_bleu_font.png" alt="Logo de l'ANSER">
+        </a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times" role="button" tabindex="0" aria-label="Fermer le menu"></i>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="appels-offres.html">Appels d'offres</a></li>
+                <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="actualites.html" class="active-tab" aria-current="page">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="./img/menu.png" alt="" role="button" tabindex="0" aria-label="Ouvrir le menu">
+        </div>
+    </nav>
+
+<main id="contenu-principal">
+
+    <!-- =====================================================================
+         BANNIÈRE DE PAGE
+    ====================================================================== -->
+    <section class="page-banniere" style="background-image: url('./img/energy2.jpg');">
+        <span class="page-banniere__voile"></span>
+        <span class="page-banniere__motif"></span>
+        <div class="conteneur page-banniere__contenu">
+            <nav class="fil-ariane" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                <span>Actualités</span>
+            </nav>
+            <span class="page-banniere__etiquette" data-anim="bas">Salle de presse</span>
+            <h1 class="page-banniere__titre" data-anim="bas" data-anim-delai="80">
+                Actualités de l'Agence
+            </h1>
+            <p class="page-banniere__texte" data-anim="bas" data-anim-delai="160">
+                Communiqués officiels, avancement des chantiers, partenariats et lancements
+                d'appels à projets : retrouvez ici l'ensemble des informations publiées par l'ANSER.
+            </p>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         ARTICLE À LA UNE
+    ====================================================================== -->
+    <section class="section section--blanc">
+        <div class="conteneur">
+            <div class="bloc-titre" data-anim="bas">
+                <span class="sur-titre">À la une</span>
+                <h2 class="titre-section">L'information principale</h2>
+                <span class="trait-jaune"></span>
+            </div>
+
+            <article class="article-vedette" data-anim="bas">
+                <div class="article-vedette__media" style="background-image: url('./img/solar.jpg');">
+                    <span class="article-carte__categorie">Fonds Mwinda</span>
+                </div>
+                <div class="article-vedette__corps">
+                    <span class="article-carte__date">
+                        <i class="fas fa-calendar-day" aria-hidden="true"></i> 17 septembre 2025
+                    </span>
+                    <h3 class="article-vedette__titre">
+                        Lancement d'un appel à projets du Fonds Mwinda pour l'accès à l'électricité
+                        et à la cuisson propre
+                    </h3>
+                    <p>
+                        L'ANSER a lancé un appel à projets destiné aux entreprises capables de
+                        déployer des systèmes solaires domestiques, des mini-réseaux verts et des
+                        solutions de cuisson propre dans les zones rurales et périurbaines. Le
+                        mécanisme retenu est celui de la subvention basée sur les résultats :
+                        l'appui financier est versé après vérification indépendante des
+                        raccordements réalisés ou des équipements effectivement livrés.
+                    </p>
+                    <p>
+                        Cette démarche vise à lever le principal obstacle à l'électrification
+                        décentralisée, à savoir l'écart entre le coût réel du service et la capacité
+                        de paiement des ménages, tout en sécurisant l'emploi des ressources
+                        publiques.
+                    </p>
+                    <div class="groupe-btn">
+                        <a href="fonds-mwinda.html" class="btn btn--bleu">
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i> Découvrir le Fonds Mwinda
+                        </a>
+                        <a href="appels-offres.html" class="btn btn--contour">
+                            <i class="fas fa-folder-open" aria-hidden="true"></i> Voir les appels en cours
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         TOUTES LES ACTUALITÉS
+    ====================================================================== -->
+    <section class="section section--gris" id="toutes">
+        <div class="conteneur">
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Fil d'information</span>
+                <h2 class="titre-section">Toutes les publications</h2>
+                <span class="trait-jaune"></span>
+            </div>
+
+            <div class="filtres" data-groupe-filtres=".articles-grille" data-anim="fondu">
+                <button type="button" class="filtre is-actif" data-filtre="tous">
+                    <i class="fas fa-newspaper" aria-hidden="true"></i> Tout
+                </button>
+                <button type="button" class="filtre" data-filtre="institution">
+                    <i class="fas fa-landmark" aria-hidden="true"></i> Institution
+                </button>
+                <button type="button" class="filtre" data-filtre="projets">
+                    <i class="fas fa-diagram-project" aria-hidden="true"></i> Projets
+                </button>
+                <button type="button" class="filtre" data-filtre="financement">
+                    <i class="fas fa-hand-holding-dollar" aria-hidden="true"></i> Financement
+                </button>
+                <button type="button" class="filtre" data-filtre="partenariat">
+                    <i class="fas fa-handshake" aria-hidden="true"></i> Partenariats
+                </button>
+            </div>
+
+            <div class="articles-grille">
+
+                <article class="article-carte" data-categorie="financement" data-anim="bas">
+                    <div class="article-carte__media" style="background-image: url('./img/solar.jpg');">
+                        <span class="article-carte__categorie">Financement</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <span class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i> 17 septembre 2025
+                        </span>
+                        <h3 class="article-carte__titre">
+                            Appel à projets Fonds Mwinda : les candidatures sont ouvertes
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Entreprises solaires, développeurs de mini-réseaux et opérateurs de la
+                            cuisson propre sont invités à présenter leurs projets pour bénéficier de
+                            subventions basées sur les résultats.
+                        </p>
+                        <a href="fonds-mwinda.html" class="carte__lien">
+                            Lire la suite <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="institution" data-anim="bas" data-anim-delai="80">
+                    <div class="article-carte__media" style="background-image: url('./img/power.jpg');">
+                        <span class="article-carte__categorie">Institution</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <span class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i> 20 juillet 2025
+                        </span>
+                        <h3 class="article-carte__titre">
+                            Cinq années d'action : une trajectoire de 30 mégawatts additionnels
+                        </h3>
+                        <p class="article-carte__extrait">
+                            L'Agence a dressé le bilan de son action depuis son opérationnalisation :
+                            structuration d'un portefeuille de projets, mise en service d'ouvrages et
+                            ambition d'une puissance additionnelle de trente mégawatts.
+                        </p>
+                        <a href="about.html" class="carte__lien">
+                            Lire la suite <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="projets" data-anim="bas" data-anim-delai="160">
+                    <div class="article-carte__media" style="background-image: url('./img/energy1.jpg');">
+                        <span class="article-carte__categorie">Projets</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <span class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i> 11 mars 2025
+                        </span>
+                        <h3 class="article-carte__titre">
+                            Vingt-deux projets d'électrification achevés et mis en service
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Réseaux étendus, centrales solaires et mini-réseaux : le point sur les
+                            ouvrages désormais opérationnels et sur les localités qu'ils desservent.
+                        </p>
+                        <a href="projets.html" class="carte__lien">
+                            Lire la suite <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="partenariat" data-anim="bas">
+                    <div class="article-carte__media" style="background-image: url('./img/energy3.jpg');">
+                        <span class="article-carte__categorie">Partenariats</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <span class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i> Année 2025
+                        </span>
+                        <h3 class="article-carte__titre">
+                            Renforcement de la coopération avec les partenaires techniques et financiers
+                        </h3>
+                        <p class="article-carte__extrait">
+                            L'ANSER poursuit le dialogue avec les institutions de financement du
+                            développement afin d'accroître les ressources mobilisables pour
+                            l'électrification rurale et périurbaine.
+                        </p>
+                        <a href="about.html#partenariats" class="carte__lien">
+                            Lire la suite <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="projets" data-anim="bas" data-anim-delai="80">
+                    <div class="article-carte__media" style="background-image: url('./img/energyback.jpg');">
+                        <span class="article-carte__categorie">Projets</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <span class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i> Année 2025
+                        </span>
+                        <h3 class="article-carte__titre">
+                            Éclairage public solaire : de nouveaux axes équipés
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Le déploiement de lampadaires solaires autonomes se poursuit sur les axes
+                            structurants, les marchés et les places publiques, renforçant la sécurité
+                            et l'activité économique nocturne.
+                        </p>
+                        <a href="projets.html#portefeuille" class="carte__lien">
+                            Lire la suite <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="institution" data-anim="bas" data-anim-delai="160">
+                    <div class="article-carte__media" style="background-image: url('./img/energy.jpg');">
+                        <span class="article-carte__categorie">Institution</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <span class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i> Année 2025
+                        </span>
+                        <h3 class="article-carte__titre">
+                            Organisation territoriale : six pools d'électrification opérationnels
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Pour rapprocher l'action publique du terrain, l'Agence structure son
+                            intervention autour de six pools régionaux couvrant l'ensemble du
+                            territoire national.
+                        </p>
+                        <a href="about.html" class="carte__lien">
+                            Lire la suite <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="financement" data-anim="bas">
+                    <div class="article-carte__media" style="background-image: url('./img/energy2.jpg');">
+                        <span class="article-carte__categorie">Financement</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <span class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i> Année 2025
+                        </span>
+                        <h3 class="article-carte__titre">
+                            Subventions basées sur les résultats : un mécanisme au service de l'efficacité
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Retour sur le principe retenu par le Fonds Mwinda : ne décaisser qu'après
+                            vérification indépendante du résultat, afin de garantir la bonne
+                            utilisation des ressources publiques.
+                        </p>
+                        <a href="fonds-mwinda.html#processus" class="carte__lien">
+                            Lire la suite <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="partenariat" data-anim="bas" data-anim-delai="80">
+                    <div class="article-carte__media" style="background-image: url('./img/power.jpg');">
+                        <span class="article-carte__categorie">Partenariats</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <span class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i> Année 2025
+                        </span>
+                        <h3 class="article-carte__titre">
+                            Dialogue avec le secteur privé sur les mini-réseaux
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Opérateurs et investisseurs ont échangé avec l'Agence sur les conditions
+                            de rentabilité, la standardisation des équipements et la mutualisation de
+                            la maintenance.
+                        </p>
+                        <a href="contact.html" class="carte__lien">
+                            Lire la suite <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-categorie="projets" data-anim="bas" data-anim-delai="160">
+                    <div class="article-carte__media" style="background-image: url('./img/energy3.jpg');">
+                        <span class="article-carte__categorie">Projets</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <span class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i> Année 2025
+                        </span>
+                        <h3 class="article-carte__titre">
+                            Hydroélectricité rurale : les études se poursuivent à l'est du pays
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Plusieurs sites font l'objet d'études techniques et environnementales en
+                            vue d'aménagements capables d'alimenter durablement les agglomérations
+                            riveraines.
+                        </p>
+                        <a href="projets.html#cycle" class="carte__lien">
+                            Lire la suite <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         APPEL À L'ACTION
+    ====================================================================== -->
+    <section class="cta">
+        <div class="conteneur cta__contenu" data-anim="zoom">
+            <span class="cta__bande"></span>
+            <h2>Vous êtes journaliste ou chercheur ?</h2>
+            <p>
+                Pour toute demande d'interview, de donnée ou d'élément de contexte, adressez-vous
+                au service de la communication de l'ANSER.
+            </p>
+            <div class="groupe-btn">
+                <a href="contact.html" class="btn btn--jaune">
+                    <i class="fas fa-microphone-lines" aria-hidden="true"></i> Contacter la presse
+                </a>
+                <a href="blog.html" class="btn btn--contour-clair">
+                    <i class="fas fa-book-open" aria-hidden="true"></i> Lire nos analyses
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+    <!-- =========================================================
+         PIED DE PAGE (identique sur toutes les pages)
+    ========================================================== -->
+    <footer>
+        <section id="footer">
+
+            <div class="footer-col">
+                <img src="./img/logo_yellow_white-removebg-preview.png" alt="Logo de l'ANSER">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="appels-offres.html">Soumission d'appels d'offres</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="appels-offres.html">Appels d'offres</a></li>
+                    <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Nos domaines</h3>
+                <ul>
+                    <li><a href="projets.html">Réseaux et extensions</a></li>
+                    <li><a href="projets.html">Centrales solaires</a></li>
+                    <li><a href="projets.html">Mini-réseaux hybrides</a></li>
+                    <li><a href="projets.html">Hydroélectricité rurale</a></li>
+                    <li><a href="projets.html">Éclairage public</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Coordonnées</h3>
+                <ul>
+                    <li>Siège social de l'ANSER, Kinshasa, RDC<br>
+                        Bâtiment Orgamane, 4845,<br>
+                        avenue Lukusa, commune de la Gombe</li>
+                    <li><a href="tel:+243810111171">+243 810 111 171</a></li>
+                    <li><a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></li>
+                </ul>
+                <div class="footer-boutons">
+                    <a class="footer-bouton" href="https://wa.me/243810111171"
+                       target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                    </a>
+                    <a class="footer-bouton footer-bouton--contour" href="mailto:anser@anser.gouv.cd">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Courriel
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p class="technoweb">
+                    &copy; <span data-annee>2026</span> ANSER — Agence Nationale de l'Électrification
+                    et des Services Énergétiques en milieux rural et périurbain.<br>
+                    Tous droits réservés.
+                </p>
+                <div class="pro-links">
+                    <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                        <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bouton de retour en haut de page -->
+    <button class="retour-haut" type="button" aria-label="Revenir en haut de la page">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+
+    <script src="pages.js"></script>
+</body>
+</html>

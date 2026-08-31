@@ -1,0 +1,27 @@
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Journaux et processus
+logs/
+*.log
+.pm2/
+pids/
+*.pid
+
+# Archives et sauvegardes
+*.bak
+*.backup
+*.tar.gz
+*.zip
+
+# Python (générateur)
+__pycache__/
+*.pyc

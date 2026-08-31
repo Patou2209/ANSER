@@ -1,0 +1,388 @@
+<main id="contenu-principal">
+
+    <!-- =====================================================================
+         BANNIÈRE DE PAGE
+    ====================================================================== -->
+    <section class="page-banniere" style="background-image: url('./img/energy1.jpg');">
+        <span class="page-banniere__voile"></span>
+        <span class="page-banniere__motif"></span>
+        <div class="conteneur page-banniere__contenu">
+            <nav class="fil-ariane" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                <span>Projets</span>
+            </nav>
+            <span class="page-banniere__etiquette" data-anim="bas">Portefeuille de projets</span>
+            <h1 class="page-banniere__titre" data-anim="bas" data-anim-delai="80">
+                Des chantiers concrets, <br>territoire par territoire
+            </h1>
+            <p class="page-banniere__texte" data-anim="bas" data-anim-delai="160">
+                Extension de réseaux, centrales solaires, mini-réseaux hybrides, micro-centrales
+                hydroélectriques et éclairage public : l'ANSER structure et accompagne des projets
+                d'électrification dans l'ensemble des provinces de la République Démocratique du Congo.
+            </p>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         CHIFFRES DU PORTEFEUILLE
+    ====================================================================== -->
+    <section class="section section--blanc">
+        <div class="conteneur">
+            <div class="stats">
+                <article class="stat-carte" data-anim="bas">
+                    <span class="stat-carte__icone"><i class="fas fa-diagram-project" aria-hidden="true"></i></span>
+                    <span class="stat-carte__valeur"><span data-compteur="1100">0</span><span class="suffixe">+</span></span>
+                    <span class="stat-carte__libelle">Projets identifiés et cartographiés</span>
+                </article>
+                <article class="stat-carte" data-anim="bas" data-anim-delai="80">
+                    <span class="stat-carte__icone"><i class="fas fa-helmet-safety" aria-hidden="true"></i></span>
+                    <span class="stat-carte__valeur"><span data-compteur="65">0</span><span class="suffixe">+</span></span>
+                    <span class="stat-carte__libelle">Projets en cours d'exécution</span>
+                </article>
+                <article class="stat-carte" data-anim="bas" data-anim-delai="160">
+                    <span class="stat-carte__icone"><i class="fas fa-circle-check" aria-hidden="true"></i></span>
+                    <span class="stat-carte__valeur"><span data-compteur="22">0</span></span>
+                    <span class="stat-carte__libelle">Projets achevés et mis en service</span>
+                </article>
+                <article class="stat-carte" data-anim="bas" data-anim-delai="240">
+                    <span class="stat-carte__icone"><i class="fas fa-bolt" aria-hidden="true"></i></span>
+                    <span class="stat-carte__valeur"><span data-compteur="30">0</span><span class="suffixe"> MW</span></span>
+                    <span class="stat-carte__libelle">Puissance additionnelle visée</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         GRILLE DE PROJETS AVEC FILTRES
+    ====================================================================== -->
+    <section class="section section--gris" id="portefeuille">
+        <div class="conteneur">
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Réalisations et chantiers</span>
+                <h2 class="titre-section">Explorez nos projets par technologie</h2>
+                <span class="trait-jaune"></span>
+                <p class="texte-section">
+                    Chaque projet répond à un diagnostic local précis : densité de population,
+                    ressource énergétique disponible, capacité de paiement des usagers et
+                    potentiel d'usages productifs.
+                </p>
+            </div>
+
+            <div class="filtres" data-groupe-filtres=".projets-grille" data-anim="fondu">
+                <button type="button" class="filtre is-actif" data-filtre="tous">
+                    <i class="fas fa-layer-group" aria-hidden="true"></i> Tous
+                </button>
+                <button type="button" class="filtre" data-filtre="reseau">
+                    <i class="fas fa-tower-cell" aria-hidden="true"></i> Réseaux
+                </button>
+                <button type="button" class="filtre" data-filtre="solaire">
+                    <i class="fas fa-solar-panel" aria-hidden="true"></i> Solaire
+                </button>
+                <button type="button" class="filtre" data-filtre="hydro">
+                    <i class="fas fa-water" aria-hidden="true"></i> Hydroélectricité
+                </button>
+                <button type="button" class="filtre" data-filtre="hybride">
+                    <i class="fas fa-plug-circle-bolt" aria-hidden="true"></i> Mini-réseaux
+                </button>
+                <button type="button" class="filtre" data-filtre="eclairage">
+                    <i class="fas fa-lightbulb" aria-hidden="true"></i> Éclairage public
+                </button>
+            </div>
+
+            <div class="projets-grille">
+
+                <article class="projet" data-categorie="reseau" data-anim="bas">
+                    <div class="projet__media" style="background-image: url('./img/power.jpg');">
+                        <span class="projet__badge">Achevé</span>
+                    </div>
+                    <div class="projet__corps">
+                        <span class="projet__lieu"><i class="fas fa-location-dot" aria-hidden="true"></i> Kinshasa — N'Djili Brasserie</span>
+                        <h3 class="projet__titre">Électrification du quartier N'Djili Brasserie</h3>
+                        <p class="projet__texte">
+                            Extension du réseau de distribution basse et moyenne tension au profit d'un
+                            quartier périurbain densément peuplé, avec pose de cabines de transformation
+                            et raccordement des ménages.
+                        </p>
+                        <div class="projet__meta">
+                            <span><i class="fas fa-tower-cell" aria-hidden="true"></i> Réseau MT/BT</span>
+                            <span><i class="fas fa-house-chimney" aria-hidden="true"></i> Ménages périurbains</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet" data-categorie="hydro" data-anim="bas" data-anim-delai="80">
+                    <div class="projet__media" style="background-image: url('./img/energy3.jpg');">
+                        <span class="projet__badge projet__badge--cours">En cours</span>
+                    </div>
+                    <div class="projet__corps">
+                        <span class="projet__lieu"><i class="fas fa-location-dot" aria-hidden="true"></i> Kasaï — Kamonia</span>
+                        <h3 class="projet__titre">Micro-centrale hydroélectrique de Kamonia</h3>
+                        <p class="projet__texte">
+                            Valorisation d'une chute d'eau locale pour alimenter la cité de Kamonia,
+                            ses centres de santé, ses écoles et ses activités artisanales à un coût
+                            durablement compétitif.
+                        </p>
+                        <div class="projet__meta">
+                            <span><i class="fas fa-water" aria-hidden="true"></i> Hydroélectricité</span>
+                            <span><i class="fas fa-clock-rotate-left" aria-hidden="true"></i> Travaux engagés</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet" data-categorie="solaire" data-anim="bas" data-anim-delai="160">
+                    <div class="projet__media" style="background-image: url('./img/solar.jpg');">
+                        <span class="projet__badge projet__badge--cours">En cours</span>
+                    </div>
+                    <div class="projet__corps">
+                        <span class="projet__lieu"><i class="fas fa-location-dot" aria-hidden="true"></i> Kasaï-Oriental — Miabi</span>
+                        <h3 class="projet__titre">Centrale solaire photovoltaïque de Miabi</h3>
+                        <p class="projet__texte">
+                            Production solaire couplée à un stockage par batteries et à un réseau de
+                            distribution local, conçue pour desservir le centre administratif du
+                            territoire ainsi que les activités commerciales riveraines.
+                        </p>
+                        <div class="projet__meta">
+                            <span><i class="fas fa-solar-panel" aria-hidden="true"></i> Solaire + stockage</span>
+                            <span><i class="fas fa-shop" aria-hidden="true"></i> Usages productifs</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet" data-categorie="hybride" data-anim="bas">
+                    <div class="projet__media" style="background-image: url('./img/energy.jpg');">
+                        <span class="projet__badge projet__badge--cours">En cours</span>
+                    </div>
+                    <div class="projet__corps">
+                        <span class="projet__lieu"><i class="fas fa-location-dot" aria-hidden="true"></i> Nord-Kivu — Walikale</span>
+                        <h3 class="projet__titre">Mini-réseau hybride de Walikale</h3>
+                        <p class="projet__texte">
+                            Solution hybride associant production solaire, stockage et appoint
+                            thermique, afin de garantir une fourniture continue dans une zone
+                            enclavée où la demande industrielle est croissante.
+                        </p>
+                        <div class="projet__meta">
+                            <span><i class="fas fa-plug-circle-bolt" aria-hidden="true"></i> Mini-réseau hybride</span>
+                            <span><i class="fas fa-battery-three-quarters" aria-hidden="true"></i> Stockage intégré</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet" data-categorie="hydro" data-anim="bas" data-anim-delai="80">
+                    <div class="projet__media" style="background-image: url('./img/energyback.jpg');">
+                        <span class="projet__badge projet__badge--etude">À l'étude</span>
+                    </div>
+                    <div class="projet__corps">
+                        <span class="projet__lieu"><i class="fas fa-location-dot" aria-hidden="true"></i> Sud-Kivu — Kalehe</span>
+                        <h3 class="projet__titre">Aménagement hydroélectrique de Kalehe</h3>
+                        <p class="projet__texte">
+                            Études techniques et environnementales en vue de l'aménagement d'un site
+                            hydroélectrique destiné à alimenter plusieurs agglomérations riveraines
+                            du lac Kivu.
+                        </p>
+                        <div class="projet__meta">
+                            <span><i class="fas fa-water" aria-hidden="true"></i> Hydroélectricité</span>
+                            <span><i class="fas fa-compass-drafting" aria-hidden="true"></i> Études en cours</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet" data-categorie="reseau" data-anim="bas" data-anim-delai="160">
+                    <div class="projet__media" style="background-image: url('./img/energy2.jpg');">
+                        <span class="projet__badge">Achevé</span>
+                    </div>
+                    <div class="projet__corps">
+                        <span class="projet__lieu"><i class="fas fa-location-dot" aria-hidden="true"></i> Kongo-Central — Mbata-Kiela</span>
+                        <h3 class="projet__titre">Raccordement de la cité de Mbata-Kiela</h3>
+                        <p class="projet__texte">
+                            Raccordement d'une cité rurale au réseau régional, accompagné de la
+                            construction d'une ligne moyenne tension et d'un réseau de distribution
+                            interne aux quartiers.
+                        </p>
+                        <div class="projet__meta">
+                            <span><i class="fas fa-tower-cell" aria-hidden="true"></i> Ligne MT</span>
+                            <span><i class="fas fa-people-roof" aria-hidden="true"></i> Cité rurale</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet" data-categorie="solaire" data-anim="bas">
+                    <div class="projet__media" style="background-image: url('./img/solar.jpg');">
+                        <span class="projet__badge projet__badge--cours">En cours</span>
+                    </div>
+                    <div class="projet__corps">
+                        <span class="projet__lieu"><i class="fas fa-location-dot" aria-hidden="true"></i> Sud-Kivu — Luvungi et Katogota</span>
+                        <h3 class="projet__titre">Électrification solaire de Luvungi et Katogota</h3>
+                        <p class="projet__texte">
+                            Déploiement de capacités solaires décentralisées dans la plaine de la
+                            Ruzizi, au bénéfice des structures de santé, des établissements
+                            scolaires et des unités de transformation agricole.
+                        </p>
+                        <div class="projet__meta">
+                            <span><i class="fas fa-solar-panel" aria-hidden="true"></i> Solaire décentralisé</span>
+                            <span><i class="fas fa-wheat-awn" aria-hidden="true"></i> Agro-transformation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet" data-categorie="eclairage" data-anim="bas" data-anim-delai="80">
+                    <div class="projet__media" style="background-image: url('./img/energy1.jpg');">
+                        <span class="projet__badge projet__badge--cours">En cours</span>
+                    </div>
+                    <div class="projet__corps">
+                        <span class="projet__lieu"><i class="fas fa-location-dot" aria-hidden="true"></i> Plusieurs provinces</span>
+                        <h3 class="projet__titre">Programme national d'éclairage public solaire</h3>
+                        <p class="projet__texte">
+                            Installation de lampadaires solaires autonomes sur les axes structurants,
+                            les marchés et les places publiques, pour renforcer la sécurité et
+                            prolonger l'activité économique après la tombée du jour.
+                        </p>
+                        <div class="projet__meta">
+                            <span><i class="fas fa-lightbulb" aria-hidden="true"></i> Lampadaires autonomes</span>
+                            <span><i class="fas fa-shield-halved" aria-hidden="true"></i> Sécurité urbaine</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projet" data-categorie="hybride" data-anim="bas" data-anim-delai="160">
+                    <div class="projet__media" style="background-image: url('./img/energy3.jpg');">
+                        <span class="projet__badge projet__badge--etude">À l'étude</span>
+                    </div>
+                    <div class="projet__corps">
+                        <span class="projet__lieu"><i class="fas fa-location-dot" aria-hidden="true"></i> Territoires enclavés</span>
+                        <h3 class="projet__titre">Mini-réseaux de nouvelle génération</h3>
+                        <p class="projet__texte">
+                            Programme de standardisation de mini-réseaux réplicables, associant
+                            comptage intelligent, paiement mobile et maintenance mutualisée, afin
+                            d'accélérer le déploiement à grande échelle.
+                        </p>
+                        <div class="projet__meta">
+                            <span><i class="fas fa-plug-circle-bolt" aria-hidden="true"></i> Mini-réseaux</span>
+                            <span><i class="fas fa-mobile-screen-button" aria-hidden="true"></i> Paiement mobile</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         CYCLE DE VIE D'UN PROJET
+    ====================================================================== -->
+    <section class="section section--blanc" id="cycle">
+        <div class="conteneur">
+            <div class="bloc-titre" data-anim="bas">
+                <span class="sur-titre">Méthode de travail</span>
+                <h2 class="titre-section">Le cycle de vie d'un projet d'électrification</h2>
+                <span class="trait-jaune"></span>
+            </div>
+
+            <div class="frise">
+                <article class="frise__item" data-anim="droite">
+                    <span class="frise__point"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i></span>
+                    <span class="frise__annee">Étape 1</span>
+                    <h3 class="frise__titre">Identification et diagnostic</h3>
+                    <p class="frise__texte">
+                        Recensement des localités, évaluation de la demande, analyse des ressources
+                        énergétiques locales et hiérarchisation des priorités en concertation avec
+                        les autorités provinciales.
+                    </p>
+                </article>
+                <article class="frise__item" data-anim="droite" data-anim-delai="80">
+                    <span class="frise__point"><i class="fas fa-compass-drafting" aria-hidden="true"></i></span>
+                    <span class="frise__annee">Étape 2</span>
+                    <h3 class="frise__titre">Études techniques et environnementales</h3>
+                    <p class="frise__texte">
+                        Études de faisabilité, dimensionnement des ouvrages, évaluation des impacts
+                        environnementaux et sociaux, puis élaboration du modèle économique du projet.
+                    </p>
+                </article>
+                <article class="frise__item" data-anim="droite" data-anim-delai="160">
+                    <span class="frise__point"><i class="fas fa-file-signature" aria-hidden="true"></i></span>
+                    <span class="frise__annee">Étape 3</span>
+                    <h3 class="frise__titre">Structuration financière et contractuelle</h3>
+                    <p class="frise__texte">
+                        Mobilisation des financements publics, concessionnels et privés, mise en
+                        concurrence des opérateurs et sécurisation du cadre contractuel d'exploitation.
+                    </p>
+                </article>
+                <article class="frise__item" data-anim="droite" data-anim-delai="240">
+                    <span class="frise__point"><i class="fas fa-helmet-safety" aria-hidden="true"></i></span>
+                    <span class="frise__annee">Étape 4</span>
+                    <h3 class="frise__titre">Exécution et contrôle des travaux</h3>
+                    <p class="frise__texte">
+                        Supervision technique des chantiers, contrôle de la conformité des ouvrages
+                        aux normes en vigueur et vérification des jalons avant tout décaissement.
+                    </p>
+                </article>
+                <article class="frise__item" data-anim="droite" data-anim-delai="320">
+                    <span class="frise__point"><i class="fas fa-arrows-spin" aria-hidden="true"></i></span>
+                    <span class="frise__annee">Étape 5</span>
+                    <h3 class="frise__titre">Exploitation et pérennisation</h3>
+                    <p class="frise__texte">
+                        Transfert de compétences aux opérateurs locaux, suivi de la qualité de
+                        service, accompagnement des usages productifs et évaluation de l'impact
+                        socio-économique.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         IMPACT
+    ====================================================================== -->
+    <section class="section section--bleu" id="impact">
+        <div class="conteneur">
+            <div class="duo">
+                <div class="duo__media" data-anim="gauche">
+                    <img src="./img/energy2.jpg" alt="Installation électrique mise en service dans une localité rurale de la RDC" loading="lazy">
+                </div>
+                <div class="duo__texte" data-anim="droite">
+                    <span class="sur-titre">Impact mesuré</span>
+                    <h2 class="titre-section">L'électricité, levier de développement local</h2>
+                    <span class="trait-jaune"></span>
+                    <p>
+                        Chaque kilowattheure mis à disposition d'une localité rurale se traduit par
+                        des effets tangibles : conservation des vaccins, accouchements sécurisés,
+                        cours du soir, moulins et scieries en activité, commerces ouverts plus
+                        longtemps.
+                    </p>
+                    <ul class="liste-check">
+                        <li>Structures de santé équipées en chaîne du froid et en éclairage opératoire</li>
+                        <li>Établissements scolaires dotés d'un éclairage fiable et d'outils numériques</li>
+                        <li>Unités de transformation agroalimentaire créatrices d'emplois locaux</li>
+                        <li>Réduction de la dépendance aux lampes à pétrole et aux groupes thermiques</li>
+                        <li>Amélioration de la sécurité grâce à l'éclairage public</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         APPEL À L'ACTION
+    ====================================================================== -->
+    <section class="cta">
+        <div class="conteneur cta__contenu" data-anim="zoom">
+            <span class="cta__bande"></span>
+            <h2>Vous portez un projet d'électrification ?</h2>
+            <p>
+                Développeurs de projets, opérateurs, collectivités et bailleurs : l'ANSER
+                accompagne la structuration technique, réglementaire et financière de votre
+                initiative.
+            </p>
+            <div class="groupe-btn">
+                <a href="contact.html" class="btn btn--jaune">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i> Nous soumettre un projet
+                </a>
+                <a href="appels-offres.html" class="btn btn--contour-clair">
+                    <i class="fas fa-gavel" aria-hidden="true"></i> Voir les appels d'offres
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
