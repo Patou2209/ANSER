@@ -5,12 +5,12 @@
 body {
     margin: 0;
     background: white;
-    font-family: "Oswald", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .titre_midle{
     text-align: center;
     font-size: 20px;
-    color: rgb(21, 21, 100);
+    color: var(--bleuDark);
     margin-top: 20px;
 }
 

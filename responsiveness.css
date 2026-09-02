@@ -1,17 +1,5 @@
 @media (max-width: 769px), (max-width: 900px) {
 
-    .top-nav {
-            width: 100%;
-            background: rgb(21, 21, 100);        /* bleu nuit profond, élégant */
-            color: #ffffff;
-            padding: 2px 10px;         /* espacement interne */
-            display: flex;
-            flex-wrap: wrap;            /* responsive : passe sur 2 lignes si besoin */
-            align-items: center;
-            justify-content: space-between;
-
-            
-    }
     .contact-info span, .social-icons a {
         margin-right: 7px;        /* espacement entre les infos */
         font-size: 12px;  

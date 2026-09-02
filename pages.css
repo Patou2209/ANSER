@@ -9,7 +9,8 @@
 ========================================================= */
 
 :root {
-    --anser-bleu: rgb(21, 21, 100);
+    --bleuDark: #253E86;
+    --violet: #662D91;
     --anser-bleu-nuit: #070245;
     --anser-bleu-fonce: #162667;
     --anser-bleu-clair: #073276;
@@ -40,7 +41,7 @@ html {
 }
 
 body {
-    font-family: "Oswald", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background: var(--anser-fond);
     color: #1c1c1c;
     overflow-x: hidden;
@@ -294,35 +295,38 @@ body {
 }
 
 .btn--jaune {
-    background: var(--anser-jaune);
-    color: #171717;
+    background: var(--yellow);
+    color: var(--bleuDark);
+
 }
 
 .btn--jaune:hover {
-    background: var(--anser-jaune-clair);
+    background: var(--bleuDark);
+    color: var(--yellow);
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(255, 212, 0, 0.35);
 }
 
 .btn--bleu {
-    background: var(--anser-bleu);
+    background: var(--bleuDark);
     color: var(--anser-blanc);
 }
 
 .btn--bleu:hover {
-    background: var(--anser-bleu-nuit);
+    background: var(--anser-blanc);
+    color: var(--bleuDark);
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(21, 21, 100, 0.28);
 }
 
 .btn--contour {
     background: transparent;
-    border-color: var(--anser-bleu);
-    color: var(--anser-bleu);
+    border-color: var(--bleuDark);
+    color: var(--bleuDark);
 }
 
 .btn--contour:hover {
-    background: var(--anser-bleu);
+    background: var(--bleuDark);
     color: var(--anser-blanc);
     transform: translateY(-3px);
 }
@@ -1814,7 +1818,7 @@ nav .navigation ul li a.active-tab {
 .chiffres-cles {
     position: relative;
     z-index: 5;
-    margin-top: -72px;
+    margin-top: 20px;
     margin-bottom: 26px;
 }
 
@@ -1853,7 +1857,7 @@ nav .navigation ul li a.active-tab {
     font-size: clamp(28px, 3vw, 38px);
     font-weight: 900;
     line-height: 1;
-    color: var(--anser-bleu);
+    color: var(--violet);
     margin-bottom: 7px;
 }
 
@@ -2632,8 +2636,8 @@ nav.fil-ariane i {
     align-items: center;
     justify-content: center;
     border-radius: 14px;
-    background: var(--anser-bleu);
-    color: var(--anser-jaune);
+    background: var(--bleuDark);
+    color: var(--yellow);
     font-size: 23px;
     transition: transform var(--anser-transition);
 }
@@ -2644,6 +2648,7 @@ nav.fil-ariane i {
 
 .missions-title {
     text-align: left;
+    color: var(--bleuDark);
 }
 
 /* --- Titre intermédiaire du bandeau de projets --- */
