@@ -215,6 +215,7 @@ body {
 .bloc-titre--centre {
     margin-inline: auto;
     text-align: center;
+    color: var(--bleuDark);
 }
 
 .sur-titre {
@@ -223,7 +224,7 @@ body {
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: var(--anser-jaune);
+    color: var(--yellow);
     margin-bottom: 12px;
 }
 
@@ -1919,8 +1920,8 @@ nav .navigation ul li a.active-tab {
     align-items: center;
     justify-content: center;
     border-radius: 14px;
-    background: var(--anser-bleu);
-    color: var(--anser-jaune);
+    background: var(--bleuDark);
+    color: var(--yellow);
     font-size: 22px;
     margin-bottom: 18px;
     transition: transform var(--anser-transition);
@@ -1933,17 +1934,12 @@ nav .navigation ul li a.active-tab {
 .domaine h3 {
     font-size: 19px;
     font-weight: 700;
-    color: var(--anser-bleu);
+    color: var(--bleuDark);
     margin-bottom: 9px;
     line-height: 1.3;
 }
 
-.domaine p {
-    font-size: 15.3px;
-    line-height: 1.68;
-    color: var(--anser-gris);
-    text-align: justify;
-}
+
 
 /* Démarche en étapes */
 .etapes {
@@ -1965,11 +1961,8 @@ nav .navigation ul li a.active-tab {
     left: 30px;
     right: -24px;
     height: 2px;
-    background: repeating-linear-gradient(
-        90deg,
-        rgba(255, 212, 0, 0.7) 0 8px,
-        transparent 8px 16px
-    );
+    background:var(--yellow); 
+    ;
 }
 
 .etape:last-child::before {
@@ -1987,8 +1980,8 @@ nav .navigation ul li a.active-tab {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: var(--anser-jaune);
-    color: var(--anser-bleu);
+    background: var(--yellow);
+    color: var(--bleuDark);
     font-size: 14px;
     font-weight: 900;
     box-shadow: 0 0 0 6px rgba(255, 212, 0, 0.16);
@@ -2390,6 +2383,22 @@ nav.fil-ariane i {
 
 .energy-banner {
     min-height: auto;
+    position: relative;
+    background: url("./img/diagram.png") no-repeat center center;
+    background-size: cover;
+}
+
+.energy-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.89);
+    z-index: 0;
+}
+
+.energy-banner > * {
+    position: relative;
+    z-index: 1;
 }
 
 .banner-container {
@@ -2399,11 +2408,7 @@ nav.fil-ariane i {
     padding-bottom: 110px;
 }
 
-.background-anser {
-    top: 130px;
-    font-size: clamp(120px, 17vw, 260px);
-    letter-spacing: -14px;
-}
+
 
 .banner-top {
     gap: 80px;
@@ -2419,6 +2424,7 @@ nav.fil-ariane i {
     font-size: clamp(24px, 2.9vw, 34px);
     line-height: 1.18;
     margin-bottom: 18px;
+    color: var(--blueDark)!important;
 }
 
 .objective p {
@@ -2441,6 +2447,11 @@ nav.fil-ariane i {
     font-size: 15px;
     margin-bottom: 9px;
 }
+.progress-header span {
+    font-size: 14px;
+    color: var(--blueDark);
+}
+
 
 .energy-banner .progress-bar {
     height: 8px;
@@ -2450,7 +2461,7 @@ nav.fil-ariane i {
 
 .energy-banner .progress-value {
     border-radius: 100px;
-    background: linear-gradient(90deg, var(--anser-jaune), #ffb300);
+    background: linear-gradient(90deg, var(--yellow));
 }
 
 .banner-bottom {
@@ -2477,6 +2488,7 @@ nav.fil-ariane i {
     font-size: clamp(23px, 2.7vw, 32px);
     line-height: 1.18;
     margin-bottom: 14px;
+    color: var(--blueDark)!important;
 }
 
 .vision-content > p {
@@ -2516,13 +2528,14 @@ nav.fil-ariane i {
     font-size: 16.5px;
     line-height: 1.3;
     margin-bottom: 6px;
+    color: var(--blueDark)!important;
 }
 
 .vision-card p {
     font-size: 14.5px;
     line-height: 1.55;
     text-align: left;
-    color: rgba(255, 255, 255, 0.78);
+
 }
 
 /* --- Blocs « projets » --- */
@@ -2547,6 +2560,7 @@ nav.fil-ariane i {
     font-size: clamp(24px, 2.9vw, 34px);
     line-height: 1.18;
     margin-bottom: 16px;
+    color: var(--blueDark);
 }
 
 .projects-text > p {
@@ -2586,6 +2600,10 @@ nav.fil-ariane i {
 .stat h3 {
     font-size: 17px;
     margin-bottom: 8px;
+    color: var(--blueDark);
+}
+.bluedark {
+    color: var(--blueDark)!important;
 }
 
 .stat p {
