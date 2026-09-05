@@ -88,6 +88,9 @@ body {
     z-index: 1200;
     transition: width 0.12s linear;
 }
+h2{
+    color: var(--bluedark);
+}
 
 /* =========================================================
    EN-TÊTE DE PAGE (BANNIÈRE)
