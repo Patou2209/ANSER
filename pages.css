@@ -11,11 +11,11 @@
 :root {
     --bleuDark: #253E86;
     --violet: #662D91;
-    --anser-bleu-nuit: #070245;
-    --anser-bleu-fonce: #162667;
-    --anser-bleu-clair: #073276;
-    --anser-jaune: #ffd400;
-    --anser-jaune-clair: #ffe34f;
+    --anser-bleu-nuit: #253E86;
+    --anser-bleu-fonce: #253E86;
+    --anser-bleu-clair: #253E86;
+    --anser-jaune: #FFF200;
+    --anser-jaune-clair: #FFF200;
     --anser-gris: #514f4f;
     --anser-gris-clair: #7b838a;
     --anser-fond: #f5f5f5;
@@ -206,10 +206,22 @@ body {
 /* =========================================================
    TITRES DE SECTION
 ========================================================= */
-
+h3 {
+    font-size: clamp(22px, 3.1vw, 32px);
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--bleuDark) !important;
+    margin-bottom: 14px;
+}
 .bloc-titre {
     max-width: 760px;
     margin-bottom: 46px;
+}
+blockquote {
+    color: var(--bleuDark)!important;
+}
+figcaption {
+    color: var(--bleuDark)!important;
 }
 
 .bloc-titre--centre {
@@ -1335,14 +1347,14 @@ table.tableau td strong {
     justify-content: center;
     border-radius: 12px;
     background: rgba(21, 21, 100, 0.07);
-    color: var(--anser-bleu);
+    color: var(--bleuDark);
     font-size: 19px;
 }
 
 .coordonnee h3 {
     font-size: 17px;
     font-weight: 700;
-    color: var(--anser-bleu);
+    color: var(--bleuDark);
     margin-bottom: 5px;
 }
 
@@ -1356,7 +1368,7 @@ table.tableau td strong {
 }
 
 .coordonnee a:hover {
-    color: var(--anser-bleu);
+    color: var(--bleuDark);
     text-decoration: underline;
 }
 
@@ -1381,7 +1393,7 @@ table.tableau td strong {
 
 .cta {
     position: relative;
-    background: var(--anser-bleu-nuit);
+    background: var(--bleuDark);
     overflow: hidden;
     padding: 74px 0;
 }
@@ -1434,7 +1446,7 @@ table.tableau td strong {
     left: -2%;
     width: 104%;
     height: 28px;
-    background: var(--anser-jaune);
+    background: var(--yellow);
     transform: rotate(-0.8deg);
 }
 
@@ -1477,18 +1489,18 @@ table.tableau td strong {
     background: var(--anser-blanc);
     font-size: 15.5px;
     font-weight: 600;
-    color: var(--anser-bleu);
+    color: var(--bleuDark);
     white-space: nowrap;
     transition: border-color var(--anser-transition), transform var(--anser-transition);
 }
 
 .jeton-partenaire i {
-    color: var(--anser-jaune);
+    color: var(--yellow);
     font-size: 17px;
 }
 
 .jeton-partenaire:hover {
-    border-color: var(--anser-jaune);
+    border-color: var(--yellow);
     transform: translateY(-3px);
 }
 
@@ -1535,13 +1547,13 @@ table.tableau td strong {
 }
 
 .jauge__tete span:last-child {
-    color: var(--anser-jaune);
+    color: var(--yellow);
 }
 
 .jauge__piste {
     height: 8px;
     border-radius: 100px;
-    background: rgba(21, 21, 100, 0.10);
+    background: var(--bleuDark);
     overflow: hidden;
 }
 
@@ -1553,7 +1565,7 @@ table.tableau td strong {
     height: 100%;
     width: 0;
     border-radius: 100px;
-    background: linear-gradient(90deg, var(--anser-jaune), #ffb300);
+    background: linear-gradient(90deg, var(--yellow), #ffb300);
     transition: width 1.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
