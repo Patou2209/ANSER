@@ -3492,3 +3492,38 @@ button.acc-voir:focus-visible { outline: 3px solid var(--bleuDark); outline-offs
 @media (prefers-reduced-motion: reduce) {
     .acc-popup__cadre, .acc-popup.is-open .acc-popup__cadre { transform: none; }
 }
+
+
+/* =========================================================
+   PAGES LÉGALES (mentions, confidentialité, cookies) — préfixe "leg-"
+========================================================= */
+.leg { display: grid; grid-template-columns: 270px 1fr; gap: 64px; align-items: start; }
+
+.leg__sommaire { position: sticky; top: 110px; padding: 24px; background: #f5f6fa; border-radius: 12px; }
+.leg__sommaire-titre { margin-bottom: 14px; font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--bleuDark); }
+.leg__sommaire ol { list-style: none; max-height: 62vh; overflow: auto; }
+.leg__sommaire a {
+    display: block; padding: 7px 0 7px 14px; border-left: 2px solid transparent;
+    font-size: 14px; line-height: 1.35; color: #444; text-decoration: none;
+    transition: color .25s, border-color .25s, padding .25s;
+}
+.leg__sommaire a:hover { color: var(--bleuDark); }
+.leg__sommaire a.active { color: var(--bleuDark); font-weight: 600; border-left-color: var(--yellow); padding-left: 18px; }
+
+.leg__intro p { margin-bottom: 36px; font-size: 17px; line-height: 1.8; color: #333; text-align: left; }
+.leg__bloc { padding-bottom: 36px; margin-bottom: 36px; border-bottom: 1px solid #e6e6e6; scroll-margin-top: 110px; }
+.leg__bloc:last-child { border-bottom: 0; }
+.leg__bloc h2 { display: flex; align-items: baseline; gap: 14px; margin-bottom: 18px; font-size: clamp(22px, 2.4vw, 28px); font-weight: 700; color: #111; }
+.leg__bloc h2 span { font-size: 15px; font-weight: 800; color: var(--bleuDark); padding-bottom: 2px; border-bottom: 3px solid var(--yellow); }
+.leg__bloc h3 { margin: 24px 0 10px; font-size: 18px; font-weight: 600; color: var(--bleuDark); }
+.leg__bloc p { margin-bottom: 14px; font-size: 16px; line-height: 1.8; color: #444; text-align: left; }
+.leg__bloc ul { margin: 0 0 18px; padding: 0; list-style: none; }
+.leg__bloc li { position: relative; padding: 5px 0 5px 24px; font-size: 16px; line-height: 1.7; color: #444; }
+.leg__bloc li::before { content: ""; position: absolute; left: 4px; top: 15px; width: 8px; height: 8px; background: var(--yellow); border-radius: 50%; box-shadow: 0 0 0 2px #f1e900 inset; }
+.leg__note { padding: 16px 20px; background: #fffde0; border-left: 4px solid var(--yellow); border-radius: 0 8px 8px 0; color: #222 !important; font-weight: 500; }
+
+@media (max-width: 900px) {
+    .leg { grid-template-columns: 1fr; gap: 32px; }
+    .leg__sommaire { position: static; }
+    .leg__sommaire ol { max-height: none; }
+}

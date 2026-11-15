@@ -6,7 +6,7 @@
         const slidesData = [
 
             {
-                image: "./img/Visuel ANSER d’écran site nuit.png",
+                image: "./img/solar.jpg",
 
                 //kicker: "ANSER RDC",
 
@@ -23,7 +23,24 @@
 
 
             {
-                image: "./img/Visuel ANSER d’écran vue .png",
+                image: "./img/power.jpg",
+
+                //kicker: "ACCÈS À L'ÉNERGIE",
+
+                title:
+                    "Nous transformons le quotidien et façonnons l’avenir de toute une nation",
+
+                description:
+                    "Faire de l’électricité un levier concret pour l’inclusion et la croissance, afin que chaque communauté bénéficie et participe pleinement au développement du pays.",
+
+                buttonText: "Découvrir nos actions",
+
+                buttonLink: "#actions"
+            },
+
+
+            {
+                image: "./img/energy2.jpg",
 
                 //kicker: "NOTRE ENGAGEMENT",
 
@@ -40,7 +57,7 @@
 
 
             {
-                image: "./img/Visuel ANSER d’écran DG.png",
+                image: "./img/energy2.jpg",
 
                 //kicker: "NOTRE ENGAGEMENT",
 
@@ -453,7 +470,7 @@
 
         const POPUP_ACCUEIL = {
             actif: true,
-            image: "./img/energy.jpg",     // ← l'image du pop-up
+            image: "./img/popup-accueil.jpg",     // ← l'image du pop-up
             alt: "Information ANSER",
             duree: 3000,                          // visible pendant 3 s (après l'animation d'entrée)
             uneFoisParSession: false              // true = une seule fois par visite
@@ -538,4 +555,24 @@
                         schedule(ENTREE + POPUP_ACCUEIL.duree);
                     }));
             }
+        })();
+
+
+        /* =========================================================
+           PAGES LÉGALES : le sommaire met en avant la section lue
+        ========================================================== */
+        (function () {
+            const links = [...document.querySelectorAll(".leg__sommaire a")];
+            if (!links.length || !("IntersectionObserver" in window)) return;
+
+            const byId = new Map(links.map(a => [a.getAttribute("href").slice(1), a]));
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    links.forEach(a => a.classList.remove("active"));
+                    byId.get(entry.target.id)?.classList.add("active");
+                });
+            }, { rootMargin: "-20% 0px -70% 0px" });
+
+            byId.forEach((_, id) => observer.observe(document.getElementById(id)));
         })();
