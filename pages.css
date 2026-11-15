@@ -3358,3 +3358,80 @@ body {
     .acc-projet { padding: 26px 20px; }
     .acc-projet__pied { flex-direction: column; align-items: flex-start; gap: 16px; }
 }
+
+/* =========================================================
+   ACCUEIL — DIAPORAMA DES PROJETS (pop-up)
+========================================================= */
+button.acc-voir {
+    padding: 0; border: 0; background: none;
+    font: inherit; font-weight: 500; cursor: pointer;
+}
+button.acc-voir:focus-visible { outline: 3px solid var(--bleuDark); outline-offset: 4px; border-radius: 30px; }
+
+/* Centré dans la fenêtre (le reset "* { margin: 0 }" annulait le centrage natif) */
+.acc-galerie {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    --acc-galerie-fit: cover;          /* cover = remplit tout le cadre ; contain = image entière */
+    width: min(460px, 92vw);
+    height: min(640px, 88vh);
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: #0f1d63;
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
+.acc-galerie::backdrop { background: rgba(0, 0, 0, 0.65); }
+.acc-galerie[open] { animation: acc-galerie-in .3s ease; }
+@keyframes acc-galerie-in {
+    from { opacity: 0; transform: translateY(14px) scale(.98); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* L'image est le FOND de la diapo : elle prend exactement la taille du conteneur */
+.acc-galerie__piste {
+    position: absolute; inset: 0;
+    touch-action: pan-y;
+}
+.acc-galerie__diapo {
+    position: absolute; inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--acc-galerie-fit);
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.acc-galerie__diapo.active { opacity: 1; }
+
+/* Croix et flèches posées sur l'image */
+.acc-galerie__fermer {
+    position: absolute; top: 10px; right: 10px; z-index: 3;
+    width: 42px; height: 42px; display: grid; place-items: center;
+    border: 0; border-radius: 50%;
+    background: rgba(15, 29, 99, .6);
+    font-size: 24px; color: var(--yellow); cursor: pointer;
+    transition: transform .25s, background .25s;
+}
+.acc-galerie__fermer:hover { transform: rotate(90deg); background: rgba(15, 29, 99, .9); }
+
+.acc-galerie__fleches {
+    position: absolute; right: 16px; bottom: 16px; z-index: 3;
+    display: flex; gap: 12px;
+}
+.acc-galerie__fleche {
+    width: 40px; height: 40px; display: grid; place-items: center;
+    border: 1px solid rgba(255, 255, 255, .8); border-radius: 50%;
+    background: rgba(15, 29, 99, .6); color: #fff; font-size: 16px; cursor: pointer;
+    transition: background .25s, color .25s, border-color .25s;
+}
+.acc-galerie__fleche:hover { background: var(--yellow); color: #111; border-color: var(--yellow); }
+.acc-galerie__fleches[hidden] { display: none; }
+.acc-galerie__fermer:focus-visible,
+.acc-galerie__fleche:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+    .acc-galerie[open] { animation: none; }
+    .acc-galerie__diapo { transition: none; }
+}

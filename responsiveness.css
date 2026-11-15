@@ -592,3 +592,27 @@
             }
         }
    
+
+
+/* =========================================
+   SÉLECTEUR DE LANGUE — MOBILE
+========================================= */
+@media (max-width: 900px) {
+    nav .navigation {
+        align-items: center;
+        gap: 12px;
+    }
+    .lang-switch__btn {
+        padding: 6px 9px;
+        font-size: 12px;
+    }
+    .lang-switch__menu {
+        top: calc(100% + 8px);
+        right: 0;
+        min-width: 140px;
+    }
+    .lang-switch__menu [role="option"] {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}

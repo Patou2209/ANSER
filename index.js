@@ -395,3 +395,68 @@
         }
 
         
+
+        /* =========================================================
+           SÉLECTEUR DE LANGUE
+           Mémorise le choix et prévient le reste du site via
+           l'événement "anser:langue" (event.detail.lang = "fr" | "en").
+        ========================================================== */
+
+        (function () {
+            const switcher = document.querySelector(".lang-switch");
+            if (!switcher) return;
+
+            const btn     = switcher.querySelector(".lang-switch__btn");
+            const menu    = switcher.querySelector(".lang-switch__menu");
+            const options = [...menu.querySelectorAll("[data-lang]")];
+            const flagEl  = btn.querySelector(".fi");
+            const codeEl  = btn.querySelector(".lang-switch__code");
+            const FLAGS   = { fr: "fi-fr", en: "fi-gb" };
+
+            function toggleMenu(open) {
+                menu.hidden = !open;
+                btn.setAttribute("aria-expanded", String(open));
+            }
+
+            function setLanguage(lang, notify) {
+                if (!FLAGS[lang]) lang = "fr";
+
+                flagEl.className = "fi " + FLAGS[lang] + " lang-switch__flag";
+                codeEl.textContent = lang.toUpperCase();
+                options.forEach(o =>
+                    o.setAttribute("aria-selected", String(o.dataset.lang === lang)));
+                document.documentElement.lang = lang;
+
+                try { localStorage.setItem("anser-langue", lang); } catch (e) {}
+
+                if (notify) {
+                    document.dispatchEvent(
+                        new CustomEvent("anser:langue", { detail: { lang } }));
+                }
+            }
+
+            btn.addEventListener("click", () => toggleMenu(menu.hidden));
+
+            options.forEach(option => {
+                const choose = () => {
+                    setLanguage(option.dataset.lang, true);
+                    toggleMenu(false);
+                    btn.focus();
+                };
+                option.addEventListener("click", choose);
+                option.addEventListener("keydown", e => {
+                    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); choose(); }
+                });
+            });
+
+            document.addEventListener("click", e => {
+                if (!switcher.contains(e.target)) toggleMenu(false);
+            });
+            document.addEventListener("keydown", e => {
+                if (e.key === "Escape") { toggleMenu(false); }
+            });
+
+            let saved = null;
+            try { saved = localStorage.getItem("anser-langue"); } catch (e) {}
+            setLanguage(saved || document.documentElement.lang || "fr", false);
+        })();

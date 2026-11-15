@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css">
     <link rel="icon" type="image/png" href="./img/icone-removebg.png">
 </head>
 
@@ -44,14 +45,23 @@
             <ul>
                 <i id="menu-close" class="fas fa-times" role="button" tabindex="0" aria-label="Fermer le menu"></i>
                 <li><a href="index.html" class="active-tab" aria-current="page">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="appels-offres.html">Appels d'offres</a></li>
-                <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="actualites.html">Actualités</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="lang-switch">
+                <button class="lang-switch__btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Changer de langue">
+                    <span class="fi fi-fr lang-switch__flag" aria-hidden="true"></span>
+                    <span class="lang-switch__code">FR</span>
+                    <i class="fas fa-chevron-down lang-switch__chevron" aria-hidden="true"></i>
+                </button>
+                <div class="lang-switch__menu" role="listbox" aria-label="Langue du site" hidden>
+                    <div role="option" data-lang="fr" aria-selected="true" tabindex="0">
+                        <span class="fi fi-fr" aria-hidden="true"></span> Français
+                    </div>
+                    <div role="option" data-lang="en" aria-selected="false" tabindex="0">
+                        <span class="fi fi-gb" aria-hidden="true"></span> English
+                    </div>
+                </div>
+            </div>
             <img id="menu-btn" src="./img/menu.png" alt="" role="button" tabindex="0" aria-label="Ouvrir le menu">
         </div>
     </nav>
@@ -239,7 +249,10 @@
 
             <div class="acc-projet__pied">
                 <span class="acc-statut">Statut :<i class="fa-solid fa-circle"></i>Opérationnel</span>
-                <a href="#" class="acc-voir">En voir plus <span class="acc-rond" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></a>
+                <button type="button" class="acc-voir"
+                        data-galerie="kamina">
+                    En voir plus <span class="acc-rond" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                </button>
             </div>
         </article>
     </div>
@@ -367,6 +380,24 @@
         <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
+
+    <!-- DIAPORAMA DES PROJETS (ouvert par les boutons [data-galerie]) -->
+    <dialog class="acc-galerie" id="galerieProjet" aria-label="Galerie du projet">
+        <div class="acc-galerie__piste"></div>
+
+        <button type="button" class="acc-galerie__fermer" aria-label="Fermer la galerie">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+
+        <div class="acc-galerie__fleches">
+            <button type="button" class="acc-galerie__fleche" data-sens="-1" aria-label="Image précédente">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="acc-galerie__fleche" data-sens="1" aria-label="Image suivante">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </dialog>
 
     <script src="index.js"></script>
     <script src="pages.js"></script>

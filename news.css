@@ -31,7 +31,7 @@
     background: linear-gradient(to top, rgba(0,0,0,.8) 5%, rgba(0,0,0,.3) 100%);
 }
 .news-card > time,
-.news-card > h3 { position: relative; z-index: 2; color: #fff; }
+.news-card > h3 { position: relative; z-index: 2; color: #fff!important; }
 .news-card time { font-size: 12px; font-weight: 600; }
 .news-card h3 { font-size: 16px; font-weight: 500; line-height: 1.4; margin: 0; }
 .news-card:hover img { transform: scale(1.05); }
