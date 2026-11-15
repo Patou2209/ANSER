@@ -1,0 +1,917 @@
+
+    <main id="contenu-principal">
+
+    <!-- =========================================================
+         DIAPORAMA D'OUVERTURE
+         Les visuels sont définis dans index.js (tableau slidesData).
+    ========================================================== -->
+
+    <section class="hero" aria-label="Présentation de l'ANSER">
+
+        <!-- Les diapositives sont générées par index.js -->
+        <div id="slidesContainer"></div>
+
+        <div class="hero-nav">
+            <div class="arrows">
+                <button class="arrow" id="prevBtn" type="button" aria-label="Diapositive précédente">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button class="arrow" id="nextBtn" type="button" aria-label="Diapositive suivante">
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="dots" id="dotsContainer" aria-label="Navigation entre les diapositives"></div>
+        </div>
+
+        <div class="progress" aria-hidden="true">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CHIFFRES CLÉS
+    ========================================================== -->
+
+    <section class="chiffres-cles" id="chiffres-cles" aria-label="Chiffres clés de l'ANSER">
+        <div class="conteneur">
+            <div class="chiffres-cles__grille" data-anim="bas">
+
+                <article class="chiffre">
+                    <div class="chiffre__icone">
+                        <i class="fas fa-map-location-dot" aria-hidden="true"></i>
+                    </div>
+                    <p class="chiffre__valeur">
+                        <span data-compteur="145">0</span>
+                    </p>
+                    <p class="chiffre__libelle">
+                        Territoires dotés d'un Plan Local d'Électrification
+                    </p>
+                </article>
+
+                <article class="chiffre">
+                    <div class="chiffre__icone">
+                        <i class="fas fa-diagram-project" aria-hidden="true"></i>
+                    </div>
+                    <p class="chiffre__valeur">
+                        <span data-compteur="1100">0</span><span class="suffixe">+</span>
+                    </p>
+                    <p class="chiffre__libelle">
+                        Projets énergétiques recensés sur le territoire national
+                    </p>
+                </article>
+
+                <article class="chiffre">
+                    <div class="chiffre__icone">
+                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                    </div>
+                    <p class="chiffre__valeur">
+                        <span data-compteur="30">0</span><span class="suffixe">&nbsp;MW</span>
+                    </p>
+                    <p class="chiffre__libelle">
+                        Puissance développée en cinq ans d'activité
+                    </p>
+                </article>
+
+                <article class="chiffre">
+                    <div class="chiffre__icone">
+                        <i class="fas fa-people-roof" aria-hidden="true"></i>
+                    </div>
+                    <p class="chiffre__valeur">
+                        <span data-compteur="500">0</span><span class="suffixe">&nbsp;000</span>
+                    </p>
+                    <p class="chiffre__libelle">
+                        Personnes bénéficiaires de l'éclairage public
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         PRÉSENTATION DE L'AGENCE
+    ========================================================== -->
+
+    <section class="about-section" id="apropos" aria-label="Présentation de l'ANSER">
+
+        <div class="about-image" data-anim="gauche">
+            <div class="img1"></div>
+            <div class="img2">
+                <img src="./img/energyback.jpg" alt="Installation énergétique soutenue par l'ANSER">
+            </div>
+        </div>
+
+        <div class="about-content" data-anim="droite">
+            <h3 class="about-title">À propos de l'ANSER</h3>
+            <div class="about-text">
+                <p>
+                    L'Agence Nationale de l'Électrification et des Services Énergétiques
+                    en milieux rural et périurbain (ANSER) est un établissement public
+                    congolais créé par le décret n°&nbsp;16/014 du 21 avril 2016, à la suite
+                    de la libéralisation du secteur de l'électricité instaurée par la loi
+                    n°&nbsp;14/011 du 17 juin 2014. Elle œuvre pour une République Démocratique
+                    du Congo où l'énergie devient un véritable levier de développement,
+                    accessible à chaque foyer, à chaque école et à chaque entreprise.
+                </p>
+                <p>
+                    À travers la planification, le financement et la coordination de projets
+                    structurants, l'ANSER favorise un développement énergétique durable et
+                    inclusif, qui réduit les inégalités territoriales et soutient l'essor
+                    économique local. Grâce à une approche décentralisée organisée en six pools
+                    couvrant les vingt-six provinces du pays, l'Agence mobilise les acteurs
+                    publics et privés et met en œuvre des solutions adaptées aux réalités
+                    locales, afin que chaque communauté puisse bénéficier d'une énergie fiable.
+                </p>
+                <div class="groupe-btn">
+                    <a href="about.html" class="btn btn--bleu">
+                        Découvrir l'Agence <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="projets.html" class="btn btn--contour">
+                        Voir nos projets <i class="fas fa-diagram-project" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         MISSIONS PRINCIPALES
+    ========================================================== -->
+
+    <section class="missions-container" id="missions" aria-label="Missions principales de l'ANSER">
+        <h2 class="missions-title" data-anim="bas">Nos principales missions</h2>
+
+        <div class="missions-grid">
+
+            <article class="mission-card" data-anim="bas" data-anim-delai="0">
+                <div class="mission-icon">
+                    <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                </div>
+                <h3>Planification et programmation</h3>
+                <p>
+                    Élaborer les Plans Locaux d'Électrification des 145 territoires et
+                    coordonner des projets adaptés aux besoins réels de chaque localité,
+                    pour un développement énergétique équilibré.
+                </p>
+                <a href="about.html" class="mission-link">
+                    Lire plus <span class="arrow" aria-hidden="true">&rarr;</span>
+                </a>
+            </article>
+
+            <article class="mission-card" data-anim="bas" data-anim-delai="120">
+                <div class="mission-icon">
+                    <i class="fas fa-hand-holding-dollar" aria-hidden="true"></i>
+                </div>
+                <h3>Financements et investissements</h3>
+                <p>
+                    Mobiliser les ressources publiques, parafiscales et privées, puis
+                    sécuriser les investissements nécessaires à la construction
+                    d'infrastructures électriques durables.
+                </p>
+                <a href="appels-offres.html" class="mission-link">
+                    Lire plus <span class="arrow" aria-hidden="true">&rarr;</span>
+                </a>
+            </article>
+
+            <article class="mission-card" data-anim="bas" data-anim-delai="240">
+                <div class="mission-icon">
+                    <i class="fas fa-plug-circle-bolt" aria-hidden="true"></i>
+                </div>
+                <h3>Fonds national d'électrification</h3>
+                <p>
+                    Administrer le Fonds Mwinda, mécanisme de subventions basées sur les
+                    résultats, afin de rendre l'électricité abordable pour les ménages
+                    ruraux les plus vulnérables.
+                </p>
+                <a href="fonds-mwinda.html" class="mission-link">
+                    Lire plus <span class="arrow" aria-hidden="true">&rarr;</span>
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         DOMAINES D'INTERVENTION
+    ========================================================== -->
+
+    <section class="section section--blanc" id="domaines" aria-label="Domaines d'intervention">
+        <div class="conteneur">
+
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Nos domaines d'intervention</span>
+                <h2 class="titre-section">
+                    Des solutions techniques adaptées à chaque territoire
+                </h2>
+                <div class="trait-jaune"></div>
+                <p class="texte-section">
+                    Il n'existe pas de réponse unique à la question de l'accès à l'énergie.
+                    Selon la densité de population, la ressource disponible et la distance
+                    au réseau existant, l'ANSER retient la technologie la plus pertinente
+                    sur le plan technique comme sur le plan économique.
+                </p>
+            </div>
+
+            <div class="grille grille--3">
+
+                <article class="domaine" data-anim="bas" data-anim-delai="0">
+                    <div class="domaine__icone">
+                        <i class="fas fa-tower-broadcast" aria-hidden="true"></i>
+                    </div>
+                    <h3>Extension de réseaux</h3>
+                    <p>
+                        Raccordement des localités périurbaines situées à proximité des
+                        réseaux existants, par la construction de lignes de moyenne et de
+                        basse tension et l'installation de cabines de transformation.
+                    </p>
+                </article>
+
+                <article class="domaine" data-anim="bas" data-anim-delai="90">
+                    <div class="domaine__icone">
+                        <i class="fas fa-solar-panel" aria-hidden="true"></i>
+                    </div>
+                    <h3>Centrales solaires</h3>
+                    <p>
+                        Déploiement de centrales photovoltaïques couplées à des systèmes de
+                        stockage, particulièrement adaptées aux chefs-lieux de territoire
+                        éloignés de toute infrastructure de production.
+                    </p>
+                </article>
+
+                <article class="domaine" data-anim="bas" data-anim-delai="180">
+                    <div class="domaine__icone">
+                        <i class="fas fa-water" aria-hidden="true"></i>
+                    </div>
+                    <h3>Hydroélectricité rurale</h3>
+                    <p>
+                        Construction et réhabilitation de micro et mini-centrales
+                        hydroélectriques, valorisant le potentiel hydrographique
+                        considérable dont dispose la République Démocratique du Congo.
+                    </p>
+                </article>
+
+                <article class="domaine" data-anim="bas" data-anim-delai="0">
+                    <div class="domaine__icone">
+                        <i class="fas fa-circle-nodes" aria-hidden="true"></i>
+                    </div>
+                    <h3>Mini-réseaux hybrides</h3>
+                    <p>
+                        Mise en place de mini-réseaux combinant plusieurs sources, dont la
+                        principale est renouvelable, pour garantir la continuité du service
+                        électrique dans les zones isolées.
+                    </p>
+                </article>
+
+                <article class="domaine" data-anim="bas" data-anim-delai="90">
+                    <div class="domaine__icone">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                    </div>
+                    <h3>Éclairage public</h3>
+                    <p>
+                        Installation de lampadaires solaires autonomes le long des axes
+                        structurants, améliorant la sécurité des habitants et prolongeant
+                        les heures d'activité économique.
+                    </p>
+                </article>
+
+                <article class="domaine" data-anim="bas" data-anim-delai="180">
+                    <div class="domaine__icone">
+                        <i class="fas fa-house-chimney-window" aria-hidden="true"></i>
+                    </div>
+                    <h3>Solutions individuelles</h3>
+                    <p>
+                        Diffusion de kits solaires domestiques certifiés et de solutions de
+                        cuisson propre et efficace, accompagnée par les subventions du
+                        Fonds Mwinda auprès des ménages à faible revenu.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         BANNIÈRE OBJECTIFS ET VISION
+    ========================================================== -->
+
+    <section class="energy-banner" id="objectifs" aria-label="Objectifs et vision de l'ANSER">
+
+        <div class="background-anser" aria-hidden="true">ANSER</div>
+
+        <div class="banner-container">
+
+            <div class="banner-top">
+
+                <div class="objective" data-anim="gauche">
+                    <h2>
+                        Notre objectif&nbsp;: l'électricité
+                        <br>
+                        pour tous à l'horizon 2050
+                    </h2>
+                    <p>
+                        L'ANSER s'engage à transformer l'accès à l'énergie en République
+                        Démocratique du Congo, en progressant par étapes concrètes vers un
+                        accès universel. Chaque palier, de 2025 à 2050, marque un jalon dans
+                        l'extension de l'électrification, afin que chaque territoire
+                        bénéficie d'une énergie fiable et durable.
+                    </p>
+                </div>
+
+                <div class="progress-container" data-anim="droite">
+
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Pour 2025</span>
+                            <span>30&nbsp;%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-value progress-30"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Pour 2030</span>
+                            <span>52&nbsp;%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-value progress-50"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Pour 2050</span>
+                            <span>100&nbsp;%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-value progress-100"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="banner-bottom">
+
+                <div class="vision-image" data-anim="gauche">
+                    <img src="./img/energy.jpg" alt="Vision énergétique de l'ANSER">
+                </div>
+
+                <div class="vision-content" data-anim="droite">
+
+                    <h2>
+                        Notre vision pour l'énergie et
+                        <br>
+                        l'électrification en RDC
+                    </h2>
+
+                    <p>
+                        L'ANSER aspire à une RDC où l'énergie devient un levier de
+                        développement durable et d'inclusion. Chaque initiative, chaque
+                        projet et chaque partenariat vise à rapprocher l'électricité des
+                        territoires ruraux et périurbains, pour bâtir un avenir prospère
+                        et équitable pour tous.
+                    </p>
+
+                    <div class="vision-cards">
+
+                        <div class="vision-card">
+                            <span class="check" aria-hidden="true">&#10003;</span>
+                            <div>
+                                <h3>Électrification universelle</h3>
+                                <p>Un accès à l'énergie pour tous les territoires.</p>
+                            </div>
+                        </div>
+
+                        <div class="vision-card">
+                            <span class="check" aria-hidden="true">&#10003;</span>
+                            <div>
+                                <h3>Innovation et modernité</h3>
+                                <p>Des solutions modernes pour un réseau fiable.</p>
+                            </div>
+                        </div>
+
+                        <div class="vision-card">
+                            <span class="check" aria-hidden="true">&#10003;</span>
+                            <div>
+                                <h3>Développement durable</h3>
+                                <p>Des infrastructures respectueuses de l'environnement.</p>
+                            </div>
+                        </div>
+
+                        <div class="vision-card">
+                            <span class="check" aria-hidden="true">&#10003;</span>
+                            <div>
+                                <h3>Croissance économique</h3>
+                                <p>Faire de l'énergie un moteur de croissance.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="yellow-bottom" aria-hidden="true"></div>
+    </section>
+
+
+    <!-- =========================================================
+         DÉMARCHE EN QUATRE ÉTAPES
+    ========================================================== -->
+
+    <section class="section section--gris" id="demarche" aria-label="Notre démarche">
+        <div class="conteneur">
+
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Notre méthode de travail</span>
+                <h2 class="titre-section">
+                    De la planification à la mise en service
+                </h2>
+                <div class="trait-jaune"></div>
+                <p class="texte-section">
+                    Chaque projet d'électrification conduit par l'ANSER suit un processus
+                    rigoureux, depuis l'analyse des besoins jusqu'à l'accompagnement des
+                    opérateurs après la mise en service des infrastructures.
+                </p>
+            </div>
+
+            <div class="etapes">
+
+                <article class="etape" data-anim="bas" data-anim-delai="0">
+                    <div class="etape__pastille" aria-hidden="true"></div>
+                    <h3>Planifier</h3>
+                    <p>
+                        Recensement des besoins territoire par territoire, élaboration des
+                        Plans Locaux d'Électrification et constitution du Programme
+                        d'Investissements Prioritaires.
+                    </p>
+                </article>
+
+                <article class="etape" data-anim="bas" data-anim-delai="110">
+                    <div class="etape__pastille" aria-hidden="true"></div>
+                    <h3>Structurer</h3>
+                    <p>
+                        Études techniques et environnementales, choix de la technologie la
+                        plus adaptée, dimensionnement des installations et montage
+                        financier des opérations.
+                    </p>
+                </article>
+
+                <article class="etape" data-anim="bas" data-anim-delai="220">
+                    <div class="etape__pastille" aria-hidden="true"></div>
+                    <h3>Réaliser</h3>
+                    <p>
+                        Lancement des appels d'offres, sélection des opérateurs qualifiés,
+                        exécution des travaux et supervision permanente de la qualité des
+                        ouvrages construits.
+                    </p>
+                </article>
+
+                <article class="etape" data-anim="bas" data-anim-delai="330">
+                    <div class="etape__pastille" aria-hidden="true"></div>
+                    <h3>Pérenniser</h3>
+                    <p>
+                        Mise en service, formation des équipes locales, suivi des
+                        indicateurs de performance et accompagnement des opérateurs dans
+                        la durée du service rendu.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         PROJETS ET STATISTIQUES
+    ========================================================== -->
+
+    <section class="projects-section" id="projets" aria-label="Nos projets d'électrification">
+        <div class="projects-container">
+
+            <div class="projects-text" data-anim="gauche">
+                <h2>Nos projets d'électrification</h2>
+                <p>
+                    L'ANSER mène des projets ambitieux d'électrification rurale et
+                    périurbaine à travers tout le pays. Du déploiement de réseaux
+                    électriques à la construction de centrales solaires et à la
+                    réhabilitation de centrales hydroélectriques, chaque initiative vise à
+                    rapprocher l'énergie des communautés et à soutenir le développement
+                    local.
+                </p>
+
+                <div class="yellow-line"></div>
+
+                <div class="projects-stats">
+
+                    <div class="stat">
+                        <div class="stat-number">
+                            <span data-compteur="500">0</span><span>K</span>
+                        </div>
+                        <h3>Bénéficiaires</h3>
+                        <p>
+                            qui bénéficient déjà d'un accès fiable à l'électricité et à
+                            l'éclairage public.
+                        </p>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-number">
+                            <span data-compteur="65">0</span><span>+</span>
+                        </div>
+                        <h3>Projets lancés</h3>
+                        <p>
+                            à travers le pays pour transformer durablement l'accès à
+                            l'énergie.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="projects-images" data-anim="droite">
+                <div class="yellow-shape" aria-hidden="true"></div>
+                <div class="big-project-image">
+                    <img src="./img/power.jpg" alt="Chantier d'électrification de l'ANSER">
+                </div>
+                <div class="small-project-image">
+                    <img src="./img/solar.jpg" alt="Installation solaire réalisée par l'ANSER">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         PROJETS PHARES (BANDEAU DÉFILANT)
+    ========================================================== -->
+
+    <h3 class="titre_midle" data-anim="bas">Nos projets phares</h3>
+
+    <section class="projects-slider" aria-label="Projets phares de l'ANSER">
+        <div class="projects-track" id="projectsTrack">
+            <!-- Les cartes sont générées par index.js -->
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         LES SIX POOLS D'ÉLECTRIFICATION
+    ========================================================== -->
+
+    <section class="section section--blanc" id="pools" aria-label="Les pools d'électrification">
+        <div class="conteneur">
+
+            <div class="duo">
+
+                <div class="duo__texte" data-anim="gauche">
+                    <span class="sur-titre">Approche décentralisée</span>
+                    <h2>Six pools pour couvrir les vingt-six provinces</h2>
+                    <p>
+                        Afin de rapprocher la décision du terrain, l'ANSER a subdivisé le
+                        territoire national en six pools d'électrification. Chaque pool
+                        dispose d'une équipe chargée d'accompagner techniquement les acteurs
+                        provinciaux, d'actualiser les Plans Locaux d'Électrification et de
+                        veiller à la bonne exécution des chantiers.
+                    </p>
+                    <ul class="liste-check">
+                        <li><i class="fas fa-circle-check" aria-hidden="true"></i> Pool Grand Ouest</li>
+                        <li><i class="fas fa-circle-check" aria-hidden="true"></i> Pool Grand Oriental</li>
+                        <li><i class="fas fa-circle-check" aria-hidden="true"></i> Pool Grand Équateur</li>
+                        <li><i class="fas fa-circle-check" aria-hidden="true"></i> Pool Grand Est</li>
+                        <li><i class="fas fa-circle-check" aria-hidden="true"></i> Pool Grand Kasaï</li>
+                        <li><i class="fas fa-circle-check" aria-hidden="true"></i> Pool Grand Katanga</li>
+                    </ul>
+                    <div class="groupe-btn">
+                        <a href="contact.html" class="btn btn--bleu">
+                            Contacter un pool <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="duo__media" data-anim="droite">
+                    <img src="./img/energy3.jpg" alt="Équipes de l'ANSER sur le terrain">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         FONDS MWINDA
+    ========================================================== -->
+
+    <section class="section section--bleu" id="mwinda" aria-label="Le Fonds Mwinda">
+        <div class="conteneur">
+
+            <div class="duo duo--inverse">
+
+                <div class="duo__media" data-anim="gauche">
+                    <img src="./img/energy1.jpg" alt="Ménage bénéficiaire du Fonds Mwinda">
+                </div>
+
+                <div class="duo__texte" data-anim="droite">
+                    <span class="sur-titre">Financement de l'accès</span>
+                    <h2>Le Fonds Mwinda, un levier financier au service des ménages</h2>
+                    <p>
+                        Créé le 24 novembre 2020 sous l'égide de l'ANSER, le Fonds Mwinda est
+                        un mécanisme de subventions basées sur les résultats. Il soutient à la
+                        fois l'offre et la demande d'électricité, en accordant un subside aux
+                        ménages afin de réduire le coût d'accès aux services énergétiques.
+                    </p>
+                    <p>
+                        Le Fonds cible trois familles de technologies&nbsp;: les solutions
+                        individuelles comme les systèmes solaires domestiques, les
+                        mini-réseaux dont la source principale est renouvelable, et les
+                        solutions de cuisson propre et efficace.
+                    </p>
+                    <div class="groupe-btn">
+                        <a href="fonds-mwinda.html" class="btn btn--jaune">
+                            Découvrir le Fonds Mwinda <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         IMPACT SUR LE DÉVELOPPEMENT
+    ========================================================== -->
+
+    <section class="projects-section" id="impact" aria-label="Notre impact sur le développement">
+        <div class="projects-container">
+
+            <div class="projects-text" data-anim="gauche">
+                <h2>Notre impact sur le développement de la RDC</h2>
+                <p>
+                    L'ANSER joue un rôle majeur dans le développement de la République
+                    Démocratique du Congo. Créée pour accélérer l'accès à l'électricité dans
+                    les zones rurales et périurbaines, elle contribue à réduire les
+                    inégalités entre les centres urbains et les régions longtemps restées à
+                    l'écart du progrès énergétique. Grâce à ses nombreux projets
+                    d'électrification, l'Agence favorise l'amélioration des conditions de vie
+                    de millions de Congolais.
+                </p>
+
+                <div class="yellow-line"></div>
+
+                <div class="projects-stats">
+
+                    <div class="stat">
+                        <div class="stat-number"><span>+</span></div>
+                        <h3>Activités économiques</h3>
+                        <p>
+                            L'électricité stimule l'entrepreneuriat local, la transformation
+                            des produits agricoles et la création de revenus.
+                        </p>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-number"><span>+</span></div>
+                        <h3>Opportunités d'emploi</h3>
+                        <p>
+                            Les infrastructures énergétiques favorisent le développement de
+                            nouveaux métiers et des chaînes de valeur locales.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="projects-images" data-anim="droite">
+                <div class="yellow-shape" aria-hidden="true"></div>
+                <div class="big-project-image">
+                    <img src="./img/energy2.jpg" alt="Infrastructure électrique en milieu rural">
+                </div>
+                <div class="small-project-image">
+                    <img src="./img/energyback.jpg" alt="Activité économique soutenue par l'électricité">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         CITATION INSTITUTIONNELLE
+    ========================================================== -->
+
+    <section class="section section--gris" aria-label="Notre engagement">
+        <div class="conteneur">
+            <figure class="citation" data-anim="zoom">
+                <blockquote>
+                    Dans les zones rurales, le taux d'électrification est d'environ un pour
+                    cent. Le défi à relever d'ici 2030 consiste à porter ce taux à
+                    cinquante-deux pour cent&nbsp;: nous savons désormais comment procéder,
+                    territoire par territoire.
+                </blockquote>
+                <figcaption>
+                    Direction générale de l'ANSER
+                    <span>Bilan des cinq premières années d'activité, juillet 2025</span>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         DERNIÈRES ACTUALITÉS
+    ========================================================== -->
+
+    <section class="section section--blanc" id="actualites" aria-label="Dernières actualités">
+        <div class="conteneur">
+
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Actualités</span>
+                <h2 class="titre-section">Les dernières informations de l'Agence</h2>
+                <div class="trait-jaune"></div>
+                <p class="texte-section">
+                    Suivez l'avancement de nos chantiers, les lancements d'appels à projets
+                    et les partenariats noués pour accélérer l'électrification du pays.
+                </p>
+            </div>
+
+            <div class="articles-grille">
+
+                <article class="article-carte" data-anim="bas" data-anim-delai="0">
+                    <div class="article-carte__media">
+                        <img src="./img/solar.jpg" alt="Lancement du premier appel à projets du Fonds Mwinda">
+                        <span class="article-carte__categorie">Financement</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                            17 septembre 2025
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Lancement du premier appel à projets du Fonds Mwinda
+                        </h3>
+                        <p class="article-carte__extrait">
+                            L'ANSER a officiellement lancé le premier appel à projets du Fonds
+                            Mwinda, destiné à accélérer l'électrification rurale et périurbaine
+                            au moyen de solutions solaires décentralisées, de mini-réseaux et de
+                            solutions de cuisson propre.
+                        </p>
+                        <a href="actualites.html" class="carte__lien">
+                            Lire l'article <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-anim="bas" data-anim-delai="120">
+                    <div class="article-carte__media">
+                        <img src="./img/power.jpg" alt="Bilan des cinq années d'activité de l'ANSER">
+                        <span class="article-carte__categorie">Institution</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                            20 juillet 2025
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Cinq ans d'activité&nbsp;: trente mégawatts réalisés et un cap fixé à 2030
+                        </h3>
+                        <p class="article-carte__extrait">
+                            À l'occasion du cinquième anniversaire de son opérationnalisation,
+                            l'Agence a présenté un bilan de trente mégawatts développés et
+                            annoncé son ambition d'atteindre cinquante-deux pour cent d'accès en
+                            milieu rural à l'horizon 2030.
+                        </p>
+                        <a href="actualites.html" class="carte__lien">
+                            Lire l'article <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-carte" data-anim="bas" data-anim-delai="240">
+                    <div class="article-carte__media">
+                        <img src="./img/energy2.jpg" alt="Projets de l'ANSER en phase d'inauguration">
+                        <span class="article-carte__categorie">Projets</span>
+                    </div>
+                    <div class="article-carte__corps">
+                        <p class="article-carte__date">
+                            <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                            11 mars 2025
+                        </p>
+                        <h3 class="article-carte__titre">
+                            Vingt-deux projets d'électrification en phase d'inauguration
+                        </h3>
+                        <p class="article-carte__extrait">
+                            Sur les quarante-neuf projets retenus dans le Programme
+                            d'Investissements Prioritaires, vingt-deux sont achevés et entrent
+                            en phase d'inauguration, tandis que les autres poursuivent leur
+                            exécution sur le terrain.
+                        </p>
+                        <a href="actualites.html" class="carte__lien">
+                            Lire l'article <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="groupe-btn" style="justify-content: center; margin-top: 40px;" data-anim="bas">
+                <a href="actualites.html" class="btn btn--contour">
+                    Toutes les actualités <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         PARTENAIRES
+    ========================================================== -->
+
+    <section class="section section--gris" id="partenaires" aria-label="Nos partenaires">
+        <div class="conteneur">
+            <div class="bloc-titre bloc-titre--centre" data-anim="bas">
+                <span class="sur-titre">Écosystème</span>
+                <h2 class="titre-section">Nos partenaires institutionnels et financiers</h2>
+                <div class="trait-jaune"></div>
+                <p class="texte-section">
+                    L'ANSER travaille avec les institutions nationales, les partenaires
+                    techniques et financiers ainsi que les investisseurs privés pour
+                    accélérer l'électrification des milieux rural et périurbain.
+                </p>
+            </div>
+        </div>
+
+        <div class="bandeau-partenaires" data-anim="fondu">
+            <div class="bandeau-partenaires__piste">
+                <span class="jeton-partenaire"><i class="fas fa-landmark" aria-hidden="true"></i> Ministère des Ressources Hydrauliques et Électricité</span>
+                <span class="jeton-partenaire"><i class="fas fa-building-columns" aria-hidden="true"></i> Ministère des Finances</span>
+                <span class="jeton-partenaire"><i class="fas fa-scale-balanced" aria-hidden="true"></i> Autorité de Régulation (ARE)</span>
+                <span class="jeton-partenaire"><i class="fas fa-bolt" aria-hidden="true"></i> SNEL</span>
+                <span class="jeton-partenaire"><i class="fas fa-globe" aria-hidden="true"></i> Banque Mondiale</span>
+                <span class="jeton-partenaire"><i class="fas fa-earth-africa" aria-hidden="true"></i> Banque Africaine de Développement</span>
+                <span class="jeton-partenaire"><i class="fas fa-handshake" aria-hidden="true"></i> Power Africa</span>
+                <span class="jeton-partenaire"><i class="fas fa-seedling" aria-hidden="true"></i> PNUD</span>
+                <span class="jeton-partenaire"><i class="fas fa-graduation-cap" aria-hidden="true"></i> INPP</span>
+                <span class="jeton-partenaire"><i class="fas fa-chart-line" aria-hidden="true"></i> ANAPI</span>
+
+                <span class="jeton-partenaire"><i class="fas fa-landmark" aria-hidden="true"></i> Ministère des Ressources Hydrauliques et Électricité</span>
+                <span class="jeton-partenaire"><i class="fas fa-building-columns" aria-hidden="true"></i> Ministère des Finances</span>
+                <span class="jeton-partenaire"><i class="fas fa-scale-balanced" aria-hidden="true"></i> Autorité de Régulation (ARE)</span>
+                <span class="jeton-partenaire"><i class="fas fa-bolt" aria-hidden="true"></i> SNEL</span>
+                <span class="jeton-partenaire"><i class="fas fa-globe" aria-hidden="true"></i> Banque Mondiale</span>
+                <span class="jeton-partenaire"><i class="fas fa-earth-africa" aria-hidden="true"></i> Banque Africaine de Développement</span>
+                <span class="jeton-partenaire"><i class="fas fa-handshake" aria-hidden="true"></i> Power Africa</span>
+                <span class="jeton-partenaire"><i class="fas fa-seedling" aria-hidden="true"></i> PNUD</span>
+                <span class="jeton-partenaire"><i class="fas fa-graduation-cap" aria-hidden="true"></i> INPP</span>
+                <span class="jeton-partenaire"><i class="fas fa-chart-line" aria-hidden="true"></i> ANAPI</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         APPEL À L'ACTION
+    ========================================================== -->
+
+    <section class="cta" aria-label="Nous rejoindre">
+        <div class="conteneur">
+            <div class="cta__contenu" data-anim="bas">
+                <h2>Construisons ensemble l'accès universel à l'énergie</h2>
+                <p>
+                    Opérateur du secteur, investisseur, collectivité ou partenaire technique&nbsp;:
+                    l'ANSER vous accompagne dans le développement de projets d'électrification
+                    en milieux rural et périurbain. Échangeons sur vos besoins et vos projets.
+                </p>
+                <div class="groupe-btn">
+                    <a href="contact.html" class="btn btn--jaune">
+                        Nous contacter <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="appels-offres.html" class="btn btn--contour-clair">
+                        Consulter les appels d'offres <i class="fas fa-file-signature" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cta__bande" aria-hidden="true"></div>
+    </section>
+
+    </main>

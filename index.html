@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSER — L'électricité pour tous en République Démocratique du Congo</title>
+    <meta name="description" content="L'Agence Nationale de l'Électrification et des Services Énergétiques en milieux rural et périurbain (ANSER) planifie, finance et coordonne l'électrification des territoires ruraux et périurbains de la RDC.">
+    <meta name="theme-color" content="#151564">
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="track.css">
+    <link rel="stylesheet" href="responsiveness.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="./news.css">
+
+    <!-- Polices et icônes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="./img/icone-removebg.png">
+</head>
+
+<body>
+
+    <!-- Barre de progression de lecture -->
+    <div class="barre-lecture" aria-hidden="true"></div>
+
+    <!-- =========================================================
+         BARRE SUPÉRIEURE — contact rapide et réseaux sociaux
+         (identique sur toutes les pages)
+    ========================================================== -->
+
+
+    <!-- =========================================================
+         NAVIGATION PRINCIPALE (identique sur toutes les pages)
+    ========================================================== -->
+    <nav id="navigation-principale" aria-label="Navigation principale">
+        <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+            <img src="./img/logo_yellow_white-removebg-preview.png" alt="Logo de l'ANSER">
+        </a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times" role="button" tabindex="0" aria-label="Fermer le menu"></i>
+                <li><a href="index.html" class="active-tab" aria-current="page">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="appels-offres.html">Appels d'offres</a></li>
+                <li><a href="fonds-mwinda.html">Fonds Mwinda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="./img/menu.png" alt="" role="button" tabindex="0" aria-label="Ouvrir le menu">
+        </div>
+    </nav>
+
+
+    <main id="contenu-principal">
+
+    <!-- =========================================================
+         DIAPORAMA D'OUVERTURE
+         Les visuels sont définis dans index.js (tableau slidesData).
+    ========================================================== -->
+
+    <section class="hero" aria-label="Présentation de l'ANSER">
+
+        <!-- Les diapositives sont générées par index.js -->
+        <div id="slidesContainer"></div>
+
+        <div class="hero-nav">
+            <div class="arrows">
+                <button class="arrow" id="prevBtn" type="button" aria-label="Diapositive précédente">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button class="arrow" id="nextBtn" type="button" aria-label="Diapositive suivante">
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="dots" id="dotsContainer" aria-label="Navigation entre les diapositives"></div>
+        </div>
+
+        <div class="progress" aria-hidden="true">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CHIFFRES CLÉS
+    ========================================================== -->
+
+    <section class="chiffres-cles" id="chiffres-cles" aria-label="Chiffres clés de l'ANSER">
+        <div class="conteneur">
+            <div class="chiffres-cles__grille" data-anim="bas">
+
+                <article class="chiffre">
+                    <div class="chiffre__icone">
+                        <i class="fas fa-map-location-dot" aria-hidden="true"></i>
+                    </div>
+                    <p class="chiffre__valeur">
+                        <span data-compteur="65">0</span>
+                    </p>
+                    <p class="chiffre__libelle">
+                        Projets déployés
+                    </p>
+                </article>
+
+                <article class="chiffre">
+                    <div class="chiffre__icone">
+                        <i class="fas fa-diagram-project" aria-hidden="true"></i>
+                    </div>
+                    <p class="chiffre__valeur">
+                        <span data-compteur="75">0</span>
+                    </p>
+                    <p class="chiffre__libelle">
+                        Centrales électriques installées
+                    </p>
+                </article>
+
+                <article class="chiffre">
+                    <div class="chiffre__icone">
+                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                    </div>
+                    <p class="chiffre__valeur">
+                        <span data-compteur="41">0</span><span class="suffixe">&nbsp;MW</span>
+                    </p>
+                    <p class="chiffre__libelle">
+                        Puissance électrique installée
+                    </p>
+                </article>
+
+                <article class="chiffre">
+                    <div class="chiffre__icone">
+                        <i class="fas fa-people-roof" aria-hidden="true"></i>
+                    </div>
+                    <p class="chiffre__valeur">
+                        <span data-compteur="612">0</span><span class="suffixe">&nbsp;330</span>
+                    </p>
+                    <p class="chiffre__libelle">
+                        Ménages impactés
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         PRÉSENTATION DE L'AGENCE
+    ========================================================== -->
+
+   <section class="message-dg">
+    <div class="message-dg__image">
+        <img src="./img/placeholder.png" alt="Cyprien N. Musimar, Directeur général d'ANSER">
+    </div>
+
+    <div class="message-dg__content">
+        <h2>Éclairer l'avenir de la RDC</h2>
+
+        <figure class="quote">
+            <span class="quote__mark" aria-hidden="true">“</span>
+
+            <blockquote>
+                <p>
+                    L'accès à une énergie propre, accessible et durable n'est plus
+                    un luxe mais un droit fondamental et un moteur incontournable
+                    du développement de nos territoires. ANSER s'engage fermement
+                    à réduire la fracture énergétique entre nos villes et nos
+                    campagnes, en valorisant le formidable potentiel renouvelable
+                    de la République Démocratique du Congo.
+                </p>
+            </blockquote>
+
+            <figcaption>
+                <strong>Cyprien N. Musimar</strong>
+                <span>Directeur général</span>
+            </figcaption>
+        </figure>
+    </div>
+</section>
+
+
+<!-- ============ MISSIONS ============ -->
+<section class="acc-section" id="missions">
+    <div class="acc-head">
+        <h2>Nos missions<br>principales</h2>
+        <p>Concevoir, mettre en œuvre et suivre les programmes d’électrification rurale sur tout le territoire national.</p>
+    </div>
+
+    <div class="acc-missions">
+        <article class="acc-mission acc-mission--vedette">
+            <div class="acc-mission__icone"><i class="fa-solid fa-calendar-check"></i></div>
+            <h3>Planification et programmation</h3>
+            <p>Planifier et coordonner les projets d’électrification en tenant compte des besoins locaux pour favoriser un développement territorial équilibré.</p>
+        </article>
+
+        <article class="acc-mission">
+            <div class="acc-mission__icone"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <h3>Financement et investissement</h3>
+            <p>Soutenir le financement des projets d’électrification afin de favoriser l’accès à l’énergie dans les zones rurales et périurbaines congolaises.</p>
+        </article>
+
+        <article class="acc-mission">
+            <div class="acc-mission__icone"><i class="fa-solid fa-coins"></i></div>
+            <h3>Mobiliser et gérer les ressources</h3>
+            <p>Mobiliser des financements à travers le Fonds Mwinda et encourager les investissements privés dans les infrastructures énergétiques.</p>
+        </article>
+    </div>
+</section>
+
+<!-- ============ ŒUVRES ============ -->
+<section class="acc-section" id="oeuvres">
+    <div class="acc-head">
+        <h2>Découvrez nos œuvres</h2>
+    </div>
+
+    <div class="acc-oeuvres">
+        <div class="acc-carte">
+            <img src="./img/carte-rdc.png" alt="Carte de la RDC divisée en pools régionaux">
+        </div>
+
+        <article class="acc-projet">
+            <span class="acc-badge">Projet réalisé</span>
+            <h3>Micro-centrale hydroélectrique de Kamina</h3>
+            <p>Inauguration de la mini-centrale au fil de l’eau avec extension du réseau de distribution basse tension.</p>
+
+            <table class="acc-table">
+                <tr><td>Impact bénéficiaires</td><td><i class="fa-solid fa-user acc-ico-users"></i>95.000 habitants</td></tr>
+                <tr><td>Gestionnaire / Opérateur</td><td>ANSER – Filiale Sud</td></tr>
+                <tr><td>Capacité installée</td><td><i class="fa-solid fa-bolt acc-ico-bolt"></i>8,2 MW</td></tr>
+                <tr><td>Province</td><td>Haut-Lomami</td></tr>
+                <tr><td>Site / Territoire</td><td>Kamina / Bukama</td></tr>
+                <tr><td>Pool régional</td><td>Pool Grand Katanga</td></tr>
+            </table>
+
+            <div class="acc-projet__pied">
+                <span class="acc-statut">Statut :<i class="fa-solid fa-circle"></i>Opérationnel</span>
+                <a href="#" class="acc-voir">En voir plus <span class="acc-rond" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- ============ TÉMOIGNAGE ============ -->
+<section class="acc-section" id="temoignages">
+    <div class="acc-head">
+        <h2>Votre expérience compte,<br>partagez-la !</h2>
+        <a href="#" class="btn btn--jaune"><i class="fa-regular fa-paper-plane"></i> Partager mon témoignage</a>
+    </div>
+
+    <div class="acc-temoignage">
+        <div class="acc-temoignage__texte">
+            <p>Derrière chaque projet d’électrification se trouvent des histoires, des expériences et des changements vécus au quotidien par les communautés. Vous avez bénéficié d’un projet soutenu par l’ANSER ? Votre témoignage nous intéresse !</p>
+            <p>Racontez-nous comment l’accès à l’électricité a transformé votre quotidien, facilité vos activités ou créé de nouvelles opportunités pour vous et votre communauté. En partageant votre expérience, vous contribuez à mettre en lumière les réalités du terrain et à faire connaître l’impact concret de l’électrification à travers la RDC.</p>
+        </div>
+        <div class="acc-temoignage__img">
+            <img src="./img/temoignage.jpg" alt="Village électrifié la nuit grâce à un lampadaire solaire">
+        </div>
+    </div>
+</section>
+
+<!-- ============ ACTUALITÉS ============ -->
+<section class="acc-section" id="actualites" style="padding-bottom: 80px;">
+    <div class="acc-head">
+        <h2>Nos actualités</h2>
+        <a href="actualites.html" class="btn btn--jaune">En voir plus</a>
+    </div>
+
+    <!-- Les 3 plus récentes, injectées par news.js -->
+    <div class="news-grid" id="newsGrid" data-limit="3"></div>
+</section>
+
+
+
+
+    </main>
+    <!-- =========================================================
+         PIED DE PAGE (identique sur toutes les pages)
+    ========================================================== -->
+    <footer>
+        <section id="footer">
+
+            <div class="footer-col">
+                <img src="./img/logo_yellow_white-removebg-preview.png" alt="Logo de l'ANSER">
+                <p style="color: white; font-size: small;">Agence Nationale d'Électrification et des Services Énergétiques en Milieux Rural et Périurbain. <br> Établissement public de la RDC. </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="index.html#temoignages">Témoignages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Pools régionaux</h3>
+                <ul>
+                    <li><a href="#">Pool Grand Ouest</a></li>
+                    <li><a href="#">Pool Grand Équateur</a></li>
+                    <li><a href="#">Pool Grand Oriental</a></li>
+                    <li><a href="#">Pool Grand Kasaï</a></li>
+                    <li><a href="#">Pool Grand Est</a></li>
+                    <li><a href="#">Pool Grand Katanga</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Coordonnées</h3>
+                <ul>
+                    <li>Siège social de l'ANSER, Kinshasa, RDC<br>
+                        Bâtiment Orgamane, 4845,<br>
+                        avenue Lukusa, commune de la Gombe</li>
+                    <li><a href="tel:+243810111171">+243 810 111 171</a></li>
+                    <li><a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></li>
+                </ul>
+                <div class="footer-boutons">
+                    <a class="footer-bouton" href="https://wa.me/243810111171"
+                       target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                    </a>
+                    <a class="footer-bouton footer-bouton--contour" href="mailto:anser@anser.gouv.cd">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Courriel
+                    </a>
+                </div>
+            </div>
+
+           
+
+            <div class="copyright">
+                <p class="technoweb">
+                    &copy; <span data-annee>2026</span> site officiel de ANSER RDC<br>
+                    Tous droits réservés.
+                </p>
+                
+                 <div class="pro-links">
+                <a href="#" style="color: white; font-size: small; padding: 5px;">Mentions légales</a>
+                <a href="#" style="color: white; font-size: small; padding: 5px;">Politique de cookies</a>
+                <a href="#" style="color: white; font-size: small; padding: 5px;">Politique de confidentialité</a>   
+            </div>
+                <div class="pro-links">
+                    <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                        <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bouton de retour en haut de page -->
+    <button class="retour-haut" type="button" aria-label="Revenir en haut de la page">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+
+    <script src="index.js"></script>
+    <script src="pages.js"></script>
+    <script src="./news.js"></script>
+</body>
+</html>

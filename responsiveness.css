@@ -1,0 +1,594 @@
+@media (max-width: 769px), (max-width: 900px) {
+
+    .contact-info span, .social-icons a {
+        margin-right: 7px;        /* espacement entre les infos */
+        font-size: 12px;  
+    }
+
+    nav{
+        padding: 8px 20px ;
+        height: 50px;
+        justify-content: space-between;
+        
+    }
+    nav img{
+        width: 70px;
+        height: 40px;
+    }
+    #menu-btn{
+        display: initial;
+        color: white;
+        background-color:var(--yellow);
+        border-radius: 50%;
+        padding: 5px;
+    }
+    #menu-close{
+        display: initial;
+        font-size: 1.6rem;
+        color: white;
+        padding: 10px 0 10px 20px;
+    }
+    nav .navigation ul {
+        position: fixed;
+        top: 0;
+        width: 220px;
+        right: -220px;
+        display: flex;
+        background-color: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 1s ease;
+        z-index: 999;
+    }
+    nav .navigation.active ul {
+    right: 0;
+    }
+    nav .navigation ul li {
+        margin-left:0;
+        padding: 20px 0 20px 40px;
+    }
+    nav .navigation ul li a {
+        color: white;
+    }
+    nav{
+        background-color: transparent;
+    }
+
+    .about-section{
+        flex-direction: column;
+    }
+    .about-content{
+        width: 100%;
+        padding: 0;
+    }
+    .about-image{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+    
+
+    /* Footer responsiveness */
+    .footer-col img{
+        width: 120px;
+    }
+}
+
+/* Correctif mobile : s'assurer que le texte et les boutons du hero sont visibles */
+@media (max-width: 768px) {
+    .hero-kicker,
+    .hero-title,
+    .hero-description,
+    .hero-button {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+        visibility: visible !important;
+    }
+
+    .hero-content {
+        z-index: 30; /* au-dessus des éventuels overlays/menus */
+    }
+}
+
+ @media (max-width: 992px) {
+            .missions-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .missions-container {
+                padding: 2rem 1.2rem;
+            }
+
+            .missions-title {
+                font-size: 1.8rem;
+            }
+
+            .missions-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .mission-card {
+                padding: 1.8rem 1.2rem;
+            }
+
+            .mission-icon {
+                width: 44px;
+                height: 44px;
+            }
+
+            .mission-card h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .missions-title {
+                font-size: 1.5rem;
+            }
+        }
+
+
+        /* =========================================
+   SECTION PROJETS
+========================================= */
+
+.projects-section {
+    width: 100%;
+
+    background: white;
+
+    padding: 25px 0 40px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTENEUR PRINCIPAL
+========================================= */
+
+.projects-container {
+
+    width: 620px;
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 55px;
+}
+
+
+/* =========================================
+   PARTIE TEXTE
+========================================= */
+
+.projects-text {
+
+    width: 275px;
+
+    flex-shrink: 0;
+}
+
+.projects-text h2 {
+
+    margin: 0 0 12px;
+
+    font-size: 21px;
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    color: rgb(21, 21, 100);
+}
+
+
+.projects-text > p {
+
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #514f4f;
+}
+
+
+/* =========================================
+   LIGNE JAUNE
+========================================= */
+
+.yellow-line {
+
+    width: 220px;
+
+    height: 1px;
+
+    background: #ffd400;
+
+    margin-top: 17px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   STATISTIQUES
+========================================= */
+
+.projects-stats {
+
+    display: flex;
+
+    gap: 35px;
+}
+
+
+.stat {
+
+    width: 90px;
+}
+
+
+.stat-number {
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    color: rgb(21, 21, 100);
+
+    margin-bottom: 5px;
+}
+
+
+.stat-number span {
+
+    color: #ffd400;
+
+    font-size: 20px;
+}
+
+
+.stat h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    color: rgb(21, 21, 100);
+}
+
+
+.stat p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.2;
+
+    color: #514f4f;
+}
+
+
+/* =========================================
+   ZONE IMAGES
+========================================= */
+
+.projects-images {
+
+    position: relative;
+
+    width: 305px;
+
+    height: 300px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   BANDE JAUNE
+========================================= */
+
+.yellow-shape {
+
+    position: absolute;
+
+    left: 87px;
+
+    top: 20px;
+
+    width: 25px;
+
+    height: 255px;
+
+    background: #ffd400;
+
+    border-radius: 12px;
+
+    z-index: 0;
+}
+
+
+/* =========================================
+   GRANDE IMAGE
+========================================= */
+
+.big-project-image {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 205px;
+
+    height: 295px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    z-index: 2;
+}
+
+
+.big-project-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   PETITE IMAGE
+========================================= */
+
+.small-project-image {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 80px;
+
+    width: 165px;
+
+    height: 180px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    z-index: 3;
+}
+
+
+.small-project-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .projects-section {
+
+        padding: 50px 0;
+    }
+
+
+    .projects-container {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 0 25px;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 50px;
+    }
+
+
+    .projects-text {
+
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+
+    .projects-text h2 {
+
+        font-size: 28px;
+    }
+
+
+    .projects-text > p {
+
+        font-size: 12px;
+
+        line-height: 1.4;
+    }
+
+
+    .yellow-line {
+
+        width: 100%;
+    }
+
+
+    .projects-stats {
+
+        gap: 50px;
+    }
+
+
+    .stat {
+
+        width: 120px;
+    }
+
+
+    .stat-number {
+
+        font-size: 35px;
+    }
+
+
+    .stat-number span {
+
+        font-size: 22px;
+    }
+
+
+    .stat h3 {
+
+        font-size: 14px;
+    }
+
+
+    .stat p {
+
+        font-size: 9px;
+    }
+
+
+    .projects-images {
+
+        width: 100%;
+
+        max-width: 360px;
+
+        height: 340px;
+    }
+
+
+    .big-project-image {
+
+        width: 225px;
+
+        height: 320px;
+    }
+
+
+    .small-project-image {
+
+        width: 180px;
+
+        height: 195px;
+
+        top: 90px;
+    }
+
+
+    .yellow-shape {
+
+        left: 95px;
+
+        height: 275px;
+    }
+
+}
+@media (max-width: 768px) {
+            
+            .hero {
+                height: 550px;
+            }
+
+            .hero-content {
+                width: 88%;
+                padding-bottom: 70px;
+            }
+            .hero-image {
+                object-fit: cover;
+            }
+
+            .hero-content-inner {
+                max-width: 100%;
+            }
+
+            .hero-title {
+                font-size: 22px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+                line-height: 1.5;
+            }
+
+            .hero-nav {
+                width: 88%;
+                bottom: 25px;
+            }
+
+            .arrow {
+                width: 40px;
+                height: 40px;
+            }
+            .maintenance{
+                background-size: 80%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-slide,
+            .hero-image,
+            .hero-overlay,
+            .hero-button {
+                transition: none;
+            }
+
+            .hero-kicker,
+            .hero-title,
+            .hero-description,
+            .hero-button {
+                animation: none !important;
+                opacity: 1;
+                transform: none;
+            }
+
+            .progress-bar.running {
+                animation: none;
+            }
+        }
+   
