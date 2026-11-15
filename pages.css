@@ -3435,3 +3435,60 @@ button.acc-voir:focus-visible { outline: 3px solid var(--bleuDark); outline-offs
     .acc-galerie[open] { animation: none; }
     .acc-galerie__diapo { transition: none; }
 }
+
+
+/* =========================================================
+   ACCUEIL — POP-UP D'OUVERTURE (image + croix, disparition auto)
+========================================================= */
+.acc-popup {
+    position: fixed; inset: 0; z-index: 10000;
+    display: grid; place-items: center;
+    background: rgba(0, 0, 0, 0);
+    visibility: hidden;
+    transition: background-color .6s ease, visibility 0s linear .6s;
+}
+.acc-popup.is-open {
+    background: rgba(0, 0, 0, .6);
+    visibility: visible;
+    transition: background-color .6s ease, visibility 0s;
+}
+
+.acc-popup__cadre {
+    position: relative;
+    width: min(460px, 90vw);
+    aspect-ratio: 1 / 1;
+    max-height: 86vh;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #0f1d63;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .45);
+    opacity: 0;
+    transform: translateY(22px) scale(.94);
+    transition: opacity .5s ease, transform .5s ease;
+    will-change: opacity, transform;
+}
+.acc-popup.is-open .acc-popup__cadre {
+    opacity: 1;
+    transform: none;
+    transition: opacity .6s cubic-bezier(.22, 1, .36, 1), transform .7s cubic-bezier(.22, 1, .36, 1);
+}
+
+.acc-popup__cadre img {
+    display: block; width: 100%; height: 100%;
+    object-fit: cover;               /* l'image remplit tout le cadre */
+}
+
+.acc-popup__fermer {
+    position: absolute; top: 10px; right: 10px;
+    width: 42px; height: 42px; display: grid; place-items: center;
+    border: 0; border-radius: 50%;
+    background: rgba(15, 29, 99, .6);
+    font-size: 24px; color: var(--yellow); cursor: pointer;
+    transition: transform .3s ease, background .3s ease;
+}
+.acc-popup__fermer:hover { transform: rotate(90deg); background: rgba(15, 29, 99, .9); }
+.acc-popup__fermer:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+    .acc-popup__cadre, .acc-popup.is-open .acc-popup__cadre { transform: none; }
+}
