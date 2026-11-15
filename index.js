@@ -6,7 +6,7 @@
         const slidesData = [
 
             {
-                image: "./img/solar.jpg",
+                image: "./img/Visuel ANSER d’écran site nuit.png",
 
                 //kicker: "ANSER RDC",
 
@@ -23,24 +23,7 @@
 
 
             {
-                image: "./img/power.jpg",
-
-                //kicker: "ACCÈS À L'ÉNERGIE",
-
-                title:
-                    "Nous transformons le quotidien et façonnons l’avenir de toute une nation",
-
-                description:
-                    "Faire de l’électricité un levier concret pour l’inclusion et la croissance, afin que chaque communauté bénéficie et participe pleinement au développement du pays.",
-
-                buttonText: "Découvrir nos actions",
-
-                buttonLink: "#actions"
-            },
-
-
-            {
-                image: "./img/energy2.jpg",
+                image: "./img/Visuel ANSER d’écran vue .png",
 
                 //kicker: "NOTRE ENGAGEMENT",
 
@@ -57,7 +40,7 @@
 
 
             {
-                image: "./img/energy2.jpg",
+                image: "./img/Visuel ANSER d’écran DG.png",
 
                 //kicker: "NOTRE ENGAGEMENT",
 
