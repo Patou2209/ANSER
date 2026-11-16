@@ -6,7 +6,7 @@
         const slidesData = [
 
             {
-                image: "./img/Visuel ANSER d’écran vue .png",
+                image: "./img/Visuel ANSER d’écran vue.png",
 
                 //kicker: "ANSER RDC",
 
