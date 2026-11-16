@@ -16,20 +16,20 @@
 const NEWS_DATA = [
     {
         date: "2026-10-26",
-        title: "Kindu : l’ANSER prépare une centrale solaire de 3 MWc et renforce sa présence au Maniema",
-        image: "./img/actu1.jpg",
+        title: "Électrification rurale en RDC: l’ANSER et l’ACERD échangent sur le réformes du secteur énergétique",
+        image: "./img/ACCERD.jpg.jpeg",
         link: "#"
     },
     {
         date: "2026-10-22",
-        title: "Électrification rurale en RDC : l’ANSER et l’ACERD échangent sur les réformes du secteur énergétique",
-        image: "./img/actu2.jpg",
+        title: "Central hydroélectrique de Mbombo: l’ANSER et le FPI franchissent une nouvelle étape",
+        image: "./img/FPI.jpg.jpeg",
         link: "#"
     },
     {
         date: "2026-10-14",
-        title: "Centrale hydroélectrique de Mbombo : l’ANSER et le FPI franchissent une nouvelle étape",
-        image: "./img/actu3.jpg",
+        title: "Kindu : l’ANSER prépare une centrale solaire de 3 MWc et renforce sa présence au Maniema",
+        image: "./img/ANSER-KINDU-19.jpg.jpeg",
         link: "#"
     }
 ];
