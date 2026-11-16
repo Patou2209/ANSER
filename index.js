@@ -455,7 +455,7 @@
             actif: true,
             image: "./img/poppup.jpeg",     // ← l'image du pop-up
             alt: "Information ANSER",
-            duree: 3000,                          // visible pendant 3 s (après l'animation d'entrée)
+            duree: 10000,                          // visible pendant 10 s (après l'animation d'entrée)
             uneFoisParSession: false              // true = une seule fois par visite
         };
 
