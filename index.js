@@ -1,12 +1,11 @@
-
-        /* =========================================================
+/* =========================================================
            CONFIGURATION DES SLIDES
         ========================================================== */
 
         const slidesData = [
 
             {
-                image: "./img/Visuel ANSER d’écran vue.png",
+                image: "./img/visuelVue.png",
 
                 //kicker: "ANSER RDC",
 
@@ -24,7 +23,7 @@
 
 
             {
-                image: "./img/Visuel ANSER d’écran site nuit.png",
+                image: "./img/visuelNuit.png",
 
                 //kicker: "NOTRE ENGAGEMENT",
 
@@ -41,7 +40,7 @@
 
 
             {
-                image: "./img/Visuel ANSER d’écran DG.png",
+                image: "./img/visuelDG.png",
 
                 //kicker: "NOTRE ENGAGEMENT",
 
@@ -395,7 +394,7 @@
             const options = [...menu.querySelectorAll("[data-lang]")];
             const flagEl  = btn.querySelector(".fi");
             const codeEl  = btn.querySelector(".lang-switch__code");
-            const FLAGS   = { fr: "fi-fr", en: "fi-gb" };
+            const FLAGS   = { fr: "fi-fr", en: "fi-gb", ln: "fi-cd" };   // ln = Lingála (drapeau RDC)
 
             function toggleMenu(open) {
                 menu.hidden = !open;
@@ -454,7 +453,7 @@
 
         const POPUP_ACCUEIL = {
             actif: true,
-            image: "./img/popup-accueil.jpg",     // ← l'image du pop-up
+            image: "./img/poppup.jpeg",     // ← l'image du pop-up
             alt: "Information ANSER",
             duree: 3000,                          // visible pendant 3 s (après l'animation d'entrée)
             uneFoisParSession: false              // true = une seule fois par visite
@@ -474,9 +473,30 @@
             const ENTREE = 700;   // durée de l'animation d'entrée (ms)
             const SORTIE = 600;   // durée de l'animation de sortie (ms)
 
+
+            const CSS = `
+.acc-popup{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;background:rgba(0,0,0,0);visibility:hidden;transition:background-color .6s ease,visibility 0s linear .6s}
+.acc-popup.is-open{background:rgba(0,0,0,.6);visibility:visible;transition:background-color .6s ease,visibility 0s}
+.acc-popup__cadre{position:relative;width:min(460px,90vw);aspect-ratio:1/1;max-height:86vh;overflow:hidden;border-radius:4px;background:#0f1d63;box-shadow:0 24px 70px rgba(0,0,0,.45);opacity:0;transform:translateY(22px) scale(.94);transition:opacity .5s ease,transform .5s ease;will-change:opacity,transform}
+.acc-popup.is-open .acc-popup__cadre{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.acc-popup__cadre img{display:block;width:100%;height:100%;object-fit:cover}
+.acc-popup__fermer{position:absolute;top:10px;right:10px;width:42px;height:42px;display:grid;place-items:center;border:0;border-radius:50%;background:rgba(15,29,99,.6);font-size:24px;color:#FFF200;cursor:pointer;transition:transform .3s ease,background .3s ease}
+.acc-popup__fermer:hover{transform:rotate(90deg);background:rgba(15,29,99,.9)}
+.acc-popup__fermer:focus-visible{outline:3px solid #FFF200;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.acc-popup__cadre,.acc-popup.is-open .acc-popup__cadre{transform:none}}`;
+            if (!document.getElementById("acc-popup-style")) {
+                const style = document.createElement("style");
+                style.id = "acc-popup-style";
+                style.textContent = CSS;
+                document.head.appendChild(style);
+            }
+
             const img = new Image();
             img.alt = POPUP_ACCUEIL.alt;
             img.onload = build;          // on attend l'image : pas de flash ni de cadre vide
+            img.onerror = () => console.warn(
+                "Pop-up d'accueil : image introuvable → " + POPUP_ACCUEIL.image +
+                " (vérifie le chemin et le nom du fichier dans POPUP_ACCUEIL.image)");
             img.src = POPUP_ACCUEIL.image;
 
             function build() {
