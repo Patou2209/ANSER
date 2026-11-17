@@ -85,7 +85,7 @@ body {
     left: 0;
     height: 3px;
     width: 0;
-    background: linear-gradient(90deg, var(--anser-jaune), #ffb300);
+    background: var(--bleuDark);
     z-index: 1200;
     transition: width 0.12s linear;
 }
@@ -1870,10 +1870,6 @@ nav .navigation ul li a.active-tab {
     border-right: 0;
 }
 
-.chiffre:hover {
-    background: var(--anser-fond-carte);
-}
-
 .chiffre__icone {
     font-size: 23px;
     color: var(--anser-jaune);
@@ -2191,6 +2187,7 @@ nav .navigation ul li a.active-tab {
 
 
 
+
 /* ==========================================================================
    COMPLÉMENTS DE STRUCTURE — logo cliquable, boutons du pied de page,
    texte réservé aux lecteurs d'écran
@@ -2246,8 +2243,6 @@ nav .navigation ul li a.active-tab {
 
 .footer-boutons a:hover,
 .footer-boutons a:focus-visible {
-    background: var(--anser-jaune);
-    border-color: var(--anser-jaune);
     color: var(--anser-bleu-nuit);
     transform: translateY(-2px);
 }
@@ -2400,10 +2395,10 @@ nav.fil-ariane i {
 
 .footer-bouton:hover,
 .footer-bouton:focus-visible {
-    background: #ffffff;
-    border-color: #ffffff;
-    color: var(--anser-bleu-nuit);
+    background: var(--bleuDark);
+    color: white;
     transform: translateY(-2px);
+    border: none;
 }
 
 /* =========================================================
@@ -2496,7 +2491,7 @@ nav.fil-ariane i {
 
 .energy-banner .progress-value {
     border-radius: 100px;
-    background: linear-gradient(90deg, var(--yellow));
+    background: linear-gradient(90deg, var(--bleuDark));
 }
 
 .banner-bottom {
@@ -3275,7 +3270,7 @@ body {
 }
 .acc-head::after {
     content: ""; position: absolute; left: 0; bottom: -1px;
-    width: 110px; height: 2px; background: var(--yellow);
+    width: 110px; height: 2px; background: var(--bleuDark);
 }
 .acc-head h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 700; line-height: 1.15; color: #111; }
 .acc-head p { max-width: 330px; font-size: 15px; color: #111; }
@@ -3285,12 +3280,12 @@ body {
 .acc-mission {
     position: relative; min-height: 330px; padding: 30px 26px;
     display: flex; flex-direction: column; justify-content: flex-end;
-    background: #fff; border: 2px solid var(--yellow); border-radius: 18px;
+    background: #fff; border: 2px solid var(--bleuDark); border-radius: 18px;
 }
 .acc-mission__icone {
     width: 72px; height: 72px; margin-bottom: auto;
     display: grid; place-items: center;
-    border: 3px dotted var(--yellow); border-radius: 50%;
+    border: 3px dotted var(--bleuDark); border-radius: 50%;
     font-size: 28px; color: var(--bleuDark);
 }
 .acc-mission h3 { font-size: 17px; font-weight: 700; margin: 22px 0 10px; color: #111; }
