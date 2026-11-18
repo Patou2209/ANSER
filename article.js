@@ -40,10 +40,11 @@
     }
 
     /* ---------- URL de partage : toujours la page de CET article ---------- */
-    const url = new URL(location.href);
-    url.search = "?id=" + encodeURIComponent(item.id);
-    url.hash = "";
-    const shareUrl = url.toString();
+    //const url = new URL(location.href);
+    //url.search = "?id=" + encodeURIComponent(item.id);
+    //url.hash = "";
+    //const shareUrl = url.toString();
+    const shareUrl = location.origin + "/partage/" + encodeURIComponent(item.id) + ".html";
 
     /* ---------- En-tête de page ---------- */
     document.title = item.title + " — ANSER";
