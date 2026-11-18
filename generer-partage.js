@@ -13,7 +13,7 @@ const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
 
-const SITE_URL = "https://www.ansercongo.com";   // <- adapte si besoin (sans "/" final)
+const SITE_URL = "https://www.anser.gouv.cd";   // <- adapte si besoin (sans "/" final)
 const SITE_NOM = "ANSER";
 
 // Lecture de NEWS_DATA depuis news.js
