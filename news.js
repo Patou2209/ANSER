@@ -30,7 +30,7 @@ const NEWS_DATA = [
         id: "anser-acerd-partenariat",
         date: "2026-10-22",
         title: "L’ANSER et l’ACERD renouvellent leur partenariat pour accélérer l’accès à l’énergie en RDC",
-        image: "./img/ACCERD.jpg.jpeg",
+        image: "./img/ACCERD.jpg",
         link: "article.html?id=anser-acerd-partenariat",
         lead: "Le jeudi 22 octobre 2026, à Kinshasa, l’ANSER a pris part à l’Assemblée Générale Ordinaire de l’ACERD. À cette occasion, le Protocole d’Accord qui lie les deux institutions depuis 2022 a été symboliquement reconduit et sera actualisé.",
         content: [
@@ -61,7 +61,7 @@ const NEWS_DATA = [
         id: "hydro-mbombo-anser-fpi",
         date: "2026-10-14",
         title: "Centrale hydroélectrique de Mbombo : l’ANSER et le FPI franchissent une nouvelle étape",
-        image: "./img/FPI.jpg.jpeg",
+        image: "./img/FPI.jpg",
         link: "article.html?id=hydro-mbombo-anser-fpi",
         lead: "C’est une étape historique et hautement stratégique qui vient d’être franchie dans la marche vers l’électrification du Grand Kasaï. Ce mercredi 14 octobre 2026, au siège du FPI, s’est déroulée la cérémonie officielle d’installation des dirigeants sociaux de la société de projet Hydro Mbombo SAS, chargée de piloter et de concrétiser ce chantier d’envergure. À travers cette impulsion, l’ANSER réaffirme son rôle de moteur incontournable du développement et de la transformation énergétique en République Démocratique du Congo.",
         content: [
@@ -89,7 +89,7 @@ const NEWS_DATA = [
         id: "kindu-kasongo-centrales-solaires",
         date: "2026-10-26",
         title: "Kindu : l’ANSER prépare une centrale solaire de 3 MWc et renforce sa présence au Maniema",
-        image: "./img/ANSER-KINDU-19.jpg.jpeg",
+        image: "./img/ANSER-KINDU-19.jpg",
         link: "article.html?id=kindu-kasongo-centrales-solaires",
         lead: "Ce lundi 26 octobre 2026, l’ANSER et le FPI ont signé un accord de financement majeur visant à accélérer l’accès à l’électricité dans la province du Maniema, à travers la construction de centrales solaires et d’infrastructures connexes.",
         content: [
