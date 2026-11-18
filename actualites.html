@@ -100,94 +100,142 @@
 
     <!-- PIED DE PAGE (identique à index.html) -->
     <footer>
-        <section id="footer">
+    <section id="footer">
 
-            <div class="footer-col">
-                <img src="./img/logo_yellow_white-removebg-preview.png" alt="Logo de l'ANSER">
-                <p style="color: white; font-size: small;">Agence Nationale d'Électrification et des Services Énergétiques en Milieux Rural et Périurbain. <br> Établissement public de la RDC. </p>
+        <!-- Newsletter -->
+        <div class="nl" id="newsletter">
+            <div>
+                <h3>Abonnez-vous à notre newsletter</h3>
+                <p>Recevez directement dans votre boîte mail les actualités, l’avancement des chantiers et les appels à projets de l’ANSER.</p>
             </div>
-
-            <div class="footer-col">
-                <h3>Navigation</h3>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="actualites.html">Actualités</a></li>
-                    <li><a href="index.html#temoignages">Témoignages</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Pools régionaux</h3>
-                <ul>
-                    <li><a href="#">Pool Grand Ouest</a></li>
-                    <li><a href="#">Pool Grand Équateur</a></li>
-                    <li><a href="#">Pool Grand Oriental</a></li>
-                    <li><a href="#">Pool Grand Kasaï</a></li>
-                    <li><a href="#">Pool Grand Est</a></li>
-                    <li><a href="#">Pool Grand Katanga</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Coordonnées</h3>
-                <ul>
-                    <li>Siège social de l'ANSER, Kinshasa, RDC<br>
-                        Bâtiment Orgamane, 4845,<br>
-                        avenue Lukusa, commune de la Gombe</li>
-                    <li><a href="tel:+243810111171">+243 810 111 171</a></li>
-                    <li><a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></li>
-                </ul>
-                <div class="footer-boutons">
-                    <a class="footer-bouton" href="https://wa.me/243810111171"
-                       target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
-                    </a>
-                    <a class="footer-bouton footer-bouton--contour" href="mailto:anser@anser.gouv.cd">
-                        <i class="fas fa-envelope" aria-hidden="true"></i> Courriel
-                    </a>
+            <form id="newsletterForm" method="post" novalidate>
+                <div class="nl__champ">
+                    <label class="visuellement-cache" for="nlEmail">Adresse e-mail</label>
+                    <input id="nlEmail" type="email" name="email" placeholder="Votre adresse e-mail" autocomplete="email" required>
+                    <button class="nl__btn" type="submit">S’abonner <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
                 </div>
-            </div>
+                <input type="text" name="_gotcha" class="ct-piege" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <label class="nl__consent">
+                    <input type="checkbox" name="consentement" value="oui" required>
+                    <span>J’accepte de recevoir la newsletter de l’ANSER et la <a href="politique-confidentialite.html">politique de confidentialité</a>.</span>
+                </label>
+                <p class="nl__statut" role="status" aria-live="polite"></p>
+            </form>
+        </div>
 
-           
+        <div class="footer-col">
+            <img src="./img/logo_yellow_white-removebg-preview.png" alt="Logo de l'ANSER">
+            <p style="color: white; font-size: small;">Agence Nationale d'Électrification et des Services Énergétiques en Milieux Rural et Périurbain. <br> Établissement public de la RDC. </p>
+        </div>
 
-            <div class="copyright">
-                <p class="technoweb">
-                    &copy; <span data-annee>2026</span> site officiel de ANSER RDC<br>
-                    Tous droits réservés.
-                </p>
-                
-                 <div class="pro-links">
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="index.html#temoignages">Témoignages</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Pools régionaux</h3>
+            <ul>
+                <li><a href="#">Pool Grand Ouest</a></li>
+                <li><a href="#">Pool Grand Équateur</a></li>
+                <li><a href="#">Pool Grand Oriental</a></li>
+                <li><a href="#">Pool Grand Kasaï</a></li>
+                <li><a href="#">Pool Grand Est</a></li>
+                <li><a href="#">Pool Grand Katanga</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Coordonnées</h3>
+            <ul>
+                <li>Siège social de l'ANSER, Kinshasa, RDC<br>
+                    Bâtiment Orgamane, 4845,<br>
+                    avenue Lukusa, commune de la Gombe</li>
+                <li><a href="tel:+243810111171">+243 810 111 171</a></li>
+                <li><a href="mailto:anser@anser.gouv.cd">anser@anser.gouv.cd</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p class="technoweb">
+                &copy; <span data-annee>2026</span> site officiel de ANSER RDC<br>
+                Tous droits réservés.
+            </p>
+
+            <div class="pro-links">
                 <a href="mentions-legales.html" style="color: white; font-size: small; padding: 5px;">Mentions légales</a>
                 <a href="politique-cookies.html" style="color: white; font-size: small; padding: 5px;">Politique de cookies</a>
-                <a href="politique-confidentialite.html" style="color: white; font-size: small; padding: 5px;">Politique de confidentialité</a>   
+                <a href="politique-confidentialite.html" style="color: white; font-size: small; padding: 5px;">Politique de confidentialité</a>
             </div>
-                <div class="pro-links">
-                    <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
-                        <i class="fab fa-x-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
-                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                    </a>
-                </div>
-                
+            <div class="pro-links">
+                <a href="https://www.facebook.com/p/ANSER-100066298099565/" target="_blank" rel="noopener" aria-label="Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/ANSER_RDC" target="_blank" rel="noopener" aria-label="X (anciennement Twitter)">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://cd.linkedin.com/company/anser-rdc" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.youtube.com/@ANSER_RDC" target="_blank" rel="noopener" aria-label="YouTube">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
     </footer>
 
-    <!-- Bouton de retour en haut de page -->
-    <button class="retour-haut" type="button" aria-label="Revenir en haut de la page">
-        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+<!-- Bouton de retour en haut de page -->
+<button class="retour-haut" type="button" aria-label="Revenir en haut de la page">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- Bouton flottant : ouvre le formulaire de contact -->
+<button type="button" class="footer-bouton call" data-contact-ouvrir>
+    <i class="fas fa-comment-dots" aria-hidden="true"></i> Contactez-nous
+</button>
+
+<!-- Fenêtre du formulaire de contact -->
+<dialog class="ct-dialog" id="contactDialog" aria-labelledby="contactTitre">
+    <button type="button" class="ct-fermer" aria-label="Fermer le formulaire">
+        <i class="fas fa-xmark" aria-hidden="true"></i>
     </button>
-    <a class="footer-bouton call" href="https://wa.me/243810111171"
-        target="_blank" rel="noopener">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i> Contactez-nous
-    </a>
+
+    <div class="ct-entete">
+        <span class="ct-etiquette">Contact</span>
+        <h2 id="contactTitre">Écrivez-nous</h2>
+        <p>Remplissez ce formulaire : votre message sera transmis directement à l’équipe de l’ANSER.</p>
+    </div>
+
+    <form class="ct-form" id="contactForm" method="post" novalidate>
+        <div class="ct-champ">
+            <label for="ctNom">Nom complet <span aria-hidden="true">*</span></label>
+            <input id="ctNom" type="text" name="nom" autocomplete="name" placeholder="Ex. Kaziama Mulenda" required>
+        </div>
+        <div class="ct-champ">
+            <label for="ctTel">Numéro de téléphone <span aria-hidden="true">*</span></label>
+            <input id="ctTel" type="tel" name="telephone" autocomplete="tel" placeholder="+243 8X XXX XXXX"
+                   pattern="[0-9+()\s.\-]{8,20}" title="Entrez un numéro valide (chiffres, espaces, +)" required>
+        </div>
+        <div class="ct-champ">
+            <label for="ctEmail">Adresse e-mail <span aria-hidden="true">*</span></label>
+            <input id="ctEmail" type="email" name="email" autocomplete="email" placeholder="vous@exemple.com" required>
+        </div>
+        <div class="ct-champ">
+            <label for="ctMessage">Message <span aria-hidden="true">*</span></label>
+            <textarea id="ctMessage" name="message" minlength="10" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+        </div>
+
+        <input type="text" name="_gotcha" class="ct-piege" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button type="submit" class="ct-envoyer">Envoyer le message <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+        <p class="ct-statut" role="status" aria-live="polite"></p>
+    </form>
+</dialog>
 
     <script src="index.js"></script>
     <script src="pages.js"></script>

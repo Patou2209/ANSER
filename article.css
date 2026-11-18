@@ -1,0 +1,92 @@
+/* =========================================================
+   PAGE ARTICLE (article.html?id=...)
+   Modèle unique : seul le contenu change d'une actualité à l'autre.
+========================================================= */
+
+.art-banniere { min-height: 420px; }
+.art-banniere .page-banniere__contenu { max-width: 900px; }
+.art-titre { font-size: clamp(26px, 3.6vw, 44px); }
+.art-banniere .page-banniere__etiquette { text-transform: none; letter-spacing: 1px; }
+
+/* Colonne de lecture */
+.art { max-width: 780px; margin-inline: auto; }
+
+.art__chapo {
+    font-size: 19px; line-height: 1.7; font-weight: 500;
+    color: var(--bleuDark);
+    padding-left: 20px; border-left: 4px solid var(--yellow);
+    margin-bottom: 28px; text-align: left;
+}
+
+.art__corps h2 {
+    font-size: clamp(21px, 2.4vw, 27px); font-weight: 800; line-height: 1.25;
+    color: var(--bleuDark); margin: 38px 0 14px;
+}
+.art__corps p {
+    font-size: 17px; line-height: 1.85; color: #2b2b2b;
+    margin-bottom: 16px; text-align: left;
+}
+.art__corps strong { color: var(--bleuDark); }
+
+.art__corps ul { list-style: none; margin: 8px 0 22px; padding: 0; }
+.art__corps li {
+    position: relative; padding: 7px 0 7px 28px;
+    font-size: 16.5px; line-height: 1.7; color: #2b2b2b;
+}
+.art__corps li::before {
+    content: ""; position: absolute; left: 6px; top: 17px;
+    width: 9px; height: 9px; border-radius: 50%; background: var(--yellow);
+    box-shadow: 0 0 0 2px var(--bleuDark) inset;
+}
+
+.art__citation {
+    margin: 32px 0; padding: 26px 28px;
+    background: var(--anser-fond-alt); border-radius: 12px;
+    border-left: 4px solid var(--yellow);
+    font-size: 20px; font-weight: 600; line-height: 1.5; color: var(--bleuDark);
+}
+
+.art__tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 34px 0 0; }
+.art__tag {
+    padding: 6px 14px; border-radius: 100px;
+    background: var(--anser-fond-alt); color: var(--bleuDark);
+    font-size: 13px; font-weight: 600;
+}
+
+/* Partage */
+.partage {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+    margin: 34px 0 0; padding: 18px 0;
+    border-top: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3;
+}
+.partage--haut { margin: 0 0 30px; border-top: 0; padding-top: 0; }
+.partage__titre {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-right: 6px; font-size: 14px; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase; color: var(--bleuDark);
+}
+.partage__btn {
+    width: 42px; height: 42px; display: inline-grid; place-items: center;
+    border: 1px solid #dde5f0; border-radius: 50%;
+    background: #fff; color: var(--bleuDark);
+    font-size: 17px; text-decoration: none; cursor: pointer;
+    transition: background .25s, color .25s, border-color .25s, transform .25s;
+}
+.partage__btn:hover, .partage__btn:focus-visible {
+    background: var(--bleuDark); color: var(--yellow);
+    border-color: var(--bleuDark); transform: translateY(-3px);
+}
+.partage__btn:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+.partage__statut { font-size: 14px; font-weight: 600; color: #1e7a50; min-height: 1em; }
+
+.art__retour { margin-top: 30px; }
+
+.art-introuvable { text-align: center; padding: 40px 0; }
+.art-introuvable p { text-align: center; margin: 12px 0 26px; font-size: 17px; }
+
+@media (max-width: 640px) {
+    .art-banniere { min-height: 340px; }
+    .art__chapo { font-size: 17px; }
+    .art__corps p { font-size: 16px; }
+    .art__corps li { font-size: 15.5px; }
+}
